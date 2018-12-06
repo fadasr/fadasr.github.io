@@ -49,3 +49,6 @@ print("SHA3-256:  ", binascii.hexlify(sha3_256))
 blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjIwMjA1MjgyXX0=
+-->
