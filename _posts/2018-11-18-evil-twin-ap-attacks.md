@@ -16,13 +16,13 @@ Eve--x Alice: Eve has DHCP server setup to issue IP address to Alice
 
 ```mermaid
 sequenceDiagram
-Alice ->> WiFi: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
+Eve ->> WiFi: Eve jams channel 6
+WiFi-->>Alice: How about you John?
+WiFi--x Eve: I am good thanks!
 ```
 
 ## Defense Against The Attack
 use VPN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjAxMDkxODEsMzAxOTA1OTUwXX0=
+eyJoaXN0b3J5IjpbMTM2ODE4NjE4MSwzMDE5MDU5NTBdfQ==
 -->
