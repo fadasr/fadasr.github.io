@@ -9,6 +9,7 @@ An evil twin is a malicious Wi-Fi access point (AP) that appears to be legitimat
 
 ```mermaid
 sequenceDiagram
+Note: 
 Alice ->> Bob: Hello Bob, how are you?
 Bob-->>John: How about you John?
 Bob--x Alice: I am good thanks!
@@ -22,5 +23,5 @@ Alice->John: Yes... John, how are you?
 ## Defense Against The Attack
 use VPN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODY2ODEwODEsMzAxOTA1OTUwXX0=
+eyJoaXN0b3J5IjpbLTE2MjIzODAyOTEsMzAxOTA1OTUwXX0=
 -->
