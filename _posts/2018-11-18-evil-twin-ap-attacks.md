@@ -12,7 +12,7 @@ sequenceDiagram
 Note: evil twin ap is set up on Eve laptop (same SSID, channel=11)
 Eve ->> WiFi-AP: Eve jams channel 6
 Alice-->>Eve: Alice roams to evil twin ap on channel 11 and associates
-Bob--x Alice: I am good thanks!
+Eve--x Alice: Eve has DHCP server setup to issue IP address to hijacked client
 Bob-x John: I am good thanks!
 Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
@@ -23,5 +23,5 @@ Alice->John: Yes... John, how are you?
 ## Defense Against The Attack
 use VPN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjE2MTI3OTEsMzAxOTA1OTUwXX0=
+eyJoaXN0b3J5IjpbMTk4ODc5NDc1NSwzMDE5MDU5NTBdfQ==
 -->
