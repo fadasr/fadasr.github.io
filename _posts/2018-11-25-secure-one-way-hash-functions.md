@@ -2,7 +2,7 @@
 
 hash functions take as an input an arbitrary length message and produce a fixed size result. The hash result is also known as the digest or the fingerprint.
 
-![](../images/hash.png)
+![](https://fadasr.github.io/images/hash.png)
 
 two properties hash functions must have to be useful:
 
@@ -50,5 +50,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
+eyJoaXN0b3J5IjpbMjAxOTQ3ODEzMiwtMTMzNTE0MjU0OSw2Mj
+AyMDUyODJdfQ==
 -->
