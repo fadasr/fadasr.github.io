@@ -1,8 +1,8 @@
-# secure one-way hash functions
+## secure one-way hash functions
 
 hash functions take as an input an arbitrary length message and produce a fixed size result. The hash result is also known as the digest or the fingerprint.
 
-![](images/hash.png)
+![](../images/hash.png)
 
 two properties hash functions must have to be useful:
 
@@ -11,7 +11,7 @@ two properties hash functions must have to be useful:
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
 
-![](images/hash-process.png)
+![](../images/hash-process.png)
 
 hash functions are used in many scenarios. Here are their most common applications:
 
