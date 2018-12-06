@@ -9,20 +9,13 @@ An evil twin is a malicious Wi-Fi access point (AP) that appears to be legitimat
 
 ```mermaid
 sequenceDiagram
-Eve ->> WiFi-AP: Eve jams channel 6
+Eve ->> WiFiAP: Eve jams channel 6
 Alice-->>Eve: Alice roams to evil twin ap on channel 11 and associates
 Eve--x Alice: Eve has DHCP server setup to issue IP address to Alice
-```
-
-```mermaid
-sequenceDiagram
-Eve ->> WiFi: Eve jams channel 6
-WiFi-->>Alice: How about you John?
-WiFi--x Eve: I am good thanks!
 ```
 
 ## Defense Against The Attack
 use VPN
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODE4NjE4MSwzMDE5MDU5NTBdfQ==
+eyJoaXN0b3J5IjpbODA0MDE4MDA1LDMwMTkwNTk1MF19
 -->
