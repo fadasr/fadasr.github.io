@@ -11,7 +11,7 @@ two properties hash functions must have to be useful:
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
 
-![](fadasr.github.io/images/hash-process.png)
+![](https://fadasr.github.io/images/hash-process.png)
 
 hash functions are used in many scenarios. Here are their most common applications:
 
@@ -50,5 +50,5 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTU0MzcwOCw2MjAyMDUyODJdfQ==
+eyJoaXN0b3J5IjpbLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
 -->
