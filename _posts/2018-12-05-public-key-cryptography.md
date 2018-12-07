@@ -12,29 +12,13 @@ digital signatures are also used for authentication to systems or applications. 
 
 ![](https://fadasr.github.io/images/dig-sig-auth.png)
 
-<table>
-	<tr>
-		<th>authentication</th>
-		<td>test</td>
-	</tr>
-	<tr>
-		<th>integrity</th>
-		<td>good</td>
-	</tr>
-</table>
-
  - [x] authentication
  - [x] integrity
- 
- 
-|integrity|good |
-|--|--|
-|  |  |
+ - [x] non-repudiation
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc3MjEwMTAsMTEwMzQ1NDg2MiwyMD
-YzNTc0ODQ2LC01NTM1MTcyNDcsMTA5NjI5Njc4NiwtOTU1NzM1
-NjQwLDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDExODRdfQ
-==
+eyJoaXN0b3J5IjpbNDMzNzI4MjQsMTEwMzQ1NDg2MiwyMDYzNT
+c0ODQ2LC01NTM1MTcyNDcsMTA5NjI5Njc4NiwtOTU1NzM1NjQw
+LDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDExODRdfQ==
 -->
