@@ -22,8 +22,18 @@ digital signatures are also used for authentication to systems or applications. 
 		<td>good</td>
 	</tr>
 </table>
+
+ - [x] authentication
+ - [x] integrity
+ 
+ 
+|integrity|good |
+|--|--|
+|  |  |
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzYwOTI2ODcsMTEwMzQ1NDg2MiwyMD
+eyJoaXN0b3J5IjpbLTEzNzc3MjEwMTAsMTEwMzQ1NDg2MiwyMD
 YzNTc0ODQ2LC01NTM1MTcyNDcsMTA5NjI5Njc4NiwtOTU1NzM1
 NjQwLDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDExODRdfQ
 ==
