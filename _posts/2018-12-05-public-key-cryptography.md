@@ -10,21 +10,9 @@ digital signatures are the public-key equivalent of MACs. Alice can generate a d
 
 digital signatures are also used for authentication to systems or applications. A system can authenticate Alice's identity through a challenge-response protocol. The system generates a random challenge and Alice signs it. If the signature is verified with Alice's public key, it must have been signed by Alice. This type of authentication is useful for remote access to information on a server, or for gaining security access to a restricted feature.
 
-@startuml
-actor Alice
-participant System
-Alice->System: request access
-System->Alice: send random numbers
-note left
-    sign the random number
-    with private key
-end note
-Alice->System: send the signature
-System->System: verify the signature\nwith Alice's public key
-System->Alice: response authentication
-@enduml
+![](https://github.com/fadasr/fadasr.github.io/blob/master/images/dig-sig-auth.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MzU3NDg0NiwtNTUzNTE3MjQ3LDEwOT
-YyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQwNzMsLTE4ODc4ODIw
-MDYsNTU1NTAxMTg0XX0=
+eyJoaXN0b3J5IjpbLTE2NTIzMzkyMTQsMjA2MzU3NDg0NiwtNT
+UzNTE3MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQw
+NzMsLTE4ODc4ODIwMDYsNTU1NTAxMTg0XX0=
 -->
