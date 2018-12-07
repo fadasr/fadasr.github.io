@@ -4,12 +4,12 @@ a public-key cryptograpy, aka asymmetric cryptography, uses two related keys, a 
 
 ## digital signatures
 
-digital signatures are the public-key equivalent of MACs. A digital signature of a message is a number dependent on private key and on the content of the message being signed. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The generic setting is shown in Figure 1.0. 
+digital signatures are the public-key equivalent of MACs. A digital signature of a message is a number dependent on private key and on the content of the message being signed. The generic setting is shown in Figure 1.0. 
 
-Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. The signature validation will fail:
+Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The signature validation will fail:
 - if a different private key was used to generate the signature
 - if the data has been changed since the signature was applied 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ2MTgwMTIsMjEyNDY0MDczLC0xOD
-g3ODgyMDA2LDU1NTUwMTE4NF19
+eyJoaXN0b3J5IjpbMzA3NDEyMTMyLDIxMjQ2NDA3MywtMTg4Nz
+g4MjAwNiw1NTU1MDExODRdfQ==
 -->
