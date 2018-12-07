@@ -8,9 +8,9 @@ digital signatures are the public-key equivalent of MACs. Alice can generate a d
 - a different private key was used to generate the signature
 - the data has been changed since the signature was applied
 
-digital signatures are also used for authentication to systems or applications. A system can authenticate Alice's identity through a challenge-response protocol. The system generates a random challenge and Alice signs it. If t
+digital signatures are also used for authentication to systems or applications. A system can authenticate Alice's identity through a challenge-response protocol. The system generates a random challenge and Alice signs it. If the signature is verified with Alice's public key, it must have been signed by Alice.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk1NDg5NTMsMTA5NjI5Njc4NiwtOT
+eyJoaXN0b3J5IjpbLTExOTkxNTExNDMsMTA5NjI5Njc4NiwtOT
 U1NzM1NjQwLDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDEx
 ODRdfQ==
 -->
