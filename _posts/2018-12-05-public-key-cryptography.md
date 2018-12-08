@@ -22,14 +22,16 @@ with a trusted third party (e.g. CA in PKI), the digital signature can be used t
 
 ![](https://fadasr.github.io/images/dig-sig-cert.png)
 
+most public-key cryptosystems like RSA and ECC provide secure digital signature schemes like DSA, [**ECDSA**](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) and [**EdDSA**](https://en.wikipedia.org/wiki/EdDSA). We shall discuss the digital signatures in greater detail later
+
 ## key transport
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjcxODIxOSwtODMxODAxMTAxLC0xMj
-Y5Mjk0NjE1LDc3MzU1NzE3NywtMzAzMDUxNjI1LC05MTAyNzUw
-MiwtNzAxNDQ2MjQ5LDEwNzkwMTI4NzAsMTEwMzQ1NDg2MiwyMD
-YzNTc0ODQ2LC01NTM1MTcyNDcsMTA5NjI5Njc4NiwtOTU1NzM1
-NjQwLDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDExODRdfQ
-==
+eyJoaXN0b3J5IjpbMTI2NzUxNzM4NSwxNDIyNzE4MjE5LC04Mz
+E4MDExMDEsLTEyNjkyOTQ2MTUsNzczNTU3MTc3LC0zMDMwNTE2
+MjUsLTkxMDI3NTAyLC03MDE0NDYyNDksMTA3OTAxMjg3MCwxMT
+AzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0NywxMDk2Mjk2
+Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xODg3ODgyMDA2LD
+U1NTUwMTE4NF19
 -->
