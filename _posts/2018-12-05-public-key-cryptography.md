@@ -30,12 +30,13 @@ in practice asymmetric algorithms are never used to encrypt large amounts of dat
 
 ![](https://fadasr.github.io/images/key-trans.png) 
 
+examples of such asymmetric encryption schemes are: 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDkyNjk3MDUsMTczMzAyNzk0NCwxNT
-czNTMyMTI0LDUxNTc2MzM3Miw5MTM1ODA5MjgsODM3MDA1Njkw
-LDE0MjI3MTgyMTksLTgzMTgwMTEwMSwtMTI2OTI5NDYxNSw3Nz
-M1NTcxNzcsLTMwMzA1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0
-OSwxMDc5MDEyODcwLDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNT
-UzNTE3MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQw
-NzNdfQ==
+eyJoaXN0b3J5IjpbNjgyNzI1NjU1LC0xNTQ5MjY5NzA1LDE3Mz
+MwMjc5NDQsMTU3MzUzMjEyNCw1MTU3NjMzNzIsOTEzNTgwOTI4
+LDgzNzAwNTY5MCwxNDIyNzE4MjE5LC04MzE4MDExMDEsLTEyNj
+kyOTQ2MTUsNzczNTU3MTc3LC0zMDMwNTE2MjUsLTkxMDI3NTAy
+LC03MDE0NDYyNDksMTA3OTAxMjg3MCwxMTAzNDU0ODYyLDIwNj
+M1NzQ4NDYsLTU1MzUxNzI0NywxMDk2Mjk2Nzg2LC05NTU3MzU2
+NDBdfQ==
 -->
