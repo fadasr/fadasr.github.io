@@ -33,12 +33,14 @@ in practice asymmetric algorithms are never used to encrypt large amounts of dat
 examples of such asymmetric encryption schemes are: [RSA-OAEP](https://tools.ietf.org/html/rfc8017), [RSA-KEM](https://tools.ietf.org/html/rfc5990), and ECIES-KEM.
 
 ## key agreement
+
+Diffie-Hellman (DH) is a key agreement algorithm used by two parties to agree on a shared secret. The secret may then be converted into cryptographic key material for other symmetric algorithms. DH is resistant to sniffing attacks, but it is vulnerable to man-in-the-middle (MITM) attacks.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTI3ODE2MSwtNTIxMjk1MTA4LC0xND
-kwNzYxODgyLC00MzE3MTA3NzksMTM0ODg0NTE0MiwtMTU0OTI2
-OTcwNSwxNzMzMDI3OTQ0LDE1NzM1MzIxMjQsNTE1NzYzMzcyLD
-kxMzU4MDkyOCw4MzcwMDU2OTAsMTQyMjcxODIxOSwtODMxODAx
-MTAxLC0xMjY5Mjk0NjE1LDc3MzU1NzE3NywtMzAzMDUxNjI1LC
-05MTAyNzUwMiwtNzAxNDQ2MjQ5LDEwNzkwMTI4NzAsMTEwMzQ1
-NDg2Ml19
+eyJoaXN0b3J5IjpbLTE0Mjc0NDc3MTAsLTc1MTI3ODE2MSwtNT
+IxMjk1MTA4LC0xNDkwNzYxODgyLC00MzE3MTA3NzksMTM0ODg0
+NTE0MiwtMTU0OTI2OTcwNSwxNzMzMDI3OTQ0LDE1NzM1MzIxMj
+QsNTE1NzYzMzcyLDkxMzU4MDkyOCw4MzcwMDU2OTAsMTQyMjcx
+ODIxOSwtODMxODAxMTAxLC0xMjY5Mjk0NjE1LDc3MzU1NzE3Ny
+wtMzAzMDUxNjI1LC05MTAyNzUwMiwtNzAxNDQ2MjQ5LDEwNzkw
+MTI4NzBdfQ==
 -->
