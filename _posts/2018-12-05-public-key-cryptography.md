@@ -26,14 +26,16 @@ most asymmetric algorithms like RSA and ECC provide secure digital signature sch
 
 ## key transport
 
-in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm. However they are perfectly suited to encrypting small amounts of data - such as symmetric key.
+in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm. However they are perfectly suited to encrypting small amounts of data - such as symmetric key. The following example might described an electronic mail message from Alice to Bob:
+
+![]() 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzAyNzk0NCwxNTczNTMyMTI0LDUxNT
-c2MzM3Miw5MTM1ODA5MjgsODM3MDA1NjkwLDE0MjI3MTgyMTks
-LTgzMTgwMTEwMSwtMTI2OTI5NDYxNSw3NzM1NTcxNzcsLTMwMz
-A1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0OSwxMDc5MDEyODcw
-LDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNTUzNTE3MjQ3LDEwOT
-YyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQwNzMsLTE4ODc4ODIw
-MDZdfQ==
+eyJoaXN0b3J5IjpbNTQ3MTg0ODA3LDE3MzMwMjc5NDQsMTU3Mz
+UzMjEyNCw1MTU3NjMzNzIsOTEzNTgwOTI4LDgzNzAwNTY5MCwx
+NDIyNzE4MjE5LC04MzE4MDExMDEsLTEyNjkyOTQ2MTUsNzczNT
+U3MTc3LC0zMDMwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDks
+MTA3OTAxMjg3MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1Mz
+UxNzI0NywxMDk2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDcz
+XX0=
 -->
