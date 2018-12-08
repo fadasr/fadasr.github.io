@@ -16,13 +16,13 @@ digital signatures are also used for authentication to systems or applications. 
 
 ![](https://fadasr.github.io/images/dig-sig-auth.png)
 
-with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation.
+with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation. If there is ever a dispute, Bob can take 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzOTczNDI4MiwtNzAxNDQ2MjQ5LDEwNz
+eyJoaXN0b3J5IjpbMTkxMjkyNDgyNiwtNzAxNDQ2MjQ5LDEwNz
 kwMTI4NzAsMTEwMzQ1NDg2MiwyMDYzNTc0ODQ2LC01NTM1MTcy
 NDcsMTA5NjI5Njc4NiwtOTU1NzM1NjQwLDIxMjQ2NDA3MywtMT
 g4Nzg4MjAwNiw1NTU1MDExODRdfQ==
