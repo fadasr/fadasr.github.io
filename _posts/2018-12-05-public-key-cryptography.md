@@ -12,7 +12,7 @@ digital signatures are the public-key equivalent of MACs. Alice can generate a d
 - a different private key was used to generate the signature
 - the data has been changed since the signature was applied
 
-![digsig](https://fadasr.github.io/images/dig-sig.png)
+![](https://fadasr.github.io/images/dig-sig.png)
 
 digital signatures are also used for authentication to systems or applications. A system can authenticate Alice's identity through a challenge-response protocol. The system generates a random challenge and Alice signs it. If the signature is verified with Alice's public key, it must have been signed by Alice. This type of authentication is useful for remote access to information on a server, or for gaining security access to a restricted feature.
 
@@ -26,7 +26,7 @@ with a trusted third party (e.g. CA in PKI), the digital signature can be used t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MzU2ODk2MiwtMTI2OTI5NDYxNSw3Nz
+eyJoaXN0b3J5IjpbLTgzMTgwMTEwMSwtMTI2OTI5NDYxNSw3Nz
 M1NTcxNzcsLTMwMzA1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0
 OSwxMDc5MDEyODcwLDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNT
 UzNTE3MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQw
