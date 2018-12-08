@@ -18,7 +18,7 @@ digital signatures are also used for authentication to systems or applications. 
 
 ![](https://fadasr.github.io/images/dig-sig-auth.png)
 
-with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation. If there is ever a dispute, Bob can take message, digital signature, and digital certificate to a judge and prove that Alice signed the message. A digital signature binds a message to a public key owner and digital certificate binds a public key owner with identity (person, organisation, or web site). The digital certificate contains the owner's public key 
+with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation. If there is ever a dispute, Bob can take message, digital signature, and digital certificate to a judge and prove that Alice signed the message. A digital signature binds a message to a public key owner and digital certificate binds a public key owner with identity (person, organisation, or web site). The digital certificate contains the owner's public key and possibly other information, and is digitally singed by a Certification Authority (CA)
 
 ![](https://fadasr.github.io/images/dig-sig-cert.png)
 
@@ -28,10 +28,10 @@ most public-key cryptosystems like RSA and ECC provide secure digital signature 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3NzQ3ODUzLDgzNzAwNTY5MCwxNDIyNz
-E4MjE5LC04MzE4MDExMDEsLTEyNjkyOTQ2MTUsNzczNTU3MTc3
-LC0zMDMwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDksMTA3OT
-AxMjg3MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0
-NywxMDk2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xOD
-g3ODgyMDA2LDU1NTUwMTE4NF19
+eyJoaXN0b3J5IjpbLTc0Mzc2Mzc1MSw4MzcwMDU2OTAsMTQyMj
+cxODIxOSwtODMxODAxMTAxLC0xMjY5Mjk0NjE1LDc3MzU1NzE3
+NywtMzAzMDUxNjI1LC05MTAyNzUwMiwtNzAxNDQ2MjQ5LDEwNz
+kwMTI4NzAsMTEwMzQ1NDg2MiwyMDYzNTc0ODQ2LC01NTM1MTcy
+NDcsMTA5NjI5Njc4NiwtOTU1NzM1NjQwLDIxMjQ2NDA3MywtMT
+g4Nzg4MjAwNiw1NTU1MDExODRdfQ==
 -->
