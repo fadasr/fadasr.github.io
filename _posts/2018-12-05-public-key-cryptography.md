@@ -8,7 +8,7 @@ cryptographic goals provided by digital signatures are:
  - [x] integrity
  - [x] non-repudiation
 
-digital signatures are the public-key equivalent of MACs. Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. The generic setting is shown in [Figure 1.0. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The signature validation will fail if:
+digital signatures are the public-key equivalent of MACs. Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. The generic setting is shown below. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The signature validation will fail if:
 - a different private key was used to generate the signature
 - the data has been changed since the signature was applied
 
@@ -26,9 +26,9 @@ with a trusted third party (e.g. CA in PKI), the digital signature can be used t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI4NTE5MTgsLTEyNjkyOTQ2MTUsNzczNT
-U3MTc3LC0zMDMwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDks
-MTA3OTAxMjg3MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1Mz
-UxNzI0NywxMDk2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDcz
-LC0xODg3ODgyMDA2LDU1NTUwMTE4NF19
+eyJoaXN0b3J5IjpbMTA2MzU2ODk2MiwtMTI2OTI5NDYxNSw3Nz
+M1NTcxNzcsLTMwMzA1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0
+OSwxMDc5MDEyODcwLDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNT
+UzNTE3MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQw
+NzMsLTE4ODc4ODIwMDYsNTU1NTAxMTg0XX0=
 -->
