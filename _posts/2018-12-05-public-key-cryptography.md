@@ -18,7 +18,7 @@ digital signatures are also used for authentication to systems or applications. 
 
 ![](https://fadasr.github.io/images/dig-sig-auth.png)
 
-with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation. If there is ever a dispute, Bob can take message, digital signature, and digital certificate to a judge and prove that Alice signed the message. The digital certificate contains the owner's public key and possibly other information, and is digitally singed by a Certification Authority (CA), thereby binding the public key to the owner. A digital signature binds a message to a public key owner and digital certificate binds a public key owner with identity (person, organisation, or web site).
+with a trusted third party (e.g. CA in PKI), the digital signature can be used to establish non-repudiation. If there is ever a dispute, Bob can take message, digital signature, and digital certificate to a judge and prove that Alice signed the message. The digital certificate contains the owner's public key and possibly other information, and is digitally signed by a Certification Authority (CA), a trusted third party, thereby binding the public key to the owner. A digital signature binds a message to a public key owner and digital certificate binds a public key owner with identity (person, organisation, or web site).
 
 ![](https://fadasr.github.io/images/dig-sig-cert.png)
 
@@ -28,10 +28,10 @@ most public-key cryptosystems like RSA and ECC provide secure digital signature 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTI5NDczNzMsODM3MDA1NjkwLDE0Mj
-I3MTgyMTksLTgzMTgwMTEwMSwtMTI2OTI5NDYxNSw3NzM1NTcx
-NzcsLTMwMzA1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0OSwxMD
-c5MDEyODcwLDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNTUzNTE3
-MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQwNzMsLT
-E4ODc4ODIwMDYsNTU1NTAxMTg0XX0=
+eyJoaXN0b3J5IjpbOTEzNTgwOTI4LDgzNzAwNTY5MCwxNDIyNz
+E4MjE5LC04MzE4MDExMDEsLTEyNjkyOTQ2MTUsNzczNTU3MTc3
+LC0zMDMwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDksMTA3OT
+AxMjg3MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0
+NywxMDk2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xOD
+g3ODgyMDA2LDU1NTUwMTE4NF19
 -->
