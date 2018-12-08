@@ -26,13 +26,14 @@ most asymmetric algorithms like RSA and ECC provide secure digital signature sch
 
 ## key transport
 
+in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzUzMjEyNCw1MTU3NjMzNzIsOTEzNT
-gwOTI4LDgzNzAwNTY5MCwxNDIyNzE4MjE5LC04MzE4MDExMDEs
-LTEyNjkyOTQ2MTUsNzczNTU3MTc3LC0zMDMwNTE2MjUsLTkxMD
-I3NTAyLC03MDE0NDYyNDksMTA3OTAxMjg3MCwxMTAzNDU0ODYy
-LDIwNjM1NzQ4NDYsLTU1MzUxNzI0NywxMDk2Mjk2Nzg2LC05NT
-U3MzU2NDAsMjEyNDY0MDczLC0xODg3ODgyMDA2LDU1NTUwMTE4
-NF19
+eyJoaXN0b3J5IjpbLTE4NjcxMzA0MDEsMTU3MzUzMjEyNCw1MT
+U3NjMzNzIsOTEzNTgwOTI4LDgzNzAwNTY5MCwxNDIyNzE4MjE5
+LC04MzE4MDExMDEsLTEyNjkyOTQ2MTUsNzczNTU3MTc3LC0zMD
+MwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDksMTA3OTAxMjg3
+MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0NywxMD
+k2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xODg3ODgy
+MDA2XX0=
 -->
