@@ -22,13 +22,14 @@ with a trusted third party (e.g. CA in PKI), the digital signature can be used t
 
 ![](https://fadasr.github.io/images/dig-sig-cert.png)
 
-
+## key transport
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTgwMTEwMSwtMTI2OTI5NDYxNSw3Nz
-M1NTcxNzcsLTMwMzA1MTYyNSwtOTEwMjc1MDIsLTcwMTQ0NjI0
-OSwxMDc5MDEyODcwLDExMDM0NTQ4NjIsMjA2MzU3NDg0NiwtNT
-UzNTE3MjQ3LDEwOTYyOTY3ODYsLTk1NTczNTY0MCwyMTI0NjQw
-NzMsLTE4ODc4ODIwMDYsNTU1NTAxMTg0XX0=
+eyJoaXN0b3J5IjpbMTQyMjcxODIxOSwtODMxODAxMTAxLC0xMj
+Y5Mjk0NjE1LDc3MzU1NzE3NywtMzAzMDUxNjI1LC05MTAyNzUw
+MiwtNzAxNDQ2MjQ5LDEwNzkwMTI4NzAsMTEwMzQ1NDg2MiwyMD
+YzNTc0ODQ2LC01NTM1MTcyNDcsMTA5NjI5Njc4NiwtOTU1NzM1
+NjQwLDIxMjQ2NDA3MywtMTg4Nzg4MjAwNiw1NTU1MDExODRdfQ
+==
 -->
