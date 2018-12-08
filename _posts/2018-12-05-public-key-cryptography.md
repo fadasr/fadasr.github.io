@@ -26,13 +26,13 @@ most asymmetric algorithms like RSA and ECC provide secure digital signature sch
 
 ## key transport
 
-in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm. Additionally, Some cryptosystems (like ECC) do not provide directly encryption primitives, so more complex schemes should be used. However they are perfectly suited to encrypting small amounts of data - such as symmetric key. The following example might described an electronic mail message from Alice to Bob:
+in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm. Additionally, some of them (like ECC) do not provide directly encryption primitives, so more complex schemes should be used. However they are perfectly suited to encrypting small amounts of data - such as symmetric key. The following example might described an electronic mail message from Alice to Bob:
 
 ![](https://fadasr.github.io/images/key-trans.png) 
 
 examples of such asymmetric encryption schemes are: [RSA-OAEP](https://tools.ietf.org/html/rfc8017), [RSA-KEM](https://tools.ietf.org/html/rfc5990), and ECIES-KEM.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjYyNTcwMiwtMTQ5MDc2MTg4MiwtND
+eyJoaXN0b3J5IjpbLTUyMTI5NTEwOCwtMTQ5MDc2MTg4MiwtND
 MxNzEwNzc5LDEzNDg4NDUxNDIsLTE1NDkyNjk3MDUsMTczMzAy
 Nzk0NCwxNTczNTMyMTI0LDUxNTc2MzM3Miw5MTM1ODA5MjgsOD
 M3MDA1NjkwLDE0MjI3MTgyMTksLTgzMTgwMTEwMSwtMTI2OTI5
