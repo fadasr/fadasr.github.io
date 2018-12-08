@@ -16,14 +16,14 @@ digital signatures are also used for authentication to systems or applications. 
 
 ![](https://fadasr.github.io/images/dig-sig-auth.png)
 
-with a trusted third party
+with a trusted third party (e.g. CA in PKI), the digital sig
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzgzOTUyNywtNzAxNDQ2MjQ5LDEwNz
-kwMTI4NzAsMTEwMzQ1NDg2MiwyMDYzNTc0ODQ2LC01NTM1MTcy
-NDcsMTA5NjI5Njc4NiwtOTU1NzM1NjQwLDIxMjQ2NDA3MywtMT
-g4Nzg4MjAwNiw1NTU1MDExODRdfQ==
+eyJoaXN0b3J5IjpbNTMwMDY4ODI5LC03MDE0NDYyNDksMTA3OT
+AxMjg3MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0
+NywxMDk2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xOD
+g3ODgyMDA2LDU1NTUwMTE4NF19
 -->
