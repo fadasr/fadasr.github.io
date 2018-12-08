@@ -8,11 +8,11 @@ cryptographic goals provided by digital signatures are:
  - [x] integrity
  - [x] non-repudiation
 
-digital signatures are the public-key equivalent of MACs. Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The signature validation will fail if:
+digital signatures are the public-key equivalent of MACs. Alice can generate a digital signature for a message using a message digest and her private key. To authenticate Alice as the sender, Bob generates the message digest as well and uses Alice's public key to validate the message. The generic setting is shown in Figure 1.0. In contrast to handwritten signatures, the digital signature also verifies the integrity of the data. The signature validation will fail if:
 - a different private key was used to generate the signature
 - the data has been changed since the signature was applied
 
-![](https://fadasr.github.io/images/dig-sig.png)
+![Figure 1.0](https://fadasr.github.io/images/dig-sig.png)
 
 digital signatures are also used for authentication to systems or applications. A system can authenticate Alice's identity through a challenge-response protocol. The system generates a random challenge and Alice signs it. If the signature is verified with Alice's public key, it must have been signed by Alice. This type of authentication is useful for remote access to information on a server, or for gaining security access to a restricted feature.
 
@@ -26,9 +26,9 @@ with a trusted third party (e.g. CA in PKI), the digital signature can be used t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNTU3MTc3LC0zMDMwNTE2MjUsLTkxMD
-I3NTAyLC03MDE0NDYyNDksMTA3OTAxMjg3MCwxMTAzNDU0ODYy
-LDIwNjM1NzQ4NDYsLTU1MzUxNzI0NywxMDk2Mjk2Nzg2LC05NT
-U3MzU2NDAsMjEyNDY0MDczLC0xODg3ODgyMDA2LDU1NTUwMTE4
-NF19
+eyJoaXN0b3J5IjpbLTEyNjkyOTQ2MTUsNzczNTU3MTc3LC0zMD
+MwNTE2MjUsLTkxMDI3NTAyLC03MDE0NDYyNDksMTA3OTAxMjg3
+MCwxMTAzNDU0ODYyLDIwNjM1NzQ4NDYsLTU1MzUxNzI0NywxMD
+k2Mjk2Nzg2LC05NTU3MzU2NDAsMjEyNDY0MDczLC0xODg3ODgy
+MDA2LDU1NTUwMTE4NF19
 -->
