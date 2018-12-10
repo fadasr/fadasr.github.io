@@ -60,7 +60,8 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 ## encryption
 
+the size of the message that can be encrypted using RSA is limited 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTgxNDAyNjksLTE5NDEyNzM2MTYsLT
+eyJoaXN0b3J5IjpbLTEyNzg5NzUyOTIsLTE5NDEyNzM2MTYsLT
 Y2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
 -->
