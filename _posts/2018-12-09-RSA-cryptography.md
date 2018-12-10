@@ -20,6 +20,8 @@ the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the privat
 ed = 1 mod (p-1)(q-1)
 ```
 
+![](https://fadasr.github.io/images/rsa-keygen.png)
+
 an academic example of RSA key generation:
 
 1. choose public exponent and prime numbers
@@ -44,6 +46,6 @@ ed = 3*147 = 441 = 1 mod 220
 ```
 (253, 3) is the public key and (253, 147) is the private key. In the next example we will use the keys for encryption and decryption of a message.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ
-==
+eyJoaXN0b3J5IjpbLTExMDMxODUwOCwtMTQ1NTg1NTU2NCwtMT
+I4NzY2MjgyM119
 -->
