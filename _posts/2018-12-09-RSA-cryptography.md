@@ -23,18 +23,27 @@ ed = 1 mod (p-1)(q-1)
 an academic example of RSA key generation:
 
 1. choose public exponent and prime numbers
-	e = 3, p = 11, q = 23
+```
+e = 3, p = 11, q = 23
+```
 2. calculate modulus
-	> n = pq = 253, t = (p-1)(q-1) = 220
+```
+n = pq = 253, t = (p-1)(q-1) = 220
+```
 3. check if the 2 numbers are coprime
-	> gcd(e, t) == 1?
+```
+gcd(e, t) == 1?
+```
 4. calculate private exponent using Extended Euclidean Algorithm
-	> d = 147
+```
+d = 147
+```
 5. verify the private exponent
-	> ed = 3*147 = 441 = 1 mod 220
-
+```
+ed = 3*147 = 441 = 1 mod 220
+```
 (253, 3) is the public key and (253, 147) is the private key. In the next example we will use the keys for encryption and decryption of a message.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTI3NTc4NjgsLTEyODc2NjI4MjNdfQ
+eyJoaXN0b3J5IjpbLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ
 ==
 -->
