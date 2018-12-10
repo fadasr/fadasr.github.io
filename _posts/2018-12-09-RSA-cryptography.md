@@ -1,6 +1,6 @@
 # RSA cryptography
 
-the [RSA](https://tools.ietf.org/html/rfc8017) is one of the most widely used public-key cryptosystem in the world. The RSA algorithm provides:
+the [RSA](https://tools.ietf.org/html/rfc8017) system is one of the most widely used public-key cryptosystem in the world. The RSA algorithm provides:
 - key-pair generation: random keys typically of size 1024-4096 bits
 - encryption: encrypt a message in the range [0-key_length] using the public key and decrypt using the private key
 - digital signature: sign a message with the private key and verify using the public key
@@ -34,3 +34,6 @@ an academic example of RSA key generation:
 	> ed = 3*147 = 441 = 1 mod 220
 
 (253, 3) is the public key and (253, 147) is the private key. In the next example we will use the keys for encryption and decryption of a 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyODc2NjI4MjNdfQ==
+-->
