@@ -63,7 +63,7 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 ## encryption
 
-to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext `c = m`<sup>e</sup>`(mod n)`. To decrypt a ciphertext `c`, the receiver computes `m = c`<sup>d</sup>`(mod n)`.
+to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext <code>c = m<sup>e</sup> (mod n)</code>. To decrypt a ciphertext `c`, the receiver computes <code>m = c<sup>d</sup> (mod n)</code>.
 
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSA-OAEP](https://tools.ietf.org/html/rfc8017#page-18)) we cannot even use all the bits.
 
@@ -89,10 +89,10 @@ m = 94^147 (mod 253) = 85
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDM4MjA4NTAsMTM5Mjk3MDI5NSwtNz
-kwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkx
-NTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC
-0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0
-OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4ND
-cxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
+eyJoaXN0b3J5IjpbNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MD
+YyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1
+LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMT
+M2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2
+NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MT
+MsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
 -->
