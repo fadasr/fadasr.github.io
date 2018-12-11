@@ -133,7 +133,14 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 
 2. encrypt and decrypt a message
 ```python
+msg = b'A message for encryption'
+encryptor = PKCS1_OAEP.new(pubKey)
+encrypted = encryptor.encrypt(msg)
+print("Encrypted:", binascii.hexlify(encrypted))
 
+decryptor = PKCS1_OAEP.new(keyPair)
+decrypted = decryptor.decrypt(encrypted)
+print('Decrypted:', decrypted)
 ```
 
 ### Ferguson-Schneier encryption
@@ -144,11 +151,11 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MTg2ODUzLDE3MzUzMDMyODUsLTY1Mj
-k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
-MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
-Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
-OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MC
-wtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1
-NTg1NTU2NF19
+eyJoaXN0b3J5IjpbLTEzMzEzNTkzMjksMTczNTMwMzI4NSwtNj
+UyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUy
+NCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMT
+A4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYx
+OTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2Mz
+kwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0x
+NDU1ODU1NTY0XX0=
 -->
