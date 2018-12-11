@@ -32,9 +32,10 @@ e = 3, p = 11, q = 23
 ```
 n = pq = 253, t = (p-1)(q-1) = 220
 ```
-3. check if the 2 numbers are coprime
+3. check if the 2 numbers are coprime (have no common factors except 1)
 ```
 gcd(e, t) == 1?
+gcd(3, 220) = 1
 ```
 4. calculate private exponent using Extended Euclidean Algorithm
 ```
@@ -82,9 +83,9 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODY1ODcwNTksODk2NDcxOTc3LC0xOD
-EyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4
-OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNj
-E2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
-
+eyJoaXN0b3J5IjpbNzAwOTA3NjYyLC0xMDg2NTg3MDU5LDg5Nj
+Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
+OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
+wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
+ODc2NjI4MjNdfQ==
 -->
