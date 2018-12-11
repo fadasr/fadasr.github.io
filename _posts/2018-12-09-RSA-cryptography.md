@@ -63,8 +63,7 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 ## encryption
 
-to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext:
-> c = m<sup>e</sup> (mod n)
+to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext `c = m<sup>e</sup> (mod n)`
 
 to decrypt a ciphertext `c`, the receiver computes:
 > m = c<sup>d</sup> (mod n)
@@ -85,7 +84,7 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MDE2MjIxLC0xMDg2NTg3MDU5LDg5Nj
+eyJoaXN0b3J5IjpbNzc4NzYwMjI3LC0xMDg2NTg3MDU5LDg5Nj
 Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
 OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
 wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
