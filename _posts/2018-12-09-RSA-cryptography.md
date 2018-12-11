@@ -69,6 +69,7 @@ the size of the message that can be encrypted using RSA is limited by the size o
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
 ```
+c = 
 c = 85^3 (mod 253) -> 
 ```
 
@@ -83,9 +84,10 @@ c = 85^3 (mod 253) ->
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNT
-kzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEw
-Nzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMj
-ksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02
-NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
+eyJoaXN0b3J5IjpbNjE1MTI1OTA0LDIxMTQxMjU3NjIsMTIzNj
+YxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3
+NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOS
+wtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0
+MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEyODc2Nj
+I4MjNdfQ==
 -->
