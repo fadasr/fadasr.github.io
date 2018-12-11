@@ -86,13 +86,13 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 example using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
-1. generate RSA keys 3072-bit in PKCS#8 PEM ASN.1 format
+1. generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
 ```python
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
 import binascii
 
-keyPair = RSA.generate(3072)
+keyPair = RSA.generate(1024)
 
 pubKey = keyPair.publickey()
 print(f"Public key:  (n={hex(pubKey.n)}, e={hex(pubKey.e)})")
@@ -112,11 +112,11 @@ print(privKeyPEM.decode('ascii'))
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NT
-AzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYy
-LDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbMTEwMDk1MTY4NywxNzM1MzAzMjg1LC02NT
+I5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0
+LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMD
+g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
+NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOT
+AsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0
+NTU4NTU1NjRdfQ==
 -->
