@@ -66,12 +66,14 @@ to encrypt a message `m` using public key `(n, e)`, the sender computes the ciph
 to decrypt a ciphertext `c`, the receiver computes:
 > m = c<sup>d</sup> (mod n)
 
-the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. RSA-OAEP) we cannot even use all the bits.
+the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSA-OAEP](https://tools.ietf.org/html/rfc8017#page-18)) we cannot even use all the bits.
 
 ### Ferguson-Schneier encryption
+
+Niels Ferguson and Bruce Schneier suggest a much simpler method of encryption
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjU4MjIyOCwtMTg2NDA1OTcxOSwtNj
-g0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3
-MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEyODc2NjI4Mj
-NdfQ==
+eyJoaXN0b3J5IjpbLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLT
+Y4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEy
+NzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyOD
+IzXX0=
 -->
