@@ -84,6 +84,9 @@ an encryption scheme consists of an encryption operation and a decryption operat
 
 the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
+example
+install[PyCryptodome](https://github.com/Legrandin/pycryptodome)
+
 ### Ferguson-Schneier encryption
 
 [Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
@@ -92,11 +95,11 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjMwMjQ3MiwtNjUyOTQ0OTc4LDQ5NT
-AzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYy
-LDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbMTg4NDcxNzI5LC02NTI5NDQ5NzgsNDk1MD
+M4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIs
+MTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5Nj
+Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
+OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
+wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
+ODc2NjI4MjNdfQ==
 -->
