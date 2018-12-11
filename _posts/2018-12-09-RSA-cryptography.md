@@ -80,6 +80,7 @@ m = 94^147 (mod 253) = 85
 
 ### RSAES-OAEP
 
+the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
 ### Ferguson-Schneier encryption
 
@@ -89,11 +90,11 @@ m = 94^147 (mod 253) = 85
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mj
-k3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcy
-LDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xOD
-EyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4
-OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNj
-E2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
-
+eyJoaXN0b3J5IjpbLTExODM1MDEyMjgsLTY1Mjk0NDk3OCw0OT
+UwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2
+MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksOD
+k2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0
+MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NT
+UwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwt
+MTI4NzY2MjgyM119
 -->
