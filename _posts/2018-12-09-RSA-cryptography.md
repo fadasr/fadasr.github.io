@@ -44,7 +44,7 @@ d = 147
 ```
 ed = 3*147 = 441 = 1 mod 220
 ```
-(253, 3) is the public key and (253, 147) is the private key. In the next example we will use the keys for encryption and decryption of a message.
+`(253, 3)` is the public key and `(253, 147) is the private key. In the next example we will use the keys for encryption and decryption of a message.
 
 real world example of 2048-bit public key, and 65537 public exponent:
 ```
@@ -68,7 +68,7 @@ to decrypt a ciphertext `c`, the receiver computes:
 
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSA-OAEP](https://tools.ietf.org/html/rfc8017#page-18)) we cannot even use all the bits.
 
-an academic example of RSA encryption. From the previous example, we have public key (253, 3) and private key (253, 147).
+an academic example of RSA encryption. From the previous example, we have public key (253, 3) and private key (253, 147). Lets encrypt a message `m` = 85.
 
 ### RSA-OAEP
 
@@ -81,7 +81,7 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNjUwNzQ3NCw4OTY0NzE5NzcsLTE4MT
+eyJoaXN0b3J5IjpbLTk2OTU3ODU1Miw4OTY0NzE5NzcsLTE4MT
 I1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5
 OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MT
 YsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
