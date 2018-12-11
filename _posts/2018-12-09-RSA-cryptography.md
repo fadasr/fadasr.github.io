@@ -104,6 +104,11 @@ privKeyPEM = keyPair.exportKey()
 print(privKeyPEM.decode('ascii'))
 ```
 
+the default public exponent is 6
+```
+Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
+```
+
 ### Ferguson-Schneier encryption
 
 [Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
@@ -112,7 +117,7 @@ print(privKeyPEM.decode('ascii'))
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDk1MTY4NywxNzM1MzAzMjg1LC02NT
+eyJoaXN0b3J5IjpbLTMzMzc3OTkwNywxNzM1MzAzMjg1LC02NT
 I5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0
 LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMD
 g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
