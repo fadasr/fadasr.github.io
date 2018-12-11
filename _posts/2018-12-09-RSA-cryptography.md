@@ -69,7 +69,7 @@ to decrypt a ciphertext `c`, the receiver computes:
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSA-OAEP](https://tools.ietf.org/html/rfc8017#page-18)) we cannot even use all the bits.
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
-> 
+> 85<sup>3</sup> mod 253
 
 ### RSA-OAEP
 
@@ -82,9 +82,9 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDc2OTUxNiw4OTY0NzE5NzcsLTE4MT
-I1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5
-OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MT
-YsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbLTEwODY1ODcwNTksODk2NDcxOTc3LC0xOD
+EyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4
+OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNj
+E2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
 
 -->
