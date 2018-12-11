@@ -84,8 +84,9 @@ an encryption scheme consists of an encryption operation and a decryption operat
 
 the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
-example
-install[PyCryptodome](https://github.com/Legrandin/pycryptodome)
+example using python:
+install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
+1. 
 
 ### Ferguson-Schneier encryption
 
@@ -95,11 +96,11 @@ install[PyCryptodome](https://github.com/Legrandin/pycryptodome)
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDcxNzI5LC02NTI5NDQ5NzgsNDk1MD
-M4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIs
-MTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5Nj
-Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
-OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
-wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
-ODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbMTk2NTU2MDk4NCwtNjUyOTQ0OTc4LDQ5NT
+AzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYy
+LDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
+Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
+NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
+AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
+Mjg3NjYyODIzXX0=
 -->
