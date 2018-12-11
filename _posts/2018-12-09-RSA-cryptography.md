@@ -61,11 +61,10 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 ## encryption
 
 to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext:
-```
 c = m<sup>e</sup> (mod n)
-```
 the size of the message that can be encrypted using RSA is limited by the size of `n`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNj
-YwODQ3MTMsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbMzk0NzU3MDMwLC0zNTIxNDg1NTAsLTE5ND
+EyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYy
+ODIzXX0=
 -->
