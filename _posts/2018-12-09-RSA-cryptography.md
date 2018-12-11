@@ -75,7 +75,7 @@ c = 85^3 (mod 253) = 85^3 - (253 * 2427) = 94
 
 to decrypt the ciphertext `c = 94` back to `m`
 ```
-
+m = 94^147 (mod 253) = 94^147 - (253 * 
 ```
 
 ### RSA-OAEP
@@ -89,7 +89,7 @@ to decrypt the ciphertext `c = 94` back to `m`
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODc1NTEwOCwtNzkwNjI1MjQsMjExND
+eyJoaXN0b3J5IjpbMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExND
 EyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcw
 NTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC
 0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUy
