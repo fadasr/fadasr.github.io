@@ -82,6 +82,8 @@ m = 94^147 (mod 253) = 85
 
 the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
+![]()
+
 example using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
 1. generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
@@ -155,11 +157,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNT
-MwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1
-LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OT
-M1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3
-NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOS
-wyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2
-MDg0NzEzXX0=
+eyJoaXN0b3J5IjpbMjA5MTE2NDkzOCwxNDYyNDY2ODUyLDg4MT
+Y5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2
+LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNj
+YxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3
+NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOS
+wtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0
+MTI3MzYxNl19
 -->
