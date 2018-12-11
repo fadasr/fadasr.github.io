@@ -131,6 +131,11 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
 
+2. encrypt and decrypt a message
+```python
+
+```
+
 ### Ferguson-Schneier encryption
 
 [Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
@@ -139,11 +144,11 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTE5MTQ1OCwxNzM1MzAzMjg1LC02NT
-I5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0
-LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMD
-g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
-NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOT
-AsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0
-NTU4NTU1NjRdfQ==
+eyJoaXN0b3J5IjpbNDA5MTg2ODUzLDE3MzUzMDMyODUsLTY1Mj
+k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
+MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
+Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
+OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MC
+wtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1
+NTg1NTU2NF19
 -->
