@@ -76,10 +76,12 @@ the size of the message that can be encrypted using RSA is limited by the size o
 [Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
 
 ![](https://fadasr.github.io/images/rsa-encrypt.png)
+
+the receiver decrypts the ciphertext `c` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNzQ3ODQwNSw4OTY0NzE5NzcsLTE4MT
-I1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5
-OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MT
-YsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbLTExNTIxMzUwMTUsODk2NDcxOTc3LC0xOD
+EyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4
+OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNj
+E2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
 
 -->
