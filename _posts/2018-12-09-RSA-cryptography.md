@@ -77,11 +77,11 @@ the size of the message that can be encrypted using RSA is limited by the size o
 
 ![](https://fadasr.github.io/images/rsa-encrypt.png)
 
-the receiver decrypts the ciphertext `c` and hash the result to get the key `K`
+the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxOTA5MDQ4LDg5NjQ3MTk3NywtMTgxMj
-UxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5
-MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNi
-wtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbLTQxMDY5MDg4OCw4OTY0NzE5NzcsLTE4MT
+I1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5
+OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MT
+YsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
 
 -->
