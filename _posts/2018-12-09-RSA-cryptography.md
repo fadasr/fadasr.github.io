@@ -32,7 +32,7 @@ e = 3, p = 11, q = 23
 ```
 n = pq = 253, t = (p-1)(q-1) = 220
 ```
-3. check if the 2 numbers are coprime (the numbers have no common factors except 1)
+3. check if the [gcd(3,220)](https://www.wolframalpha.com/input/?i=gcd(3,220)) is coprime (the numbers have no common factors except 1)
 ```
 gcd(e, t) == 1?
 gcd(3, 220) = 1
@@ -89,10 +89,10 @@ m = 94^147 (mod 253) = 94^147 - (253 *
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExND
-EyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcw
-NTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC
-0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUy
-MTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1NTg1NT
-U2NCwtMTI4NzY2MjgyM119
+eyJoaXN0b3J5IjpbLTEzMzg3MjA3NDAsMTM5Mjk3MDI5NSwtNz
+kwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkx
+NTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC
+0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0
+OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4ND
+cxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
 -->
