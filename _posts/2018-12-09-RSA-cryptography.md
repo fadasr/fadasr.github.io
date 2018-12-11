@@ -70,10 +70,10 @@ the size of the message that can be encrypted using RSA is limited by the size o
 
 ### Ferguson-Schneier encryption
 
-Niels Ferguson and Bruce Schneier suggest a much simpler method of encryption
+[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a much simpler method of encryption
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLT
-Y4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEy
-NzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyOD
-IzXX0=
+eyJoaXN0b3J5IjpbLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLT
+E4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIx
+NDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NT
+Y0LC0xMjg3NjYyODIzXX0=
 -->
