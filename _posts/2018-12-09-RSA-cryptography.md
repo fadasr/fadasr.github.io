@@ -39,7 +39,7 @@ gcd(3, 220) = 1
 ```
 4. calculate private exponent (e.g. using Extended Euclidean Algorithm)
 ```
-ed = 1 (mod t) can also be expressed like this: ed = i*t + 1, where i is an integer. In other word, find d that (i*t + 1) is divisible by e.
+ed = 1 (mod t) can also be expressed like this: ed = i*t + 1, where i is an integer and remainder is smaller than modulus, 1 < t. In other word, find d that (i*t + 1) is divisible by e.
 i = 1:
 	ed = 1*220 + 1 = 221 -> not divisible by 3
 i = 2:
@@ -83,9 +83,9 @@ c = 85^3 (mod 253) -> c = i*253 + (85^3)
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbLTgyOTMxNTA3OCwxMzU5MzU5MTU1LC0xMD
+g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
+NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOT
+AsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0
+NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
 -->
