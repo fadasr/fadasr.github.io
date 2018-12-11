@@ -73,12 +73,12 @@ the size of the message that can be encrypted using RSA is limited by the size o
 
 ### Ferguson-Schneier encryption
 
-[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption.
+[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random integer and use a hash function to derive the actual bulk encryption key, thus removing any structural similarities between the actual key and the data encrypted by the RSA.
 
 ![](https://fadasr.github.io/images/rsa-encrypt.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzAxMzgwMywtMTgxMjUxMDc3NSwtMT
-M2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2
-NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MT
-MsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMz
+Y2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1
+NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMy
+wtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
 -->
