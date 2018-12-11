@@ -32,7 +32,7 @@ e = 3, p = 11, q = 23
 ```
 n = pq = 253, t = (p-1)(q-1) = 220
 ```
-3. check if the 2 numbers are coprime (have no common factors except 1)
+3. check if the 2 numbers are coprime (the numbers have no common factors except 1)
 ```
 gcd(e, t) == 1?
 gcd(3, 220) = 1
@@ -83,9 +83,9 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwOTA3NjYyLC0xMDg2NTg3MDU5LDg5Nj
-Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
-OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
-wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
-ODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbLTExMzQ4ODE1OTEsLTEwODY1ODcwNTksOD
+k2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0
+MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NT
+UwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwt
+MTI4NzY2MjgyM119
 -->
