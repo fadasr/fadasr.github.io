@@ -73,7 +73,7 @@ x mod y = x - (y * floor(x/y))
 c = 85^3 (mod 253) = 85^3 - (253 * 2427) = 94
 ```
 
-to decrypt the ciphertext `c = 94` back to `m` see [the calculation](https://www.wolframalpha.com/input/?i=94%5E147+-+(253*floor((94%5E147)%2F253))) here.
+to decrypt the ciphertext `c = 94` back to `m`. See [the calculation](https://www.wolframalpha.com/input/?i=94%5E147+-+(253*floor((94%5E147)%2F253))) here.
 ```
 m = 94^147 (mod 253) = 85
 ```
@@ -89,10 +89,10 @@ m = 94^147 (mod 253) = 85
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxMjgwMjEwLDEzOTI5NzAyOTUsLTc5MD
-YyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1
-LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMT
-M2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2
-NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MT
-MsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
+eyJoaXN0b3J5IjpbLTIwOTM5NTg0MiwxMzkyOTcwMjk1LC03OT
+A2MjUyNCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1
+NSwtMTA4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLT
+EzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5
+NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0Nz
+EzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
 -->
