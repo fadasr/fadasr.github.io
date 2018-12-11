@@ -68,12 +68,15 @@ to decrypt a ciphertext `c`, the receiver computes:
 
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSA-OAEP](https://tools.ietf.org/html/rfc8017#page-18)) we cannot even use all the bits.
 
+### RSA-OAEP
+
+
 ### Ferguson-Schneier encryption
 
-[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a much simpler method of encryption
+[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLT
-E4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIx
-NDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NT
-Y0LC0xMjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbMTMwNTQ5NjA5NywtMTgxMjUxMDc3NSwtMT
+M2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2
+NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MT
+MsLTE0NTU4NTU1NjQsLTEyODc2NjI4MjNdfQ==
 -->
