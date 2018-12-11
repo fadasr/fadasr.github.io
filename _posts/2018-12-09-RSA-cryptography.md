@@ -131,7 +131,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
 
-2. encrypt and decrypt a message
+2. encrypt and decrypt a message.
 ```python
 msg = b'A message for encryption'
 encryptor = PKCS1_OAEP.new(pubKey)
@@ -157,7 +157,7 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxNjU2MTU5LDE3MzUzMDMyODUsLTY1Mj
+eyJoaXN0b3J5IjpbNTA0MzgyMzQ1LDE3MzUzMDMyODUsLTY1Mj
 k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
 MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
 Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
