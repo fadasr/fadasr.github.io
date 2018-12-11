@@ -80,8 +80,6 @@ m = 94^147 (mod 253) = 85
 
 ### RSAES-OAEP
 
-an encryption scheme consists of an encryption operation and a decryption operation. The encryption operations apply a message encoding operation to a message to produce an encoded message, which is then converted to an integer message representative. An encryption primitive is applied to the message representative to produce the ciphertext. Reversing this, the decryption operations apply a decryption primitive to the ciphertext to recover a message representative, which is then converted to an octet-string-encoded message. A message decoding operation is applied to the encoded message to recover the message and verify the correctness of the decryption.
-
 the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
 example using python:
@@ -157,11 +155,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mj
-k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
-MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
-Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
-OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MC
-wtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1
-NTg1NTU2NF19
+eyJoaXN0b3J5IjpbMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNT
+MwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1
+LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OT
+M1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3
+NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOS
+wyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2
+MDg0NzEzXX0=
 -->
