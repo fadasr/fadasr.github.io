@@ -107,7 +107,6 @@ print(privKeyPEM.decode('ascii'))
 the default public exponent is 65537. Use this [website](https://lapo.it/asn1js/) to decode the format.
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
-```
 -----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCaEUhbzLlWlBCoSPsa/fKoGxfB
 +p+etUb9HeuHO0m2k6Tt8g64NiwIXNWyi6EJ260r0legE/V/dFQC4kWwzC1VPHsr
@@ -131,7 +130,6 @@ i/Q4AWZmtDDxWkx+bYECQG8e6bGoszuX5xjvhEBslIws9+nMzMuYBR8HvhLo58B5
 N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
-```
 
 ### Ferguson-Schneier encryption
 
@@ -141,7 +139,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMjczMjI1NiwxNzM1MzAzMjg1LC02NT
+eyJoaXN0b3J5IjpbMTc1MTE5MTQ1OCwxNzM1MzAzMjg1LC02NT
 I5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0
 LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMD
 g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
