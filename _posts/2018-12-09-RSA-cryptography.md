@@ -41,8 +41,9 @@ gcd(3, 220) = 1
 ```
 ed = 1 (mod t) can also be expressed like this: ed = i*t + 1, where i is an integer. In other word, find d that (i*t + 1) is divisible by e.
 i = 1:
-	ed = t + 1 = 221 -> not divisible by 3
-	 
+	ed = 220 + 1 = 221 -> not divisible by 3
+i = 2:
+	ed = 2*220 + 1 = 
 d = 147
 ```
 5. verify the private exponent
@@ -87,7 +88,7 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA0MTM4NjM4LC0xMDg2NTg3MDU5LDg5Nj
+eyJoaXN0b3J5IjpbNjIyODMzODQxLC0xMDg2NTg3MDU5LDg5Nj
 Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
 OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
 wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
