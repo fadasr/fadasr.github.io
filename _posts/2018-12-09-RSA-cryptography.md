@@ -143,6 +143,12 @@ decrypted = decryptor.decrypt(encrypted)
 print('Decrypted:', decrypted)
 ```
 
+here is the output:
+```
+Encrypted: b'99b331c4e1c8f3fa227aacd57c85f38b7b7461574701b427758ee4f94b1e07d791ab70b55d672ff55dbe133ac0bea16fc23ea84636365f605a9b645e0861ee11d68a7550be8eb35e85a4bde6d73b0b956d000866425511c7920cdc8a3786a4f1cb1986a875373975e158d74e11ad751594de593a35de765fe329c0d3dfbbfedc'
+Decrypted: b'A message for encryption'
+```
+
 ### Ferguson-Schneier encryption
 
 [Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
@@ -151,11 +157,11 @@ print('Decrypted:', decrypted)
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzEzNTkzMjksMTczNTMwMzI4NSwtNj
-UyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUy
-NCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMT
-A4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYx
-OTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2Mz
-kwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0x
-NDU1ODU1NTY0XX0=
+eyJoaXN0b3J5IjpbMzQxNjU2MTU5LDE3MzUzMDMyODUsLTY1Mj
+k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
+MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
+Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
+OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MC
+wtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1
+NTg1NTU2NF19
 -->
