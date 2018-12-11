@@ -104,7 +104,7 @@ privKeyPEM = keyPair.exportKey()
 print(privKeyPEM.decode('ascii'))
 ```
 
-the default public exponent is 65537. Use this [website](https://lapo.it/asn1js/) to decode the format.
+the default public exponent is 65537. Each generation should generates different random RSA key-pair** at each execution. Use this [website](https://lapo.it/asn1js/) to decode the format.
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
 -----BEGIN PUBLIC KEY-----
@@ -131,7 +131,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
 
-2. encrypt and decrypt a message.
+2. encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
 ```python
 msg = b'A message for encryption'
 encryptor = PKCS1_OAEP.new(pubKey)
@@ -157,11 +157,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MzgyMzQ1LDE3MzUzMDMyODUsLTY1Mj
-k0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQs
-MjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwOD
-Y1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1
-OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MC
-wtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1
-NTg1NTU2NF19
+eyJoaXN0b3J5IjpbMTY2ODk5MzM1MSwxNzM1MzAzMjg1LC02NT
+I5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0
+LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMD
+g2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5
+NTkxNSwtMTg2NDA1OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOT
+AsLTM1MjE0ODU1MCwtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0
+NTU4NTU1NjRdfQ==
 -->
