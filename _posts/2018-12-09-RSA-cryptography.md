@@ -44,13 +44,9 @@ i = 1:
 	ed = 1*220 + 1 = 221 -> not divisible by 3
 i = 2:
 	ed = 2*220 + 1 = 441 -> is divisible by 3
-so ed = 441
-d = 147
+so d = 441 / 3 = 147
 ```
-5. verify the private exponent
-```
-ed = 3*147 = 441 = 1 mod 220
-```
+
 `(253, 3)` is the public key and `(253, 147)` is the private key. In the next example we will use the keys for encryption and decryption of a message.
 
 real world example of 2048-bit public key, and 65537 public exponent:
@@ -89,9 +85,9 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MTM3MzcxNCwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbNTM5MDE2MjIxLC0xMDg2NTg3MDU5LDg5Nj
+Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
+OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
+wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
+ODc2NjI4MjNdfQ==
 -->
