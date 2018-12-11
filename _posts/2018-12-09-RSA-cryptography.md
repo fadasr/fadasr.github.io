@@ -39,9 +39,9 @@ gcd(3, 220) = 1
 ```
 4. calculate private exponent (e.g. using Extended Euclidean Algorithm)
 ```
-ed = 1 (mod t) can also be expressed like this: ed = i*t + 1, where i is an integer. In other word, find d that is divisible by (i*t + 1).
+ed = 1 (mod t) can also be expressed like this: ed = i*t + 1, where i is an integer. In other word, find d that (i*t + 1) is divisible by e.
 i = 1:
-	ed = t + 1 = 221
+	ed = t + 1 = 221 -> not divisible by 3
 	 
 d = 147
 ```
@@ -87,9 +87,9 @@ an academic example of RSA encryption. From the previous example, we have public
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjUxNDc4MiwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbOTA0MTM4NjM4LC0xMDg2NTg3MDU5LDg5Nj
+Q3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1
+OTcxOSwtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MC
+wtMTk0MTI3MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEy
+ODc2NjI4MjNdfQ==
 -->
