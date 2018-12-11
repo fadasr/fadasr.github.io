@@ -49,7 +49,7 @@ so d = 441 / 3 = 147
 
 `(253, 3)` is the public key and `(253, 147)` is the private key. In the next example we will use the keys for encryption and decryption of a message.
 
-real world example of 2048-bit public key, and 65537 public exponent:
+other real world example of 2048-bit public key, and 65537 public exponent:
 ```
 n = 0xa709e2f84ac0e21eb0caa018cf7f697f774e96f8115fc2359e9cf60b1dd8d4048d974cdf8422bef6be3c162b04b916f7ea2133f0e3e4e0eee164859bd9c1e0ef0357c142f4f633b4add4aab86c8f8895cd33fbf4e024d9a3ad6be6267570b4a72d2c34354e0139e74ada665a16a2611490debb8e131a6cffc7ef25e74240803dd71a4fcd953c988111b0aa9bbc4c57024fc5e8c4462ad9049c7f1abed859c63455fa6d58b5cc34a3d3206ff74b9e96c336dbacf0cdd18ed0c66796ce00ab07f36b24cbe3342523fd8215a8e77f89e86a08db911f237459388dee642dae7cb2644a03e71ed5c6fa5077cf4090fafa556048b536b879a88f628698f0c7b420c4b7
 e = 0x010001
@@ -89,10 +89,10 @@ m = 94^147 (mod 253) = 85
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM5NTg0MiwxMzkyOTcwMjk1LC03OT
-A2MjUyNCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1
-NSwtMTA4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLT
-EzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5
-NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEyNzM2MTYsLTY2MDg0Nz
-EzLC0xNDU1ODU1NTY0LC0xMjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbLTE3NDM4MjA4NTAsMTM5Mjk3MDI5NSwtNz
+kwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkx
+NTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC
+0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0
+OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQxMjczNjE2LC02NjA4ND
+cxMywtMTQ1NTg1NTU2NCwtMTI4NzY2MjgyM119
 -->
