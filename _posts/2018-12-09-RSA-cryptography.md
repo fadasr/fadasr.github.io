@@ -80,6 +80,8 @@ m = 94^147 (mod 253) = 85
 
 ### RSAES-OAEP
 
+an encryption scheme consists of an encryption operation and a decryption operation. The encryption operations apply a message encoding operation to a message to produce an encoded message, which is then converted to an integer message representative. An encryption primitive is applied to th message representative to produce the ciphertext.  Reversing this,
+   the decryption operations apply a decryption primitive to the
 the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method.
 
 ### Ferguson-Schneier encryption
@@ -90,11 +92,11 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM1MDEyMjgsLTY1Mjk0NDk3OCw0OT
-UwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2
-MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksOD
-k2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0
-MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NT
-UwLC0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwt
-MTI4NzY2MjgyM119
+eyJoaXN0b3J5IjpbMTUyMDQ3MzkyOCwtNjUyOTQ0OTc4LDQ5NT
+AzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYy
+LDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
+Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
+NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
+AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
+Mjg3NjYyODIzXX0=
 -->
