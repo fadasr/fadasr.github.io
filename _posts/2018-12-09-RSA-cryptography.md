@@ -86,7 +86,7 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 example using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
-1. 
+1. generate RSA keys 3072-bit in PKCS#8PEMASN.1 format
 
 ### Ferguson-Schneier encryption
 
@@ -96,11 +96,11 @@ install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NTU2MDk4NCwtNjUyOTQ0OTc4LDQ5NT
-AzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYy
-LDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OT
-Y0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQw
-NTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NT
-AsLTE5NDEyNzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0x
-Mjg3NjYyODIzXX0=
+eyJoaXN0b3J5IjpbODI4NTIzNzAsLTY1Mjk0NDk3OCw0OTUwMz
+g3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2Miwx
+MjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2ND
+cxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5
+NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC
+0xOTQxMjczNjE2LC02NjA4NDcxMywtMTQ1NTg1NTU2NCwtMTI4
+NzY2MjgyM119
 -->
