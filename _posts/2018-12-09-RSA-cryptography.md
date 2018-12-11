@@ -80,7 +80,7 @@ m = 94^147 (mod 253) = 85
 
 ### RSAES-OAEP
 
-the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method. Here is ME-OAEP encoding
+the encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method. Here is EME-OAEP encoding operation:
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
@@ -157,11 +157,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4MDgyNDY3LDE0NjI0NjY4NTIsODgxNj
-k0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYs
-MTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2Nj
-E0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3
-LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC
-02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQx
-MjczNjE2XX0=
+eyJoaXN0b3J5IjpbLTQ4MTI0NzA1NywxNDYyNDY2ODUyLDg4MT
+Y5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2
+LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNj
+YxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3
+NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOS
+wtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0
+MTI3MzYxNl19
 -->
