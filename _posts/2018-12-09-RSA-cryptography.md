@@ -67,9 +67,11 @@ to decrypt a ciphertext `c`, the receiver computes:
 > m = c<sup>d</sup> (mod n)
 
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function we cannot even use all the bits.
+
+### Ferguson-Schneier encryption
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODU4OTYzMCwtMTg2NDA1OTcxOSwtNj
-g0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0MTI3
-MzYxNiwtNjYwODQ3MTMsLTE0NTU4NTU1NjQsLTEyODc2NjI4Mj
-NdfQ==
+eyJoaXN0b3J5IjpbLTE2NTIyNDU3NjMsLTE4NjQwNTk3MTksLT
+Y4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5NDEy
+NzM2MTYsLTY2MDg0NzEzLC0xNDU1ODU1NTY0LC0xMjg3NjYyOD
+IzXX0=
 -->
