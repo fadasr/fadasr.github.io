@@ -179,13 +179,13 @@ RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding 
 
 ![](https://fadasr.github.io/images/EMSA-PSS-encode.png)
 
-the signature is verified by first applying RSAVP1 to the signature, which returns the value of EM. We then look for the 0xBC octet and check if 
+the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost oc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU1ODI3OTgsLTE5ODU0ODY3ODIsLT
-ExNTgwMTQ1OTAsLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgz
-NjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5Mj
-MsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1
-MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOT
-UsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5
-MzU5MTU1XX0=
+eyJoaXN0b3J5IjpbLTQxODE4Mjk3NSwtMTk4NTQ4Njc4MiwtMT
+E1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2
+Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMy
+wtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUz
+MDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NS
+wtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkz
+NTkxNTVdfQ==
 -->
