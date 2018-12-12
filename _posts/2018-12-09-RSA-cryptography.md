@@ -175,10 +175,9 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 
 ### RSASSA-PSS
 
-RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the
-   EMSA-PSS encoding method.
+RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTQ3OTMzNiwxOTMwMDc4NjcsLTExND
+eyJoaXN0b3J5IjpbLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExND
 gzNjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5
 MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNz
 M1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAy
