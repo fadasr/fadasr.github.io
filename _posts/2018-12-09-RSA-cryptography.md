@@ -227,16 +227,19 @@ RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding 
 
 the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
 
-to demonstrate the PKCS#1 RSA digital signatures, we shall use the following code, based on the `pycryptodome` Python library, which implements RSA sign / verify, following the **PKCS#1 v1.5** specification:
+to demonstrate the PKCS#1 RSA digital signatures, we shall use the following code, based on the `pycryptodome` Python library, which implements RSA sign/verify, following the PKCS#1 v1.5 specification:
+```python
+
+```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzExNzc2NywtNzIzMDg3MjEwLC0xMD
-E0NzU3MDE0LDk2NTI4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAx
-NDU5MCwtODE0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2Ny
-wtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0
-OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyOD
-UsLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkw
-NjI1MjRdfQ==
+eyJoaXN0b3J5IjpbLTE5ODg3MjE3NTEsLTcyMzA4NzIxMCwtMT
+AxNDc1NzAxNCw5NjUyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgw
+MTQ1OTAsLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3Nj
+csLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMx
+NDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMj
+g1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5
+MDYyNTI0XX0=
 -->
