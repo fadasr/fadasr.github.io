@@ -171,13 +171,13 @@ the receiver decrypts the ciphertext `c` and hash the result to get the same key
 
 ## signatures
 
-to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed message. To verify the signature, anyone who knows the public key can verify that 
+to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed message. To verify the signature, anyone who knows the public key can verify that <code>m = s<sup>e</sup> (mod n)</code>.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNj
-A3MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5MzYy
-MzMsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNj
-UyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUy
-NCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMT
-A4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYx
-OTU5MTVdfQ==
+eyJoaXN0b3J5IjpbOTg2MDQyMDUyLDE5MzAwNzg2NywtMTE0OD
+M2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTky
+MywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3Mz
+UzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5
+NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNT
+kzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEw
+Nzc1XX0=
 -->
