@@ -200,7 +200,7 @@ signature = pow(hash, keyPair.d, keyPair.n)
 print("Signature:", hex(signature))
 ```
 
-here is the Signature generated:
+here is the 1024-bit Signature generated:
 ```
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
 ```
@@ -255,10 +255,16 @@ except:
     print("Signature is invalid.")
 ```
 
+here is the output:
+```
+Signature: b'243b9ed6561ab3bddead98508af0ac34b4567b1358011ace24db71ce2bc7f1a2e942b6231aa84cb07bae85b668d7c7cd0bc40cdda6f8162de57f0ee842e589c58f94aa4f96d51355f8aa395d7db950ebb9d375fca3124b6222699a645e93287bc6f5eb5b750fc0b470588f949a887dff75ed42cf01d9642a5d497f609b8cd043'
+Signature is valid.
+```
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1MzUzOTA5LC03MjMwODcyMTAsLTEwMT
+eyJoaXN0b3J5IjpbMTIyMTczNDAyLC03MjMwODcyMTAsLTEwMT
 Q3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0
 NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC
 0xNjA3MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5
