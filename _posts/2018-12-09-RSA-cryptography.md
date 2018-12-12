@@ -116,7 +116,7 @@ privKeyPEM = keyPair.exportKey()
 print(privKeyPEM.decode('ascii'))
 ```
 
-the default public exponent is 65537. Each generation should generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
+the default public exponent is 65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
 -----BEGIN PUBLIC KEY-----
@@ -169,11 +169,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0ODYxOTYzNCwtMTYwNzIxNTA3OSw1NT
-I2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4
-NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OT
-UwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2
-MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksOD
-k2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0
-MDU5NzE5XX0=
+eyJoaXN0b3J5IjpbLTExNDgzNjY3NjcsLTE2MDcyMTUwNzksNT
+UyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2
+ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsND
+k1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3
+NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LD
+g5NjQ3MTk3NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2
+NDA1OTcxOV19
 -->
