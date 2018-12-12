@@ -65,9 +65,7 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext <code>c = m<sup>e</sup> (mod n)</code>. To decrypt a ciphertext `c`, the receiver computes <code>m = c<sup>d</sup> (mod n)</code>.
 
-the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt. RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2 octets`, where hLen is the length of the
-   output from the underlying hash function and k is the length in
-   octets of the recipient's RSA modulus.
+the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt.
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
 ```
@@ -85,6 +83,8 @@ m = 94^147 (mod 253) = 85
 RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding method. The encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method. The provable security of RSAES-OAEP relies on the random nature of the output of the MGF, which in turn relies on the random nature of the underlying hash. Here is EME-OAEP encoding operation:
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
+
+RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2 octets`, where hLen is the length of the output from the underlying hash function and k is the length in octets of the recipient's RSA modulus.
 
 the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
 
@@ -161,7 +161,7 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwNDI1NjE1LC04NTE1NTk5MjMsLTMxND
+eyJoaXN0b3J5IjpbNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxND
 kzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1
 LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MD
 YyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1
