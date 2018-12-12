@@ -93,10 +93,11 @@ SHA-512:
 	message limit = 256 - (2*64) - 2 = 126 octets
 ```
 
-the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
+the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The PKCS#1 standard also specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
 
-example using python:
+example of RSAES-OAEP using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
+
 1. generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
 ```python
 from Crypto.PublicKey import RSA
@@ -168,11 +169,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NT
-E1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkz
-NiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOT
-I5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3
-MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMT
-gxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0
-ODk5MTI5XX0=
+eyJoaXN0b3J5IjpbMTA0ODYxOTYzNCwtMTYwNzIxNTA3OSw1NT
+I2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4
+NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OT
+UwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2
+MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksOD
+k2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0
+MDU5NzE5XX0=
 -->
