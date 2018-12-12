@@ -93,7 +93,7 @@ SHA-512:
 	message limit = 2048 - (2*512) - 2 = 1026-bit = 127 octets
 ```
 
-for hybrid mode, the typical p
+for hybrid mode, the typical largest message would be 32 bytes corresponding to a 256-bit AES key.
 
 the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
 
@@ -170,11 +170,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Nzk5MjcxNiw1NTI2MDc1NDksLTg1MT
-U1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2
-LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mj
-k3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcy
-LDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xOD
-EyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC02ODQ4
-OTkxMjldfQ==
+eyJoaXN0b3J5IjpbLTE2Nzc0OTM5NDUsNTUyNjA3NTQ5LC04NT
+E1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkz
+NiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOT
+I5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3
+MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMT
+gxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0
+ODk5MTI5XX0=
 -->
