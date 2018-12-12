@@ -182,12 +182,13 @@ RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding 
 the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
 
 example of RSASSA-PSS using python:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjY1MDkzMywtMTAxNDc1NzAxNCw5Nj
-UyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgwMTQ1OTAsLTgxNDE4
-NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcyMTUwNz
-ksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYy
-NDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5Nz
-gsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQx
-MjU3NjJdfQ==
+eyJoaXN0b3J5IjpbODAzNTA4MjU5LC0xMDE0NzU3MDE0LDk2NT
+I4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1
+NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OS
+w1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0
+NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OC
+w0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEy
+NTc2Ml19
 -->
