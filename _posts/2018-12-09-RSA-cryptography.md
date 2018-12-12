@@ -175,13 +175,13 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 
 ### RSASSA-PSS
 
-RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method.
+RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExND
-gzNjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5
-MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNz
-M1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAy
-OTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMz
-U5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUx
-MDc3NV19
+eyJoaXN0b3J5IjpbLTEzNzQ1MjE0NDEsLTgxNDE4NTYwNiwxOT
+MwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3
+NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLD
+g4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4
+NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMT
+IzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3
+MTk3N119
 -->
