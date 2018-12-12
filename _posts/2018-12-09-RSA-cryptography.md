@@ -80,7 +80,9 @@ m = 94^147 (mod 253) = 85
 
 ### RSAES-OAEP
 
-RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding method. The encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method. Here is EME-OAEP encoding operation:
+RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding method. The encoding technique involves a mask generation function (MGF) based on a hash function and there is no obvious structure in the encoded block, unlike the PKCS#1v1.5 encoding method. The provable security of RSAES-OAEP a relies on the random nature of the output
+   of the mask generation function, which in turn relies on the random
+   nature of the underlying hash.Here is EME-OAEP encoding operation:
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
@@ -159,11 +161,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0MTIzODU3LDE0NjI0NjY4NTIsODgxNj
-k0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYs
-MTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2Nj
-E0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3
-LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC
-02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQx
-MjczNjE2XX0=
+eyJoaXN0b3J5IjpbLTExOTc5NDA2ODYsMTQ2MjQ2Njg1Miw4OD
+E2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2
+NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMz
+Y2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5
+NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MT
+ksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5
+NDEyNzM2MTZdfQ==
 -->
