@@ -151,13 +151,13 @@ Decrypted: b'A message for encryption'
 
 ### Ferguson-Schneier encryption
 
-[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual bulk encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
+[Niels Ferguson and Bruce Schneier](https://www.schneier.com/books/cryptography_engineering/) suggest a simpler method of encryption. It uses RSA to encrypt a random `r` and use a hash function (e.g. SHA-256) to derive the actual content-encryption key `K`, thus removing any structural similarities between the actual key `K` and the random `r` encrypted by the RSA.
 
 ![](https://fadasr.github.io/images/rsa-encrypt.png)
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTI0NzA1NywxNDYyNDY2ODUyLDg4MT
+eyJoaXN0b3J5IjpbMTIwOTI4MTUwMSwxNDYyNDY2ODUyLDg4MT
 Y5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2
 LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNj
 YxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3
