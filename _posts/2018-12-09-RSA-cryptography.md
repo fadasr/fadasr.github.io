@@ -171,9 +171,9 @@ the receiver decrypts the ciphertext `c` and hash the result to get the same key
 
 ## signatures
 
-to sign a message `m`, the owner of the private key computes <code></c
+to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzc3NzQzMiwtMTE0ODM2Njc2NywtMT
+eyJoaXN0b3J5IjpbMjAyNTUzMDAyNCwtMTE0ODM2Njc2NywtMT
 YwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2
 MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLT
 Y1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1
