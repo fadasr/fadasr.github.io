@@ -183,12 +183,20 @@ the signature is verified by first applying RSAVP1 to the signature, which retur
 
 example of RSASSA-PSS using python:
 
+1. generate RSA keys 1024-bit
+```python
+from Crypto.PublicKey import RSA
+
+keyPair = RSA.generate(bits=1024)
+print(f"Public key:  (n={hex(keyPair.n)}, e={hex(keyPair.e)})")
+print(f"Private key: (n={hex(keyPair.n)}, d={hex(keyPair.d)})")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzNTA4MjU5LC0xMDE0NzU3MDE0LDk2NT
-I4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1
-NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OS
-w1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0
-NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OC
-w0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEy
-NTc2Ml19
+eyJoaXN0b3J5IjpbLTEzMzIxMDg5MDQsLTEwMTQ3NTcwMTQsOT
+Y1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQx
+ODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MD
+c5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2
+MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OT
+c4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0
+MTI1NzYyXX0=
 -->
