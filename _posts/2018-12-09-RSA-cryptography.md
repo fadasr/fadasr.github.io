@@ -65,7 +65,7 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext <code>c = m<sup>e</sup> (mod n)</code>. To decrypt a ciphertext `c`, the receiver computes <code>m = c<sup>d</sup> (mod n)</code>.
 
-the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places limits on the size of the plaintext 
+the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt.
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
 ```
@@ -159,11 +159,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE4MzE4MjQwLC0zMTQ5MzYyMzMsMTQ2Mj
-Q2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4
-LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MT
-I1NzYyLDEyMzY2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1
-OSw4OTY0NzE5NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLT
-E4NjQwNTk3MTksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIx
-NDg1NTBdfQ==
+eyJoaXN0b3J5IjpbLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0Nj
+I0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3
+OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExND
+EyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcw
+NTksODk2NDcxOTc3LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC
+0xODY0MDU5NzE5LC02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUy
+MTQ4NTUwXX0=
 -->
