@@ -173,15 +173,7 @@ the receiver decrypts the ciphertext `c` and hash the result to get the same key
 
 to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed message. To verify the signature, anyone who knows the public key can verify that <code>m = s<sup>e</sup> (mod n)</code>.
 
-### RSASSA-PSS
-
-RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message, therefore, it is recommended that the EMSA-PSS mask generation function be based on the same hash function. Here is the EMSA-PSS encoding operation:
-
-![](https://fadasr.github.io/images/EMSA-PSS-encode.png)
-
-the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
-
-example of RSASSA-PSS using python:
+example o using python:
 
 1. generate RSA keys 1024-bit
 ```python
@@ -200,14 +192,30 @@ Private key: (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a
 
 2. sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
 ```python
-
+# RSA sign the message
+msg = b'A message for signing'
+from hashlib import sha512
+hash = int.from_bytes(sha512(msg).digest(), byteorder='big')
+signature = pow(hash, keyPair.d, keyPair.n)
+print("Signature:", hex(signature))
 ```
+
+### RSASSA-PSS
+
+RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message, therefore, it is recommended that the EMSA-PSS mask generation function be based on the same hash function. Here is the EMSA-PSS encoding operation:
+
+![](https://fadasr.github.io/images/EMSA-PSS-encode.png)
+
+the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNzEwMjIyLC0xMDE0NzU3MDE0LDk2NT
-I4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1
-NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OS
-w1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0
-NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OC
-w0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEy
-NTc2Ml19
+eyJoaXN0b3J5IjpbLTIxMjU1NzY2NDksLTEwMTQ3NTcwMTQsOT
+Y1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQx
+ODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MD
+c5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2
+MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OT
+c4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0
+MTI1NzYyXX0=
 -->
