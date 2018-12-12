@@ -180,12 +180,14 @@ RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding 
 ![](https://fadasr.github.io/images/EMSA-PSS-encode.png)
 
 the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
+
+example of RSASSA-PSS using python:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOT
-g1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3
-ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OS
-wtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2
-OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2Ni
-wxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMzY2
-MTQ5NzJdfQ==
+eyJoaXN0b3J5IjpbMTgyNjY1MDkzMywtMTAxNDc1NzAxNCw5Nj
+UyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgwMTQ1OTAsLTgxNDE4
+NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcyMTUwNz
+ksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYy
+NDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5Nz
+gsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQx
+MjU3NjJdfQ==
 -->
