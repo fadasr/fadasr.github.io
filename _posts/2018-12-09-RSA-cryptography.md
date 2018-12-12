@@ -172,12 +172,17 @@ the receiver decrypts the ciphertext `c` and hash the result to get the same key
 ## signatures
 
 to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed message. To verify the signature, anyone who knows the public key can verify that <code>m = s<sup>e</sup> (mod n)</code>.
+
+### RSASSA-PSS
+
+RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the
+   EMSA-PSS encoding method.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2MDQyMDUyLDE5MzAwNzg2NywtMTE0OD
-M2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTky
-MywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3Mz
-UzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5
-NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNT
-kzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3LC0xODEyNTEw
-Nzc1XX0=
+eyJoaXN0b3J5IjpbMTk2OTQ3OTMzNiwxOTMwMDc4NjcsLTExND
+gzNjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5
+MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNz
+M1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAy
+OTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMz
+U5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMTgxMjUx
+MDc3NV19
 -->
