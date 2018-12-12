@@ -175,9 +175,9 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 
 ### RSASSA-PSS
 
-RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message,
+RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message, therefore, it is recommended that the EMSA-PSS mask generation function be based on the same hash function.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ1MjE0NDEsLTgxNDE4NTYwNiwxOT
+eyJoaXN0b3J5IjpbLTExNTgwMTQ1OTAsLTgxNDE4NTYwNiwxOT
 MwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3
 NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLD
 g4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4
