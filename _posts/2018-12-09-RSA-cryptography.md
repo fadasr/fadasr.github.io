@@ -84,7 +84,7 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
-the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP 
+the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
 
 example using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
@@ -159,11 +159,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MzYzMDk5LDE0NjI0NjY4NTIsODgxNj
-k0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUwMzg3NjYs
-MTM5Mjk3MDI5NSwtNzkwNjI1MjQsMjExNDEyNTc2MiwxMjM2Nj
-E0OTcyLDEzNTkzNTkxNTUsLTEwODY1ODcwNTksODk2NDcxOTc3
-LC0xODEyNTEwNzc1LC0xMzY2MTk1OTE1LC0xODY0MDU5NzE5LC
-02ODQ4OTkxMjksMjA0OTY1NjM5MCwtMzUyMTQ4NTUwLC0xOTQx
-MjczNjE2XX0=
+eyJoaXN0b3J5IjpbLTE3MDYzMDE1MDgsMTQ2MjQ2Njg1Miw4OD
+E2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2
+NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMz
+Y2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5
+NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MT
+ksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5
+NDEyNzM2MTZdfQ==
 -->
