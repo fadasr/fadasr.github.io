@@ -84,6 +84,8 @@ the encoding technique involves a mask generation function (MGF) based on a hash
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
+the RSAEP primitive perform
+
 example using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
 1. generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
@@ -157,11 +159,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwOTI4MTUwMSwxNDYyNDY2ODUyLDg4MT
-Y5NDkzNiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2
-LDEzOTI5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNj
-YxNDk3MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3
-NywtMTgxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOS
-wtNjg0ODk5MTI5LDIwNDk2NTYzOTAsLTM1MjE0ODU1MCwtMTk0
-MTI3MzYxNl19
+eyJoaXN0b3J5IjpbLTIwMTIwMjIwNjcsMTQ2MjQ2Njg1Miw4OD
+E2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2
+NiwxMzkyOTcwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMz
+Y2MTQ5NzIsMTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5
+NzcsLTE4MTI1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MT
+ksLTY4NDg5OTEyOSwyMDQ5NjU2MzkwLC0zNTIxNDg1NTAsLTE5
+NDEyNzM2MTZdfQ==
 -->
