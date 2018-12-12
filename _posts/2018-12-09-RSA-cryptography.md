@@ -84,10 +84,10 @@ RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding me
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
-RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2 octets`, where `hLen` is the length of the output from the underlying hash function and `k` is the length in octets of the recipient's RSA modulus. With RSA 4096-bit modulus, the overhead for OAEP can be calculated:
+RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2 octets`, where `hLen` is the length of the output from the underlying hash function and `k` is the length in octets of the recipient's RSA modulus. With RSA 4096-bit modulus, the message limit for OAEP can be calculated:
 ```
 SHA-256: 
-	overhead = 
+	message limit = 
 ```
 
 the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The standard specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
@@ -165,11 +165,11 @@ Decrypted: b'A message for encryption'
 
 the receiver decrypts the ciphertext `c` and hash the result to get the same key `K`.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYxOTc1MzcwLDU1MjYwNzU0OSwtODUxNT
-U5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYs
-MTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOT
-cwMjk1LC03OTA2MjUyNCwyMTE0MTI1NzYyLDEyMzY2MTQ5NzIs
-MTM1OTM1OTE1NSwtMTA4NjU4NzA1OSw4OTY0NzE5NzcsLTE4MT
-I1MTA3NzUsLTEzNjYxOTU5MTUsLTE4NjQwNTk3MTksLTY4NDg5
-OTEyOV19
+eyJoaXN0b3J5IjpbLTEwODY3OTcyNDAsNTUyNjA3NTQ5LC04NT
+E1NTk5MjMsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkz
+NiwxNzM1MzAzMjg1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOT
+I5NzAyOTUsLTc5MDYyNTI0LDIxMTQxMjU3NjIsMTIzNjYxNDk3
+MiwxMzU5MzU5MTU1LC0xMDg2NTg3MDU5LDg5NjQ3MTk3NywtMT
+gxMjUxMDc3NSwtMTM2NjE5NTkxNSwtMTg2NDA1OTcxOSwtNjg0
+ODk5MTI5XX0=
 -->
