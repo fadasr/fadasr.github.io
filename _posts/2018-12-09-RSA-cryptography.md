@@ -205,6 +205,8 @@ here is the Signature generated:
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
 ```
 
+3. verify the Signature
+
 ### RSASSA-PSS
 
 RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message, therefore, it is recommended that the EMSA-PSS mask generation function be based on the same hash function. Here is the EMSA-PSS encoding operation:
@@ -216,7 +218,7 @@ the signature is verified by first applying RSAVP1 to the signature, which retur
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1ODg0NTI5OSwtMTAxNDc1NzAxNCw5Nj
+eyJoaXN0b3J5IjpbMTc4OTc1MTkyMiwtMTAxNDc1NzAxNCw5Nj
 UyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgwMTQ1OTAsLTgxNDE4
 NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcyMTUwNz
 ksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMywxNDYy
