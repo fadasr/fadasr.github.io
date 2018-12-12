@@ -229,17 +229,40 @@ the signature is verified by first applying RSAVP1 to the signature, which retur
 
 to demonstrate the PKCS#1 RSA digital signatures, we shall use the following code, based on the `pycryptodome` Python library, which implements RSA sign/verify, following the PKCS#1 v1.5 specification:
 ```python
+from Crypto.PublicKey import RSA
+from Crypto.Signature.pkcs1_15 import PKCS115_SigScheme
+from Crypto.Hash import SHA256
+import binascii
 
+# Generate 1024-bit RSA key pair (private + public key)
+keyPair = RSA.generate(bits=1024)
+
+# Sign the message using the PKCS#1 v1.5 signature scheme (RSASP1)
+msg = b'A message for signing'
+hash = SHA256.new(msg)
+signer = PKCS115_SigScheme(keyPair)
+signature = signer.sign(hash)
+print("Signature:", binascii.hexlify(signature))
+
+# Verify valid PKCS#1 v1.5 signature (RSAVP1)
+msg = b'A message for signing'
+hash = SHA256.new(msg)
+signer = PKCS115_SigScheme(keyPair)
+try:
+    signer.verify(hash, signature)
+    print("Signature is valid.")
+except:
+    print("Signature is invalid.")
 ```
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg3MjE3NTEsLTcyMzA4NzIxMCwtMT
-AxNDc1NzAxNCw5NjUyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgw
-MTQ1OTAsLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3Nj
-csLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMx
-NDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMj
-g1LC02NTI5NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5
-MDYyNTI0XX0=
+eyJoaXN0b3J5IjpbMzY1MzUzOTA5LC03MjMwODcyMTAsLTEwMT
+Q3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0
+NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC
+0xNjA3MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5
+MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NS
+wtNjUyOTQ0OTc4LDQ5NTAzODc2NiwxMzkyOTcwMjk1LC03OTA2
+MjUyNF19
 -->
