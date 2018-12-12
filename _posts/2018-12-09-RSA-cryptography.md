@@ -178,12 +178,14 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding method. In contrast to the RSASSA-PKCS1-v1_5 signature scheme, a hash function identifier is not embedded in the EMSA-PSS encoded message, therefore, it is recommended that the EMSA-PSS mask generation function be based on the same hash function. Here is the EMSA-PSS encoding operation:
 
 ![](https://fadasr.github.io/images/EMSA-PSS-encode.png)
+
+the signature is verified by first applying 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODg4MjA0NzQsLTExNTgwMTQ1OTAsLT
-gxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcy
-MTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMy
-wxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5
-NDQ5NzgsNDk1MDM4NzY2LDEzOTI5NzAyOTUsLTc5MDYyNTI0LD
-IxMTQxMjU3NjIsMTIzNjYxNDk3MiwxMzU5MzU5MTU1LC0xMDg2
-NTg3MDU5XX0=
+eyJoaXN0b3J5IjpbMTc5MjQ2MzM4MiwtMTE1ODAxNDU5MCwtOD
+E0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIx
+NTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLD
+E0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0
+NDk3OCw0OTUwMzg3NjYsMTM5Mjk3MDI5NSwtNzkwNjI1MjQsMj
+ExNDEyNTc2MiwxMjM2NjE0OTcyLDEzNTkzNTkxNTUsLTEwODY1
+ODcwNTldfQ==
 -->
