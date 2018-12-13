@@ -118,6 +118,7 @@ print(privKeyPEM.decode('ascii'))
 ```
 
 the default public exponent is 65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
+
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
 -----BEGIN PUBLIC KEY-----
@@ -145,6 +146,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 ```
 
 2. encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
+
 ```python
 msg = b'A message for encryption'
 encryptor = PKCS1_OAEP.new(pubKey)
@@ -157,6 +159,7 @@ print('Decrypted:', decrypted)
 ```
 
 here is the output:
+
 ```
 Encrypted: b'99b331c4e1c8f3fa227aacd57c85f38b7b7461574701b427758ee4f94b1e07d791ab70b55d672ff55dbe133ac0bea16fc23ea84636365f605a9b645e0861ee11d68a7550be8eb35e85a4bde6d73b0b956d000866425511c7920cdc8a3786a4f1cb1986a875373975e158d74e11ad751594de593a35de765fe329c0d3dfbbfedc'
 Decrypted: b'A message for encryption'
@@ -177,6 +180,7 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 example using python:
 
 1. generate RSA keys 1024-bit
+
 ```python
 from Crypto.PublicKey import RSA
 
@@ -186,12 +190,14 @@ print(f"Private key: (n={hex(keyPair.n)}, d={hex(keyPair.d)})")
 ```
 
 here is the output:
+
 ```
 Public key:  (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a37e1dfc8848d7fbbdf2599830268d544c1ecab4f2b19b6164a4ac29c8b1a4ec6930047397d0bb93aa77ed0c2f5d5c90ff3d458755b2367b46cc5c0d83f8f8673ec85b0575b9d1cea2c35a0b881a6d007d95c1cc94892bec61c2e9ed1599c1e605f, e=0x10001)
 Private key: (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a37e1dfc8848d7fbbdf2599830268d544c1ecab4f2b19b6164a4ac29c8b1a4ec6930047397d0bb93aa77ed0c2f5d5c90ff3d458755b2367b46cc5c0d83f8f8673ec85b0575b9d1cea2c35a0b881a6d007d95c1cc94892bec61c2e9ed1599c1e605f, d=0x165ecc9b4689fc6ceb9c3658977686f8083fc2e5ed75644bb8540766a9a2884d1d82edac9bb5d312353e63e4ee68b913f264589f98833459a7a547e0b2900a33e71023c4dedb42875b2dfdf412881199a990dfb77c097ce71b9c8b8811480f1637b85900137231ab47a7e0cbecc0b011c2c341b6de2b2e9c24d455ccd1fc0c21)
 ```
 
 2. sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
+
 ```python
 # RSA sign the message
 msg = b'A message for signing'
@@ -202,11 +208,13 @@ print("Signature:", hex(signature))
 ```
 
 here is the 1024-bit Signature generated:
+
 ```
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
 ```
 
 3. verify the Signature by decrypting the Signature using the public key `(n, e)` and comparing the hashes:
+
 ```python
 # RSA verify signature
 msg = b'A message for signing'
@@ -216,6 +224,7 @@ print("Signature valid:", hash == hashFromSignature)
 ```
 
 here is the output:
+
 ```
 Signature valid: True
 ```
@@ -229,6 +238,7 @@ RSASSA-PSS combines the RSASP1 and RSAVP1 primitives with the EMSA-PSS encoding 
 the signature is verified by first applying RSAVP1 to the signature, which returns the value of `EM`. We then look for the `0xBC` octet and check if the upper `8*emLen - emBits` bits of the leftmost octet are zero. If either test fails, the signature is invalid. After further decoding, we can re-compute `H` from the `salt` and compare it against the `H` we extracted from `EM`. If they match, the signature is valid.
 
 to demonstrate the PKCS#1 RSA digital signatures, we shall use the following code, based on the `pycryptodome` Python library, which implements RSA sign/verify, following the PKCS#1 v1.5 specification:
+
 ```python
 from Crypto.PublicKey import RSA
 from Crypto.Signature.pkcs1_15 import PKCS115_SigScheme
@@ -257,6 +267,7 @@ except:
 ```
 
 here is the output:
+
 ```
 Signature: b'243b9ed6561ab3bddead98508af0ac34b4567b1358011ace24db71ce2bc7f1a2e942b6231aa84cb07bae85b668d7c7cd0bc40cdda6f8162de57f0ee842e589c58f94aa4f96d51355f8aa395d7db950ebb9d375fca3124b6222699a645e93287bc6f5eb5b750fc0b470588f949a887dff75ed42cf01d9642a5d497f609b8cd043'
 Signature is valid.
@@ -265,11 +276,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODkzMjYxODAsLTE0MTM1MDkwMTAsMT
-IyMTczNDAyLC03MjMwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1
-MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MD
-YsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1
-MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Nj
-g1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNjUyOTQ0OTc4LDQ5
-NTAzODc2Nl19
+eyJoaXN0b3J5IjpbLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMj
+E3MzQwMiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIw
+MywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LD
+E5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2
+MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NT
+IsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUw
+Mzg3NjZdfQ==
 -->
