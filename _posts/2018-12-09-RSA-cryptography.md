@@ -65,7 +65,7 @@ d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd2
 
 to encrypt a message `m` using public key `(n, e)`, the sender computes the ciphertext <code>c = m<sup>e</sup> (mod n)</code>. To decrypt a ciphertext `c`, the receiver computes <code>m = c<sup>d</sup> (mod n)</code>.
 
-the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt. If you encrypt a very small message `m` with small public exponent `e` (e.g. `e = 5`), where <code>m<sup>5</sup> < n</code>, so no modular reduction takes place. The attacker can recover `m` by simply taking the fifth root of <code>m<sup>5</sup></code>
+the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt. If you encrypt a very small message `m` with small public exponent `e` (e.g. `e = 5`), where <code>m<sup>5</sup> < n</code>, so no modular reduction takes place. The attacker can recover `m` by simply taking the fifth root of <code>m<sup>5</sup></code>.
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
 ```
@@ -264,7 +264,7 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzU3NzI3ODYsMTIyMTczNDAyLC03Mj
+eyJoaXN0b3J5IjpbLTE0MTM1MDkwMTAsMTIyMTczNDAyLC03Mj
 MwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2
 NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC
 0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OSwtODUx
