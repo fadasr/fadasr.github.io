@@ -15,6 +15,7 @@ where `x`, `y`, `a`, and `b` are elements of the field `Fp` (i.e. `p` is a prime
 ### an academic example of the curve
 
 let's see an academic example of the curve (i.e. `secp256k1`) used in Bitcoin's public-key cryptography. The elliptic curve equation over the real numbers, where `a = 0`, and `b = 7`:
+
 ```
 y^2 := x^3 + 7
 ```
@@ -24,6 +25,7 @@ and here is the [visualization](https://kevinmehall.net/p/equationexplorer/#%5B-
 ![](https://fadasr.github.io/images/secp256k1-graph-real-numbers.png) 
 
 the same elliptic curve equation over a prime finite field `Fp` can be expressed as:
+
 ```
 y^2 := (x^3 + 7) mod p
 ```
@@ -33,6 +35,7 @@ and here is the visualization of the curve over prime finite field with `p = 17`
 ![](https://fadasr.github.io/images/secp256k1-graph-prime-field.png)
 
 the curve over prime finite field are set of points in a square matrix of size `p x p`. The finite number of unique points on the curve is known as the **order** of the curve. Let's see an example how the points are [computed](https://www.wolframalpha.com/input/?i=y%5E2+%3D+34+mod+17) using the elliptic curve equation:
+
 ```
 for x = 3:
 	y^2 := (3^3 + 7) mod 17 = 34  mod 17
@@ -48,7 +51,8 @@ to check if any point belong to the curve, it should satisfies the equation belo
 
 ## elliptic curve algebra
 
-elliptic curves posses an algebra with operations that allows us to create a trapdoor function useful for both DSA signatures and DH-based encryption. Point doubling (aka adding a point to itself) is defined as computing the tangent of a point on the curve and finding where it strikes the curve. There should be only one unique answer, and it is the double of the point. If we add a point `G` to itself: `G + G = 2G`. The set of points on `E(Fp)` forms a group under this operation. Furthermore the group is abelian - meaning that `G1 + G2 = G2 + G1`. Point multiplication is defined as adding a point to itself a set number of times, typically denoted as `kG` where `k` is the scalar number of times we wish to add G to itself. If we wrote `3G`, that is equivalent to `G + G + G`. If we cycle through all possible values of `k`, we will hit all of the points on the curve.
+elliptic curves posses an algebra with operations that allows us to create a trapdoor function useful for both DSA signatures and DH-based encryption. Point doubling (aka adding a point to itself) is defined as computing the tangent of a point on the curve and finding where it strikes the curve. There should be only one unique answer, and it is the double of the point. If we add a point `G` to itself: `G + G = 2G`. The set of points on `E(Fp)` forms a group under this operation. Furthermore the group is abelian - meaning that `G1 + G2 = G2 + G1`. Point multiplication is defined as adding a point to itself a set number of times, typically denoted as `kG` where `k` is the scalar number of times we wish to add `G` to itself. If we wrote `3G`, that is equivalent to `G + G + G`. If we cycle through all possible values of `k`, we will hit all of the points on the curve.
+
 ```
 P = kG
 ```
@@ -58,6 +62,7 @@ where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. 
 ## elliptic curve parameters
 
 Six parameters describe any curve over the prime finite fields:
+
 ```
 T = (p, a, b, G, n, h)
 ```
@@ -82,5 +87,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODE5OTI5NjNdfQ==
+eyJoaXN0b3J5IjpbMTU2OTY5NzkxN119
 -->
