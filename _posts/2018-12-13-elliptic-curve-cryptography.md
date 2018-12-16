@@ -164,7 +164,13 @@ actions:
 	2. compute Q = dG
 	3. Output (d, Q)  
 ```
+
+### example key pairs generation
+
+```python
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExOD
-Y4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTE2Mzc0MzAyNTcsLTE1Mjc0OTgyMzAsMT
+UyMTkwMjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
