@@ -168,7 +168,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
 
-encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
+4) encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
 
 ```python
 msg = b'A message for encryption'
@@ -181,7 +181,7 @@ decrypted = decryptor.decrypt(encrypted)
 print('Decrypted:', decrypted)
 ```
 
-here is the output:
+5) here is the output:
 
 ```
 Encrypted: b'99b331c4e1c8f3fa227aacd57c85f38b7b7461574701b427758ee4f94b1e07d791ab70b55d672ff55dbe133ac0bea16fc23ea84636365f605a9b645e0861ee11d68a7550be8eb35e85a4bde6d73b0b956d000866425511c7920cdc8a3786a4f1cb1986a875373975e158d74e11ad751594de593a35de765fe329c0d3dfbbfedc'
@@ -200,9 +200,9 @@ the receiver decrypts the ciphertext `c` and hash the result to get the same key
 
 to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</sup> (mod n)</code>. The pair `(m, s)` is now a signed message. To verify the signature, anyone who knows the public key can verify that <code>m = s<sup>e</sup> (mod n)</code>.
 
-example using python:
+### example using python
 
-generate RSA keys 1024-bit
+1) generate RSA keys 1024-bit
 
 ```python
 from Crypto.PublicKey import RSA
@@ -212,14 +212,14 @@ print(f"Public key:  (n={hex(keyPair.n)}, e={hex(keyPair.e)})")
 print(f"Private key: (n={hex(keyPair.n)}, d={hex(keyPair.d)})")
 ```
 
-here is the output:
+2) here is the output:
 
 ```
 Public key:  (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a37e1dfc8848d7fbbdf2599830268d544c1ecab4f2b19b6164a4ac29c8b1a4ec6930047397d0bb93aa77ed0c2f5d5c90ff3d458755b2367b46cc5c0d83f8f8673ec85b0575b9d1cea2c35a0b881a6d007d95c1cc94892bec61c2e9ed1599c1e605f, e=0x10001)
 Private key: (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a37e1dfc8848d7fbbdf2599830268d544c1ecab4f2b19b6164a4ac29c8b1a4ec6930047397d0bb93aa77ed0c2f5d5c90ff3d458755b2367b46cc5c0d83f8f8673ec85b0575b9d1cea2c35a0b881a6d007d95c1cc94892bec61c2e9ed1599c1e605f, d=0x165ecc9b4689fc6ceb9c3658977686f8083fc2e5ed75644bb8540766a9a2884d1d82edac9bb5d312353e63e4ee68b913f264589f98833459a7a547e0b2900a33e71023c4dedb42875b2dfdf412881199a990dfb77c097ce71b9c8b8811480f1637b85900137231ab47a7e0cbecc0b011c2c341b6de2b2e9c24d455ccd1fc0c21)
 ```
 
-sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
+3) sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
 
 ```python
 # RSA sign the message
@@ -230,7 +230,7 @@ signature = pow(hash, keyPair.d, keyPair.n)
 print("Signature:", hex(signature))
 ```
 
-here is the 1024-bit Signature generated:
+4) here is the 1024-bit Signature generated:
 
 ```
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
@@ -299,11 +299,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODgwNTI5NSwxOTczNzY3NTI0LDk5Nz
-g4MzA5OCwtNTcwMDUyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAy
-LC03MjMwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOT
-g1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3
-ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OS
-wtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2
-OTQ5MzZdfQ==
+eyJoaXN0b3J5IjpbLTEzODc5ODI0ODksMTk3Mzc2NzUyNCw5OT
+c4ODMwOTgsLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQw
+MiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMT
+k4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAw
+Nzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1ND
+ksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgx
+Njk0OTM2XX0=
 -->
