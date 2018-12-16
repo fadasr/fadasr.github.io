@@ -78,7 +78,7 @@ elliptic curve parameters over `Fp` precisely specify an elliptic curve and base
 ### example curve parameters from the standards
 
 ```
-secp256k1:
+secp256k1: y^2 = x^3 + 0x + 7
 	p = 115792089237316195423570985008687907853269984665640564039457584007908834671663
 	  = 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f
 	  = 2^256 - 2^32 - 977
@@ -102,6 +102,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzOTE3NTcxLC0xMTg2ODM0MjU0LDk5MD
-gyMjI0OF19
+eyJoaXN0b3J5IjpbLTIxMTYxMTcwMDMsLTExODY4MzQyNTQsOT
+kwODIyMjQ4XX0=
 -->
