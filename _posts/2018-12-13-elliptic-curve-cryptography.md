@@ -81,6 +81,11 @@ elliptic curve parameters over `Fp` precisely specify an elliptic curve and base
 NIST P-256:
 	p = 115792089210356248762697446949407573530086143415290314195533631308867097853951
 	  = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
+	  = 2^256 - 2^224 + 2^192 + 2^96 - 1
+
+secp256k1:
+	p = 115792089237316195423570985008687907853269984665640564039457584007908834671663
+	  = 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f
 ```
 
 ## elliptic curve key pairs
@@ -96,5 +101,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTQ0Mjk2OF19
+eyJoaXN0b3J5IjpbLTI1ODc5NTQzOF19
 -->
