@@ -103,6 +103,8 @@ Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
 	  = 2^252 + 27742317777372353535851937790883648493
 ```
 
+### example 
+
 ## elliptic curve key pairs
 
 elliptic curve key pairs should be generated as follows:
@@ -116,6 +118,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwOD
-IyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTMwMDk1NjQ0MCwxNTIxOTAyNSwtMTE4Nj
+gzNDI1NCw5OTA4MjIyNDhdfQ==
 -->
