@@ -91,6 +91,10 @@ Curve25519: y^2 = x^3 + 486662x^2 + x
 	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
 	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
 	  = 2^255 - 19
+	G = (9,
+	    14781619447589544791020593568409986887264606134616475288964881837755586237401)
+	  = (0x9,
+	    0x20ae19a1b8a086b4e01edd2c7748d14c923d4d7e6d7c61b229e9c5a27eced3d9)
 ```
 
 ## elliptic curve key pairs
@@ -106,6 +110,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODcwNjM2NDcsLTExODY4MzQyNTQsOT
-kwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMjQ0NDM0NDIzLC0xMTg2ODM0MjU0LDk5MD
+gyMjI0OF19
 -->
