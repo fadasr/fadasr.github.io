@@ -90,7 +90,7 @@ secp256k1: y^2 = x^3 + 0x + 7
 	  = 0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141
 	  = 2^256 - 432420386565659656852420866394968145599
 
-Curve25519: y^2 = x^3 + 486662x^2 + x
+Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
 	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
 	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
 	  = 2^255 - 19
@@ -116,6 +116,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjI3ODA5NDgsLTExODY4MzQyNTQsOT
-kwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwOD
+IyMjQ4XX0=
 -->
