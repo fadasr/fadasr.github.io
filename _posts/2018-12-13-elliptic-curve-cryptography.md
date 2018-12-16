@@ -77,7 +77,7 @@ for k in range(0, 25):
     print(f"{k} * G = ({p.x}, {p.y})")
 ```
 
-3) the result of the above point multiplications
+3) the result of the above point multiplications.
 
 ```
 curve: "p1707" => y^2 = x^3 + 0x + 7 (mod 17)
@@ -165,6 +165,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0MTM1NDI3LDE1MjE5MDI1LC0xMTg2OD
-M0MjU0LDk5MDgyMjI0OF19
+eyJoaXN0b3J5IjpbLTE4NzMzMzkyMjksMTUyMTkwMjUsLTExOD
+Y4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
