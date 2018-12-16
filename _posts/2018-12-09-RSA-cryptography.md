@@ -84,7 +84,9 @@ to encrypt a message `m` using public key `(n, e)`, the sender computes the ciph
 
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt. If you encrypt a very small message `m` with small public exponent `e` (e.g. `e = 5`), where <code>m<sup>5</sup> < n</code>, so no modular reduction takes place. The attacker can recover `m` by simply taking the fifth root of <code>m<sup>5</sup></code>.
 
-an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
+### an academic example of RSA encryption
+
+From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
 
 ```
 x mod y = x - (y * floor(x/y))
@@ -115,10 +117,11 @@ SHA-512:
 
 the RSAEP primitive performs the public key RSA transform by raising the integer to `e` modulo `n`. The RSADP function is the inverse of RSAEP. The PKCS#1 standard also specifies how RSADP can be performed with the Chinese Remainder Theorem (CRT) to speed up the operation.
 
-example of RSAES-OAEP using python:
-install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
+### example of RSAES-OAEP using python
 
-generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
+1) install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
+
+2) generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
 
 ```python
 from Crypto.PublicKey import RSA
@@ -137,7 +140,7 @@ privKeyPEM = keyPair.exportKey()
 print(privKeyPEM.decode('ascii'))
 ```
 
-the default public exponent is 65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
+3) the default public exponent is 65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
 
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
@@ -296,11 +299,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjEyNDczMzYsMTk3Mzc2NzUyNCw5OT
-c4ODMwOTgsLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQw
-MiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMT
-k4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAw
-Nzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1ND
-ksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgx
-Njk0OTM2XX0=
+eyJoaXN0b3J5IjpbLTY4ODgwNTI5NSwxOTczNzY3NTI0LDk5Nz
+g4MzA5OCwtNTcwMDUyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAy
+LC03MjMwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOT
+g1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3
+ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OS
+wtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2
+OTQ5MzZdfQ==
 -->
