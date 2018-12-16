@@ -23,7 +23,8 @@ the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the privat
 ```
 ed = 1 mod (p-1)(q-1)
 ```
-   
+
+key generation flow diagra
 ![](https://fadasr.github.io/images/rsa-keygen.png)
 
 ### an academic example of RSA key generation
@@ -292,7 +293,7 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTI3ODMwLDk5Nzg4MzA5OCwtNTcwMD
+eyJoaXN0b3J5IjpbMzg4ODc5NDI3LDk5Nzg4MzA5OCwtNTcwMD
 UyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAs
 LTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMT
 U4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2
