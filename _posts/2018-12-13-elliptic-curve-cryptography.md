@@ -77,7 +77,36 @@ for k in range(0, 25):
     print(f"{k} * G = ({p.x}, {p.y})")
 ```
 
+3) the result of the above point multiplications
 
+```
+curve: "p1707" => y^2 = x^3 + 0x + 7 (mod 17)
+0 * G = (None, None)
+1 * G = (15, 13)
+2 * G = (2, 10)
+3 * G = (8, 3)
+4 * G = (12, 1)
+5 * G = (6, 6)
+6 * G = (5, 8)
+7 * G = (10, 15)
+8 * G = (1, 12)
+9 * G = (3, 0)
+10 * G = (1, 5)
+11 * G = (10, 2)
+12 * G = (5, 9)
+13 * G = (6, 11)
+14 * G = (12, 16)
+15 * G = (8, 14)
+16 * G = (2, 7)
+17 * G = (15, 4)
+18 * G = (None, None)
+19 * G = (15, 13)
+20 * G = (2, 10)
+21 * G = (8, 3)
+22 * G = (12, 1)
+23 * G = (6, 6)
+24 * G = (5, 8)
+```
 
 ## elliptic curve parameters
 
@@ -136,6 +165,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDg3OTY3MDEsMTUyMTkwMjUsLTExOD
-Y4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbNjU0MTM1NDI3LDE1MjE5MDI1LC0xMTg2OD
+M0MjU0LDk5MDgyMjI0OF19
 -->
