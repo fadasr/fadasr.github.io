@@ -5,11 +5,14 @@ ECC is a public-key cryptography that offers performance advantages at equal/hig
 ## what are elliptic curves
 
 ECC makes use of elliptic curves over finite field. An elliptic curve `E(Fp)` over a prime finite field `Fp` is defined by the curve equation:   
+
 ```
 E : y^2 := (x^3 + a*x + b) mod p  
 ```
 
 where `x`, `y`, `a`, and `b` are elements of the field `Fp` (i.e. `p` is a prime number `> 3`).
+
+### an academic example of the curve
 
 let's see an academic example of the curve (i.e. `secp256k1`) used in Bitcoin's public-key cryptography. The elliptic curve equation over the real numbers, where `a = 0`, and `b = 7`:
 ```
@@ -79,5 +82,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjAwODE3MjldfQ==
+eyJoaXN0b3J5IjpbLTIwODE5OTI5NjNdfQ==
 -->
