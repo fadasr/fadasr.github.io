@@ -3,7 +3,7 @@
 the [RSA](https://tools.ietf.org/html/rfc8017) system is one of the most widely used public-key cryptosystem in the world. The RSA algorithm provides:
 
 - key-pair generation: random keys typically of size 1024-4096 bits
-- encryption: encrypt a message in the range [0-key_length] using the public key and decrypt using the private key
+- encryption: encrypt a message in the range [0...n] using the public key and decrypt using the private key
 - digital signature: sign a message with the private key and verify using the public key
 
 the key length of 3072 bits and above are considered secure. Longer keys provide higher security but consume more computing time.
@@ -292,7 +292,7 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTg4MTQyOSwtNTcwMDUyMzAsLTE0MT
+eyJoaXN0b3J5IjpbLTM5OTQzMTgzNiwtNTcwMDUyMzAsLTE0MT
 M1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAsLTEwMTQ3NTcw
 MTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC
 04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3
