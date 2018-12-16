@@ -83,7 +83,7 @@ secp256k1:
 	  = 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f
 	  = 2^256 - 2^32 - 977
 
-Curve25519:
+Curve25519: y^2 = x^3 + 486662x^2 + x
 	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
 	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
 	  = 2^255 - 19
@@ -102,5 +102,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMzYzOTE3NTcxLC0xMTg2ODM0MjU0LDk5MD
+gyMjI0OF19
 -->
