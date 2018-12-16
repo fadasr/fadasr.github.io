@@ -23,8 +23,7 @@ the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the privat
 ```
 ed = 1 mod (p-1)(q-1)
 ```
-
-
+<br>
 ![](https://fadasr.github.io/images/rsa-keygen.png)
 
 ### an academic example of RSA key generation
@@ -293,11 +292,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2MjM3MDY0LDk5Nzg4MzA5OCwtNTcwMD
-UyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAs
-LTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMT
-U4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2
-NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC
-0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMw
-MzI4NV19
+eyJoaXN0b3J5IjpbLTIxNDQ4Nzk2NDAsOTk3ODgzMDk4LC01Nz
+AwNTIzMCwtMTQxMzUwOTAxMCwxMjIxNzM0MDIsLTcyMzA4NzIx
+MCwtMTAxNDc1NzAxNCw5NjUyODUyMDMsLTE5ODU0ODY3ODIsLT
+ExNTgwMTQ1OTAsLTgxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgz
+NjY3NjcsLTE2MDcyMTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5Mj
+MsLTMxNDkzNjIzMywxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1
+MzAzMjg1XX0=
 -->
