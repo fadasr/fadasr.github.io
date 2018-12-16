@@ -78,6 +78,7 @@ elliptic curve parameters over `Fp` precisely specify an elliptic curve and base
 ## elliptic curve key pairs
 
 elliptic curve key pairs should be generated as follows:
+
 ```
 input: valid parameters T = (p, a, b, G, n, h)
 output: an elliptic curve key pair (d, Q) associated with T
@@ -87,5 +88,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTY5NzkxN119
+eyJoaXN0b3J5IjpbLTE0NTk0NDA4NTNdfQ==
 -->
