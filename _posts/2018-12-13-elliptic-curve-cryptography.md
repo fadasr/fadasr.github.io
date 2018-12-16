@@ -77,7 +77,11 @@ elliptic curve parameters over `Fp` precisely specify an elliptic curve and base
 
 ### example curve parameters from the standards
 
-
+```
+NIST P-256:
+	p = 115792089210356248762697446949407573530086143415290314195533631308867097853951
+	  = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
+```
 
 ## elliptic curve key pairs
 
@@ -92,5 +96,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDg3NTU4OTFdfQ==
+eyJoaXN0b3J5IjpbMTQ3MTQ0Mjk2OF19
 -->
