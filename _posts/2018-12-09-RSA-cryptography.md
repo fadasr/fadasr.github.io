@@ -28,26 +28,26 @@ ed = 1 mod (p-1)(q-1)
 
 ### an academic example of RSA key generation
 
-choose public exponent and prime numbers
+1) choose public exponent and prime numbers
 
 ```
 e = 3, p = 11, q = 23
 ```
 
-calculate modulus
+2) calculate modulus
 
 ```
 n = pq = 253, t = (p-1)(q-1) = 220
 ```
 
-check if the [gcd(3,220)](https://www.wolframalpha.com/input/?i=gcd(3,220)) is coprime (the numbers have no common factors except 1)
+3) check if the [gcd(3,220)](https://www.wolframalpha.com/input/?i=gcd(3,220)) is coprime (the numbers have no common factors except 1)
 
 ```
 gcd(e, t) == 1?
 gcd(3, 220) = 1
 ```
 
-calculate private exponent (e.g. using Extended Euclidean Algorithm)
+4) calculate private exponent (e.g. using Extended Euclidean Algorithm)
 
 ```
 ed = 1 (mod t) - in this case 1 < t, it can also be expressed like this: ed = i*t + 1, where i is an integer. In other word, find d that (i*t + 1) is divisible by e.
@@ -292,7 +292,7 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNTQzMzQ3OCwtNTcwMDUyMzAsLTE0MT
+eyJoaXN0b3J5IjpbMTE2NzExNzUzOCwtNTcwMDUyMzAsLTE0MT
 M1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAsLTEwMTQ3NTcw
 MTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC
 04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3
