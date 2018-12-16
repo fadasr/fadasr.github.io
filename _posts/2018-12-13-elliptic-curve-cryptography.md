@@ -59,7 +59,9 @@ P = kG
 
 where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. It is relatively easy to calculate `P` given `k` and `G`, but it is hard to determine `k` given `P` and `G`. This is called the **discrete logarithm problem** for elliptic curves. 
 
-### e
+### example of arithmetic operations
+
+1) install [tinyec]()
 
 ## elliptic curve parameters
 
@@ -118,6 +120,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMxMjQ4ODM5LDE1MjE5MDI1LC0xMTg2OD
+eyJoaXN0b3J5IjpbOTk0NjY1MjkzLDE1MjE5MDI1LC0xMTg2OD
 M0MjU0LDk5MDgyMjI0OF19
 -->
