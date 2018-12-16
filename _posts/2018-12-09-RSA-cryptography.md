@@ -236,7 +236,7 @@ print("Signature:", hex(signature))
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
 ```
 
-verify the Signature by decrypting the Signature using the public key `(n, e)` and comparing the hashes:
+5) verify the Signature by decrypting the Signature using the public key `(n, e)` and comparing the hashes:
 
 ```python
 # RSA verify signature
@@ -246,7 +246,7 @@ hashFromSignature = pow(signature, keyPair.e, keyPair.n)
 print("Signature valid:", hash == hashFromSignature)
 ```
 
-here is the output:
+6) here is the output:
 
 ```
 Signature valid: True
@@ -299,11 +299,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODc5ODI0ODksMTk3Mzc2NzUyNCw5OT
-c4ODMwOTgsLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQw
-MiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMT
-k4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAw
-Nzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1ND
-ksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgx
-Njk0OTM2XX0=
+eyJoaXN0b3J5IjpbMTY0OTgyNTk4MCwxOTczNzY3NTI0LDk5Nz
+g4MzA5OCwtNTcwMDUyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAy
+LC03MjMwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOT
+g1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3
+ODY3LC0xMTQ4MzY2NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OS
+wtODUxNTU5OTIzLC0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2
+OTQ5MzZdfQ==
 -->
