@@ -24,7 +24,8 @@ the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the privat
 ed = 1 mod (p-1)(q-1)
 ```
 
-key generation flow diagra
+key generation flow diagram:
+
 ![](https://fadasr.github.io/images/rsa-keygen.png)
 
 ### an academic example of RSA key generation
@@ -293,11 +294,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4ODc5NDI3LDk5Nzg4MzA5OCwtNTcwMD
-UyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAs
-LTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMT
-U4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2
-NzY3LC0xNjA3MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC
-0zMTQ5MzYyMzMsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMw
-MzI4NV19
+eyJoaXN0b3J5IjpbMTk3Mzc2NzUyNCw5OTc4ODMwOTgsLTU3MD
+A1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQwMiwtNzIzMDg3MjEw
+LC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMTk4NTQ4Njc4MiwtMT
+E1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2
+Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMy
+wtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUz
+MDMyODVdfQ==
 -->
