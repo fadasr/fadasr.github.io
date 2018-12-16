@@ -1,6 +1,6 @@
 # elliptic curve cryptography (ECC)
 
-ECC is a public-key cryptography that offers performance advantages at equal/higher security levels for a far smaller key size, compared to [RSA](https://fadasr.github.io/RSA-cryptography/). 
+[ECC](http://www.secg.org/sec1-v2.pdf) is a public-key cryptography that offers performance advantages at equal/higher security levels for a far smaller key size, compared to [RSA](https://fadasr.github.io/RSA-cryptography/). 
 
 ## what are elliptic curves
 
@@ -116,6 +116,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1MTI3NzgyLC0xMTg2ODM0MjU0LDk5MD
-gyMjI0OF19
+eyJoaXN0b3J5IjpbLTEwNjI3ODA5NDgsLTExODY4MzQyNTQsOT
+kwODIyMjQ4XX0=
 -->
