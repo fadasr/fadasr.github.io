@@ -63,7 +63,7 @@ where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. 
 
 1) install [tinyec](https://github.com/alexmgr/tinyec)
 
-2) from the previous example, the curve equation is `y^2 =
+2) from the previous example, the curve equation is `y^2 = (x^3 - 7) mod 17`
 
 ## elliptic curve parameters
 
@@ -122,6 +122,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzA2MTQ0MDcsMTUyMTkwMjUsLTExOD
-Y4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTY3Njg2NjE0NywxNTIxOTAyNSwtMTE4Nj
+gzNDI1NCw5OTA4MjIyNDhdfQ==
 -->
