@@ -78,3 +78,6 @@ actions:
 	2. compute Q = dG
 	3. Output (d, Q)  
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTExMjAwODE3MjldfQ==
+-->
