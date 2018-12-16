@@ -73,7 +73,7 @@ T = (p, a, b, G, n, h)
 - order of the curve `n`: defines the order of `G`
 - cofactor `h = #E(Fp) / n`
 
-elliptic curve parameters over `Fp` precisely specify an elliptic curve and base point. This is necessary to precisely define public-key cryptographic schemes based on ECC. The base/generator point `G` can generate any other point in its group by multiplying `G` by some integer in the range `[0…n]`. To foster interoperability it is strongly recommended that we use one of the parameters specified in the standard (e.g . SEC 2).
+elliptic curve parameters over `Fp` precisely specify an elliptic curve and base point. This is necessary to precisely define public-key cryptographic schemes based on ECC. The base/generator point `G` can generate any other point in its group by multiplying `G` by some integer in the range `[0…n]`. The base point has order `n`, . To foster interoperability it is strongly recommended that we use one of the parameters specified in the standard (e.g . SEC 2).
 
 ## elliptic curve key pairs
 
@@ -88,5 +88,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTk0NDA4NTNdfQ==
+eyJoaXN0b3J5IjpbMTU0NDk4N119
 -->
