@@ -10,12 +10,14 @@ the key length of 3072 bits and above are considered secure. Longer keys provide
 ## key generation
 
 the foundation of RSA's security is based on the difficulty of factoring large numbers (aka the trapdoor). Given `n`, it is considered a hard problem to determine it's prime factors, `p` and `q`.
+
 ```
 n = pq
 ```
 where `n` is a modulus, `p` and `q` are two large prime number
 
-the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the private key. The number `e` is called _public key exponent_ and typically is equal to 3, 5, 17, or 65537. The number `d` is called _private key exponent_. The requirement for `e` and `d` is that:
+the pair `(n, e)` forms the public key, while the pair `(n, d)` forms the private key. The number `e` is called public key exponent_ and typically is equal to 3, 5, 17, or 65537. The number `d` is called _private key exponent_. The requirement for `e` and `d` is that:
+
 ```
 ed = 1 mod (p-1)(q-1)
 ```
@@ -24,10 +26,12 @@ ed = 1 mod (p-1)(q-1)
 
 an academic example of RSA key generation:
 
-1. choose public exponent and prime numbers
+choose public exponent and prime numbers
+
 ```
 e = 3, p = 11, q = 23
 ```
+
 2. calculate modulus
 ```
 n = pq = 253, t = (p-1)(q-1) = 220
@@ -276,11 +280,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMj
-E3MzQwMiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIw
-MywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LD
-E5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2
-MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NT
-IsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0NDk3OCw0OTUw
-Mzg3NjZdfQ==
+eyJoaXN0b3J5IjpbOTY2NTg5NjYsLTU3MDA1MjMwLC0xNDEzNT
+A5MDEwLDEyMjE3MzQwMiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0
+LDk2NTI4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtOD
+E0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYwNzIx
+NTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2MjMzLD
+E0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1Mjk0
+NDk3OF19
 -->
