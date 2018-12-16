@@ -86,6 +86,7 @@ NIST P-256:
 secp256k1:
 	p = 115792089237316195423570985008687907853269984665640564039457584007908834671663
 	  = 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f
+	  = 2^256 - 2^32 - 977
 ```
 
 ## elliptic curve key pairs
@@ -101,5 +102,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODc5NTQzOF19
+eyJoaXN0b3J5IjpbOTkwODIyMjQ4XX0=
 -->
