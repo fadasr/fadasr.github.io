@@ -26,7 +26,7 @@ ed = 1 mod (p-1)(q-1)
 
 ![](https://fadasr.github.io/images/rsa-keygen.png)
 
-an academic example of RSA key generation:
+### an academic example of RSA key generation
 
 choose public exponent and prime numbers
 
@@ -292,11 +292,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyNTExNzI3LC01NzAwNTIzMCwtMTQxMz
-UwOTAxMCwxMjIxNzM0MDIsLTcyMzA4NzIxMCwtMTAxNDc1NzAx
-NCw5NjUyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgwMTQ1OTAsLT
-gxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcy
-MTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMy
-wxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5
-NDQ5NzhdfQ==
+eyJoaXN0b3J5IjpbLTUyNTQzMzQ3OCwtNTcwMDUyMzAsLTE0MT
+M1MDkwMTAsMTIyMTczNDAyLC03MjMwODcyMTAsLTEwMTQ3NTcw
+MTQsOTY1Mjg1MjAzLC0xOTg1NDg2NzgyLC0xMTU4MDE0NTkwLC
+04MTQxODU2MDYsMTkzMDA3ODY3LC0xMTQ4MzY2NzY3LC0xNjA3
+MjE1MDc5LDU1MjYwNzU0OSwtODUxNTU5OTIzLC0zMTQ5MzYyMz
+MsMTQ2MjQ2Njg1Miw4ODE2OTQ5MzYsMTczNTMwMzI4NSwtNjUy
+OTQ0OTc4XX0=
 -->
