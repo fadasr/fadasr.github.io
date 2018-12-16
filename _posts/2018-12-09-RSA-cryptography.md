@@ -62,7 +62,9 @@ so d = 441 / 3 = 147
 
 `(253, 3)` is the public key and `(253, 147)` is the private key. In the next example we will use the keys for encryption and decryption of a message.
 
-### real world example of 2048-bit public key, and 65537 public exponent
+### real world example of key pair
+
+2048-bit public key with 65537 public exponent:
 
 ```
 n = 0xa709e2f84ac0e21eb0caa018cf7f697f774e96f8115fc2359e9cf60b1dd8d4048d974cdf8422bef6be3c162b04b916f7ea2133f0e3e4e0eee164859bd9c1e0ef0357c142f4f633b4add4aab86c8f8895cd33fbf4e024d9a3ad6be6267570b4a72d2c34354e0139e74ada665a16a2611490debb8e131a6cffc7ef25e74240803dd71a4fcd953c988111b0aa9bbc4c57024fc5e8c4462ad9049c7f1abed859c63455fa6d58b5cc34a3d3206ff74b9e96c336dbacf0cdd18ed0c66796ce00ab07f36b24cbe3342523fd8215a8e77f89e86a08db911f237459388dee642dae7cb2644a03e71ed5c6fa5077cf4090fafa556048b536b879a88f628698f0c7b420c4b7
@@ -294,11 +296,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3Mzc2NzUyNCw5OTc4ODMwOTgsLTU3MD
-A1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQwMiwtNzIzMDg3MjEw
-LC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMTk4NTQ4Njc4MiwtMT
-E1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2
-Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMy
-wtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUz
-MDMyODVdfQ==
+eyJoaXN0b3J5IjpbLTIwNjEyNDczMzYsMTk3Mzc2NzUyNCw5OT
+c4ODMwOTgsLTU3MDA1MjMwLC0xNDEzNTA5MDEwLDEyMjE3MzQw
+MiwtNzIzMDg3MjEwLC0xMDE0NzU3MDE0LDk2NTI4NTIwMywtMT
+k4NTQ4Njc4MiwtMTE1ODAxNDU5MCwtODE0MTg1NjA2LDE5MzAw
+Nzg2NywtMTE0ODM2Njc2NywtMTYwNzIxNTA3OSw1NTI2MDc1ND
+ksLTg1MTU1OTkyMywtMzE0OTM2MjMzLDE0NjI0NjY4NTIsODgx
+Njk0OTM2XX0=
 -->
