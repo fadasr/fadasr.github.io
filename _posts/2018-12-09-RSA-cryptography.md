@@ -105,7 +105,7 @@ RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding me
 
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
-RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2` octets, where `hLen` is the length of the output from the underlying hash function and `k` is the length in octets of the recipient's RSA modulus. For hybrid mode, the typical largest message would be 32 bytes corresponding to a 256-bit AES key. With RSA 2048-bit modulus, the message limit for OAEP can be calculated:
+RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2` octets, where `hLen` is the length of the output from the underlying hash function and `k` is the length in octets of the recipient's RSA modulus. For hybrid mode, the typical largest message would be `32` bytes corresponding to a `256-bit` AES key. With RSA `2048-bit` modulus, the message limit for OAEP can be calculated:
 
 ```
 SHA-256: 
@@ -121,7 +121,7 @@ the RSAEP primitive performs the public key RSA transform by raising the integer
 
 1) install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
 
-2) generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
+2) generate RSA keys `1024-bit` in PKCS#8 PEM ASN.1 format
 
 ```python
 from Crypto.PublicKey import RSA
@@ -140,7 +140,7 @@ privKeyPEM = keyPair.exportKey()
 print(privKeyPEM.decode('ascii'))
 ```
 
-3) the default public exponent is 65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
+3) the default public exponent is `65537. Each generation will generates different random RSA key-pair. Use this [website](https://lapo.it/asn1js/) to decode the PEM-format.
 
 ```
 Public key: (n=0x9a11485bccb9569410a848fb1afdf2a81b17c1fa9f9eb546fd1deb873b49b693a4edf20eb8362c085cd5b28ba109dbad2bd257a013f57f745402e245b0cc2d553c7b2b8dbba57ebda7f84cfb32b7d9c254f03dbd0188e4b8e40c47b64c1bd2572834b936ffc3da9953657ef8bee80c49c2c12933c8a34804a00eb4c81248e01f, e=0x10001)
@@ -299,7 +299,7 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTgyNTk4MCwxOTczNzY3NTI0LDk5Nz
+eyJoaXN0b3J5IjpbMTcxNTU2MzcyNCwxOTczNzY3NTI0LDk5Nz
 g4MzA5OCwtNTcwMDUyMzAsLTE0MTM1MDkwMTAsMTIyMTczNDAy
 LC03MjMwODcyMTAsLTEwMTQ3NTcwMTQsOTY1Mjg1MjAzLC0xOT
 g1NDg2NzgyLC0xMTU4MDE0NTkwLC04MTQxODU2MDYsMTkzMDA3
