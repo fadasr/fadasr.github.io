@@ -68,6 +68,7 @@ e = 0x010001
 ```
 
 and the corresponding 2048-bit private key:
+
 ```
 n = 0xa709e2f84ac0e21eb0caa018cf7f697f774e96f8115fc2359e9cf60b1dd8d4048d974cdf8422bef6be3c162b04b916f7ea2133f0e3e4e0eee164859bd9c1e0ef0357c142f4f633b4add4aab86c8f8895cd33fbf4e024d9a3ad6be6267570b4a72d2c34354e0139e74ada665a16a2611490debb8e131a6cffc7ef25e74240803dd71a4fcd953c988111b0aa9bbc4c57024fc5e8c4462ad9049c7f1abed859c63455fa6d58b5cc34a3d3206ff74b9e96c336dbacf0cdd18ed0c66796ce00ab07f36b24cbe3342523fd8215a8e77f89e86a08db911f237459388dee642dae7cb2644a03e71ed5c6fa5077cf4090fafa556048b536b879a88f628698f0c7b420c4b7
 d = 0x10f22727e552e2c86ba06d7ed6de28326eef76d0128327cd64c5566368fdc1a9f740ad8dd221419a5550fc8c14b33fa9f058b9fa4044775aaf5c66a999a7da4d4fdb8141c25ee5294ea6a54331d045f25c9a5f7f47960acbae20fa27ab5669c80eaf235a1d0b1c22b8d750a191c0f0c9b3561aaa4934847101343920d84f24334d3af05fede0e355911c7db8b8de3bf435907c855c3d7eeede4f148df830b43dd360b43692239ac10e566f138fb4b30fb1af0603cfcf0cd8adf4349a0d0b93bf89804e7c2e24ca7615e51af66dccfdb71a1204e2107abbee4259f2cac917fafe3b029baf13c4dde7923c47ee3fec248390203a384b9eb773c154540c5196bce1
@@ -80,12 +81,14 @@ to encrypt a message `m` using public key `(n, e)`, the sender computes the ciph
 the size of the message that can be encrypted using RSA is limited by the size of `n`. With encoding function (e.g. [RSAES-OAEP](https://tools.ietf.org/html/rfc8017#page-18)), it places more limits on the size of the plaintext you can encrypt. If you encrypt a very small message `m` with small public exponent `e` (e.g. `e = 5`), where <code>m<sup>5</sup> < n</code>, so no modular reduction takes place. The attacker can recover `m` by simply taking the fifth root of <code>m<sup>5</sup></code>.
 
 an academic example of RSA encryption. From the previous example, we have public key `(253, 3)` and private key `(253, 147)`. Lets encrypt a message `m = 85`.
+
 ```
 x mod y = x - (y * floor(x/y))
 c = 85^3 (mod 253) = 85^3 - (253 * 2427) = 94
 ```
 
 to decrypt the ciphertext `c = 94` back to `m`. See [the calculation](https://www.wolframalpha.com/input/?i=94%5E147+-+(253*floor((94%5E147)%2F253))) here.
+
 ```
 m = 94^147 (mod 253) = 85
 ```
@@ -97,6 +100,7 @@ RSAES-OAEP combines the RSAEP and RSADP primitives with the EME-OAEP encoding me
 ![](https://fadasr.github.io/images/eme-oaep-encode.png)
 
 RSAES-OAEP can operate on messages of length up to `k - 2hLen - 2` octets, where `hLen` is the length of the output from the underlying hash function and `k` is the length in octets of the recipient's RSA modulus. For hybrid mode, the typical largest message would be 32 bytes corresponding to a 256-bit AES key. With RSA 2048-bit modulus, the message limit for OAEP can be calculated:
+
 ```
 SHA-256: 
 	message limit = 256 - (2*32) - 2 = 190 octets
@@ -110,7 +114,7 @@ the RSAEP primitive performs the public key RSA transform by raising the integer
 example of RSAES-OAEP using python:
 install first [PyCryptodome](https://github.com/Legrandin/pycryptodome)
 
-1. generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
+generate RSA keys 1024-bit in PKCS#8 PEM ASN.1 format
 
 ```python
 from Crypto.PublicKey import RSA
@@ -157,7 +161,7 @@ N8dk3nIsLs3UncKLiiWubMAciU5jUxZoqWpRXXwECKE=
 -----END RSA PRIVATE KEY-----
 ```
 
-2. encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
+encrypt and decrypt a message. The OAEP padding algorithm adds some randomness with the padding.
 
 ```python
 msg = b'A message for encryption'
@@ -191,7 +195,7 @@ to sign a message `m`, the owner of the private key computes <code>s = m<sup>d</
 
 example using python:
 
-1. generate RSA keys 1024-bit
+generate RSA keys 1024-bit
 
 ```python
 from Crypto.PublicKey import RSA
@@ -208,7 +212,7 @@ Public key:  (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a
 Private key: (n=0xf51518d30754430e4b89f828fd4f1a8e8f44dd10e0635c0e93b7c01802729a37e1dfc8848d7fbbdf2599830268d544c1ecab4f2b19b6164a4ac29c8b1a4ec6930047397d0bb93aa77ed0c2f5d5c90ff3d458755b2367b46cc5c0d83f8f8673ec85b0575b9d1cea2c35a0b881a6d007d95c1cc94892bec61c2e9ed1599c1e605f, d=0x165ecc9b4689fc6ceb9c3658977686f8083fc2e5ed75644bb8540766a9a2884d1d82edac9bb5d312353e63e4ee68b913f264589f98833459a7a547e0b2900a33e71023c4dedb42875b2dfdf412881199a990dfb77c097ce71b9c8b8811480f1637b85900137231ab47a7e0cbecc0b011c2c341b6de2b2e9c24d455ccd1fc0c21)
 ```
 
-2. sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
+sign a hashed message using the private key `(n, d)`. In Python we have modular exponentiation as built in function [`pow(x, y, n)`](https://docs.python.org/3/library/functions.html#pow):
 
 ```python
 # RSA sign the message
@@ -225,7 +229,7 @@ here is the 1024-bit Signature generated:
 Signature: 0x650c9f2e6701e3fe73d3054904a9a4bbdb96733f1c4c743ef573ad6ac14c5a3bf8a4731f6e6276faea5247303677fb8dbdf24ff78e53c25052cdca87eecfee85476bcb8a05cb9a1efef7cb87dd68223e117ce800ac46177172544757a487be32f5ab8fe0879fa8add78be465ea8f8d5acf977e9f1ae36d4d47816ea6ed41372b
 ```
 
-3. verify the Signature by decrypting the Signature using the public key `(n, e)` and comparing the hashes:
+verify the Signature by decrypting the Signature using the public key `(n, e)` and comparing the hashes:
 
 ```python
 # RSA verify signature
@@ -288,11 +292,11 @@ Signature is valid.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjkwODcwNDIsLTU3MDA1MjMwLC0xND
-EzNTA5MDEwLDEyMjE3MzQwMiwtNzIzMDg3MjEwLC0xMDE0NzU3
-MDE0LDk2NTI4NTIwMywtMTk4NTQ4Njc4MiwtMTE1ODAxNDU5MC
-wtODE0MTg1NjA2LDE5MzAwNzg2NywtMTE0ODM2Njc2NywtMTYw
-NzIxNTA3OSw1NTI2MDc1NDksLTg1MTU1OTkyMywtMzE0OTM2Mj
-MzLDE0NjI0NjY4NTIsODgxNjk0OTM2LDE3MzUzMDMyODUsLTY1
-Mjk0NDk3OF19
+eyJoaXN0b3J5IjpbNzcyNTExNzI3LC01NzAwNTIzMCwtMTQxMz
+UwOTAxMCwxMjIxNzM0MDIsLTcyMzA4NzIxMCwtMTAxNDc1NzAx
+NCw5NjUyODUyMDMsLTE5ODU0ODY3ODIsLTExNTgwMTQ1OTAsLT
+gxNDE4NTYwNiwxOTMwMDc4NjcsLTExNDgzNjY3NjcsLTE2MDcy
+MTUwNzksNTUyNjA3NTQ5LC04NTE1NTk5MjMsLTMxNDkzNjIzMy
+wxNDYyNDY2ODUyLDg4MTY5NDkzNiwxNzM1MzAzMjg1LC02NTI5
+NDQ5NzhdfQ==
 -->
