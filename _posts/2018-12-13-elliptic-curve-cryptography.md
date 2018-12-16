@@ -77,7 +77,7 @@ for k in range(0, 25):
     print(f"{k} * G = ({p.x}, {p.y})")
 ```
 
-3) the result of the above point multiplications.
+3) the result of the above point multiplications. The EC group is cyclic and the order of the EC group is `n = 18`, because starting from `k = 18`, the next points repeat the first ones.
 
 ```
 curve: "p1707" => y^2 = x^3 + 0x + 7 (mod 17)
@@ -165,6 +165,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzMzMzkyMjksMTUyMTkwMjUsLTExOD
+eyJoaXN0b3J5IjpbLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExOD
 Y4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
