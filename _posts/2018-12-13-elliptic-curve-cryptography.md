@@ -61,7 +61,9 @@ where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. 
 
 ### example of arithmetic operations
 
-1) install [tinyec]()
+1) install [tinyec](https://github.com/alexmgr/tinyec)
+
+2) from the previous example, the curve equation is `y^2 =
 
 ## elliptic curve parameters
 
@@ -120,6 +122,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk0NjY1MjkzLDE1MjE5MDI1LC0xMTg2OD
-M0MjU0LDk5MDgyMjI0OF19
+eyJoaXN0b3J5IjpbLTE2MzA2MTQ0MDcsMTUyMTkwMjUsLTExOD
+Y4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
