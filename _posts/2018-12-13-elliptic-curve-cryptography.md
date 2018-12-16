@@ -78,15 +78,15 @@ elliptic curve parameters over `Fp` precisely specify an elliptic curve and base
 ### example curve parameters from the standards
 
 ```
-NIST P-256:
-	p = 115792089210356248762697446949407573530086143415290314195533631308867097853951
-	  = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
-	  = 2^256 - 2^224 + 2^192 + 2^96 - 1
-
 secp256k1:
 	p = 115792089237316195423570985008687907853269984665640564039457584007908834671663
 	  = 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffefffffc2f
 	  = 2^256 - 2^32 - 977
+
+Curve25519:
+	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
+	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
+	  = 2^255 - 19
 ```
 
 ## elliptic curve key pairs
@@ -102,5 +102,5 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
