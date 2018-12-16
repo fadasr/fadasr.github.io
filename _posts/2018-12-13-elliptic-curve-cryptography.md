@@ -77,6 +77,8 @@ for k in range(0, 25):
     print(f"{k} * G = ({p.x}, {p.y})")
 ```
 
+
+
 ## elliptic curve parameters
 
 Six parameters describe any curve over the prime finite fields:
@@ -134,6 +136,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk4MDE3NDE1LDE1MjE5MDI1LC0xMTg2OD
-M0MjU0LDk5MDgyMjI0OF19
+eyJoaXN0b3J5IjpbLTE5NDg3OTY3MDEsMTUyMTkwMjUsLTExOD
+Y4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
