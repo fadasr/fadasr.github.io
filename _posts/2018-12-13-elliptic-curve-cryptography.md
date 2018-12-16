@@ -59,6 +59,8 @@ P = kG
 
 where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. It is relatively easy to calculate `P` given `k` and `G`, but it is hard to determine `k` given `P` and `G`. This is called the **discrete logarithm problem** for elliptic curves. 
 
+### e
+
 ## elliptic curve parameters
 
 Six parameters describe any curve over the prime finite fields:
@@ -103,8 +105,6 @@ Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
 	  = 2^252 + 27742317777372353535851937790883648493
 ```
 
-### example 
-
 ## elliptic curve key pairs
 
 elliptic curve key pairs should be generated as follows:
@@ -118,6 +118,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDk1NjQ0MCwxNTIxOTAyNSwtMTE4Nj
-gzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbNzMxMjQ4ODM5LDE1MjE5MDI1LC0xMTg2OD
+M0MjU0LDk5MDgyMjI0OF19
 -->
