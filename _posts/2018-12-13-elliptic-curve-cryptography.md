@@ -63,7 +63,19 @@ where `P`, and `G` are points on the curve, and `k` is the scalar number `< p`. 
 
 1) install [tinyec](https://github.com/alexmgr/tinyec)
 
-2) from the previous example, the curve equation is `y^2 = (x^3 - 7) mod 17`
+2) from the previous example, the curve equation is `y^2 = (x^3 - 7) mod 17` with `G = (15,13)`
+
+```python
+from tinyec.ec import SubGroup, Curve
+
+field = SubGroup(p=17, g=(15, 13), n=18, h=1)
+curve = Curve(a=0, b=7, field=field, name='p1707')
+print('curve:', curve)
+
+for k in range(0, 25):
+    p = k * curve.g
+    print(f"{k} * G = ({p.x}, {p.y})")
+```
 
 ## elliptic curve parameters
 
@@ -122,6 +134,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3Njg2NjE0NywxNTIxOTAyNSwtMTE4Nj
-gzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbNjk4MDE3NDE1LDE1MjE5MDI1LC0xMTg2OD
+M0MjU0LDk5MDgyMjI0OF19
 -->
