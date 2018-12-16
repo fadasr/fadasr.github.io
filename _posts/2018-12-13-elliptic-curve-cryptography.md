@@ -73,7 +73,7 @@ T = (p, a, b, G, n, h)
 - order of the curve `n`: defines the order of `G`
 - cofactor `h = #E(Fp) / n`
 
-elliptic curve parameters over `Fp` precisely specify an elliptic curve and base point. This is necessary to precisely define public-key cryptographic schemes based on ECC. The base/generator point `G` can generate any other point in its group by multiplying `G` by some integer in the range `[0…n]`. The base point has order `n`, which is a large prime. The number of points on the curve is `hn` for some integer `h` (the cofactor) which is not divisible by `n`. To foster interoperability it is strongly recommended that we use the parameters specified in the standard (e.g . [SEC 2](https://safecurves.cr.yp.to/refs.html#2010/certicom-sec2), [NIST FIPS 186-4](https://csrc.nist.gov/publications/detail/fips/186/4/final)). Each of these standards tries to ensure that the elliptic-curve discrete-logarithm problem (ECDLP) is difficult. It is recommended to [choose curves](https://safecurves.cr.yp.to/index.html) that allow simple implementations to be secure implementations.
+elliptic curve parameters over `Fp` precisely specify an elliptic curve and base point. This is necessary to precisely define public-key cryptographic schemes based on ECC. The base/generator point `G` can generate any other point in its group by multiplying `G` by some integer in the range `[0…n]`. The base point has order `n`, which is a large prime. The number of points on the curve is `hn` for some integer `h` (the cofactor) which is not divisible by `n`. To foster interoperability it is strongly recommended that we use the parameters specified in the standard (e.g . [SEC 2](https://safecurves.cr.yp.to/refs.html#2010/certicom-sec2)). Each of these standards tries to ensure that the elliptic-curve discrete-logarithm problem (ECDLP) is difficult. It is recommended to [choose curves](https://safecurves.cr.yp.to/index.html) that allow simple implementations to be secure implementations.
 
 ### example curve parameters from the standards
 
@@ -116,6 +116,6 @@ actions:
 	3. Output (d, Q)  
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTgxMTgwLC0xMTg2ODM0MjU0LDk5MD
+eyJoaXN0b3J5IjpbODc1MTI3NzgyLC0xMTg2ODM0MjU0LDk5MD
 gyMjI0OF19
 -->
