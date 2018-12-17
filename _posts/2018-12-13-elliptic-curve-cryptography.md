@@ -4,7 +4,7 @@
 
 ## what are elliptic curves
 
-ECC makes use of elliptic curves over finite field. An elliptic curve `E(Fp)` over a prime finite field `Fp` is defined by the curve equation:   
+ECC makes use of elliptic curves over finite field. An elliptic curve `E(Fp)` over a prime finite field `Fp` is defined by the curve equation ([Weierstrass form](https://en.wikipedia.org/wiki/Elliptic_curve "Elliptic curve")):   
 
 ```
 E : y^2 := (x^3 + a*x + b) mod p  
@@ -186,6 +186,7 @@ private key: 4225655318977962031264230130242180748818603147467615868902
 public key: (5396030834456770190396776530938374882273836179487834152291, 3422160588166914010077732710830109086004758012634997793937) on "secp192r1" => y^2 = x^3 + 6277101735386680763835789423207666416083908700390324961276x + 2455155546008943817740293915197451784769108058161191238065 (mod 6277101735386680763835789423207666416083908700390324961279)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNT
-IxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbMTE2NjgxNTE5OCwtMzg5ODEwNTA0LC0xNT
+I3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0
+OF19
 -->
