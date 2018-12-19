@@ -34,13 +34,15 @@ examples of such asymmetric encryption schemes are: [RSA-OAEP](https://tools.iet
 
 ## key agreement
 
-Diffie-Hellman (DH) is a key agreement algorithm used by two parties to agree on a shared secret. The secret may then be converted into cryptographic key material for other symmetric algorithms. DH is resistant to sniffing attacks, but it is vulnerable to man-in-the-middle (MITM) attacks. The authenticated key agreement schemes authenticate the identities of parties involved in the key exchange and thus prevent MITM attacks by use of digitally signed keys (e.g. PKI certificate), or password-authenticated key agreement.
+Diffie-Hellman (DH) is a key agreement algorithm used by two parties to agree on a shared secret. The secret may then be converted into cryptographic key material for other symmetric algorithms. DH is resistant to sniffing attacks, but it is vulnerable to man-in-the-middle (MITM) attacks. 
+
+The authenticated key agreement schemes authenticate the identities of parties involved in the key exchange and thus prevent MITM attacks by use of digitally signed keys (e.g. PKI certificate), or password-authenticated key agreement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjEyNzE1MSwtMTQyNzQ0NzcxMCwtNz
-UxMjc4MTYxLC01MjEyOTUxMDgsLTE0OTA3NjE4ODIsLTQzMTcx
-MDc3OSwxMzQ4ODQ1MTQyLC0xNTQ5MjY5NzA1LDE3MzMwMjc5ND
-QsMTU3MzUzMjEyNCw1MTU3NjMzNzIsOTEzNTgwOTI4LDgzNzAw
-NTY5MCwxNDIyNzE4MjE5LC04MzE4MDExMDEsLTEyNjkyOTQ2MT
-UsNzczNTU3MTc3LC0zMDMwNTE2MjUsLTkxMDI3NTAyLC03MDE0
-NDYyNDldfQ==
+eyJoaXN0b3J5IjpbMTI5MTQ3NjI2OSwtNzMyMTI3MTUxLC0xND
+I3NDQ3NzEwLC03NTEyNzgxNjEsLTUyMTI5NTEwOCwtMTQ5MDc2
+MTg4MiwtNDMxNzEwNzc5LDEzNDg4NDUxNDIsLTE1NDkyNjk3MD
+UsMTczMzAyNzk0NCwxNTczNTMyMTI0LDUxNTc2MzM3Miw5MTM1
+ODA5MjgsODM3MDA1NjkwLDE0MjI3MTgyMTksLTgzMTgwMTEwMS
+wtMTI2OTI5NDYxNSw3NzM1NTcxNzcsLTMwMzA1MTYyNSwtOTEw
+Mjc1MDJdfQ==
 -->
