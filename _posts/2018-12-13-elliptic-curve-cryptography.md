@@ -188,9 +188,9 @@ public key: (5396030834456770190396776530938374882273836179487834152291, 3422160
 
 ## elliptic curve digital signature algorithm (ECDSA)
 
-the ECDSA s
+the ECDSA signing algorithm is based on the [ElGamal signature scheme](https://en.wikipedia.org/wiki/ElGamal_signature_scheme)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzkwMDQyOSwtMzg5ODEwNTA0LC0xNT
+eyJoaXN0b3J5IjpbLTQ0MTg5NjYwNSwtMzg5ODEwNTA0LC0xNT
 I3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0
 OF19
 -->
