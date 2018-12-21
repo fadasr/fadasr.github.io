@@ -195,18 +195,18 @@ input:
 	d: private key (integer)
 	n: order of the curve
 	m: message to be signed
-	
+output: (r, s): the signature
 signature generation:
 	1. select a random integer k in the range [1, n-1]
 	2. compute point P = (x, y) = kG and r = x mod n. If r = 0 then goto step 1
 	3. compute h = H(m), where H is one of the SHA-2 or SHA-3 hash functions
-	4. compute s = k^-1(h + dr) mod n
+	4. compute s = k^-1(h + dr) mod n. If s = 0 the goto step 1
 	5. the signature of message m is the pair (r, s)
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MTY5NjMxMSwyMDQyOTgyOTk1LC0zOD
+eyJoaXN0b3J5IjpbLTYxOTc5NzU3MywyMDQyOTgyOTk1LC0zOD
 k4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQy
 NTQsOTkwODIyMjQ4XX0=
 -->
