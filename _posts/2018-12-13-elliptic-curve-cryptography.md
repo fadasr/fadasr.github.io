@@ -188,9 +188,9 @@ public key: (5396030834456770190396776530938374882273836179487834152291, 3422160
 
 ## elliptic curve digital signature algorithm (ECDSA)
 
-the [ECDSA](https://tools.ietf.org/html/rfc6979) signing algorithm is based on the [ElGamal signature scheme](https://en.wikipedia.org/wiki/ElGamal_signature_scheme). For each signature generation, ECDSA need a fresh random value `k`. It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. The key pair generation still requires a source of randomness. Deterministic ECDSA only deal with the need for randomness at the time of signature generation.
+the [ECDSA](https://tools.ietf.org/html/rfc6979) signing algorithm is based on the [ElGamal signature scheme](https://en.wikipedia.org/wiki/ElGamal_signature_scheme). For each signature generation, ECDSA requires a fresh random value `k`. It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. The key pair generation still requires a source of randomness. Deterministic ECDSA only deal with the need for randomness at the time of signature generation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NjUwNTgyNiwtMzg5ODEwNTA0LC0xNT
+eyJoaXN0b3J5IjpbMTAyNTY0MDE4NiwtMzg5ODEwNTA0LC0xNT
 I3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0
 OF19
 -->
