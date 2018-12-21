@@ -28,7 +28,9 @@ most asymmetric algorithms like RSA and ECC provide secure digital signature sch
 
 in practice asymmetric algorithms are never used to encrypt large amounts of data, because they are much slower than symmetric key algorithm. Additionally, some of them (like ECC) do not provide directly encryption primitives, so more complex schemes should be used. However they are perfectly suited to encrypting small amounts of data - such as symmetric key. The following example might described an electronic mail message from Alice to Bob:
 
-![](https://fadasr.github.io/images/key-trans.png) 
+![](https://fadasr.github.io/images/key-trans-alice.png) 
+
+![](https://fadasr.github.io/images/key-trans-alice.png) 
 
 examples of such asymmetric encryption schemes are: [RSA-OAEP](https://tools.ietf.org/html/rfc8017), [RSA-KEM](https://tools.ietf.org/html/rfc5990), and ECIES-KEM.
 
@@ -75,11 +77,11 @@ Equal shared keys: True
 
 The authenticated key agreement schemes authenticate the identities of parties involved in the key exchange and thus prevent MITM attacks by use of digitally signed keys (e.g. PKI certificate), or password-authenticated key agreement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTkyNzMwMywtNzMyMTI3MTUxLC0xND
-I3NDQ3NzEwLC03NTEyNzgxNjEsLTUyMTI5NTEwOCwtMTQ5MDc2
-MTg4MiwtNDMxNzEwNzc5LDEzNDg4NDUxNDIsLTE1NDkyNjk3MD
-UsMTczMzAyNzk0NCwxNTczNTMyMTI0LDUxNTc2MzM3Miw5MTM1
-ODA5MjgsODM3MDA1NjkwLDE0MjI3MTgyMTksLTgzMTgwMTEwMS
-wtMTI2OTI5NDYxNSw3NzM1NTcxNzcsLTMwMzA1MTYyNSwtOTEw
-Mjc1MDJdfQ==
+eyJoaXN0b3J5IjpbNTkyMDkxMTI1LC03MzIxMjcxNTEsLTE0Mj
+c0NDc3MTAsLTc1MTI3ODE2MSwtNTIxMjk1MTA4LC0xNDkwNzYx
+ODgyLC00MzE3MTA3NzksMTM0ODg0NTE0MiwtMTU0OTI2OTcwNS
+wxNzMzMDI3OTQ0LDE1NzM1MzIxMjQsNTE1NzYzMzcyLDkxMzU4
+MDkyOCw4MzcwMDU2OTAsMTQyMjcxODIxOSwtODMxODAxMTAxLC
+0xMjY5Mjk0NjE1LDc3MzU1NzE3NywtMzAzMDUxNjI1LC05MTAy
+NzUwMl19
 -->
