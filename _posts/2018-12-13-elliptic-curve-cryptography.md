@@ -206,9 +206,14 @@ signature generation:
 
 For Bob to authenticate Alice's signature, he must have a copy of her public-key and public domain parameters. Bob is presented with Alice's message and digital signature and can verify the signature as follows:
 
+```
+signature verification:
+	1. verify that (r, s) in the range [1, n-1]
+```
+
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzE5NDMzNCwtNjE5Nzk3NTczLDIwND
-I5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAy
-NSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbLTE5NjQyNjE0ODQsLTYxOTc5NzU3MywyMD
+QyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkw
+MjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
