@@ -204,11 +204,11 @@ signature generation:
 	5. the signature of message m is the pair (r, s)
 ```
 
-For Bob to authenticate Alice's signature, he must have a copy of her public-key curve point `Qa`. Bob can verify `Qa` is a valid curve point as follows:
+For Bob to authenticate Alice's signature, he must have a copy of her public-key and public domain parameters. Bob can verify `Qa` is a valid curve point as follows:
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTA0OTkyOSwtNjE5Nzk3NTczLDIwND
-I5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAy
-NSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbMjE0NzI1OTUwLC02MTk3OTc1NzMsMjA0Mj
+k4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1
+LC0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
