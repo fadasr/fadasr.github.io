@@ -195,12 +195,13 @@ signature generation:
 	1. select a random integer k in the range [1, n-1]
 	2. compute point P = (x, y) = kG and r = x mod n. If r = 0 then goto step 1
 	3. compute h = H(m), where H is one of the SHA-2 or SHA-3 hash functions
-	4. 
+	4. compute s = k^-1(h + dr) mod n
+	5. the signature of 
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDIxNzg3MywyMDQyOTgyOTk1LC0zOD
-k4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQy
-NTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMjAwNzUxNzAwLDIwNDI5ODI5OTUsLTM4OT
+gxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1
+NCw5OTA4MjIyNDhdfQ==
 -->
