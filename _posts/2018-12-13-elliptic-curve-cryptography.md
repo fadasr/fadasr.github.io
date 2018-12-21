@@ -193,12 +193,13 @@ the ECDSA signing algorithm is based on the [ElGamal signature scheme](https://e
 ```
 signature generation:
 	1. select a random integer k in the range [1, n-1]
-	2. compute point P = (x, y
+	2. compute point P = (x, y) = kG and r = x mod n. If r = 0 then goto step 1
+	3. 
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5NTMzNzY5LC0zODk4MTA1MDQsLTE1Mj
-c0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwODIyMjQ4
-XX0=
+eyJoaXN0b3J5IjpbMjA0Mjk4Mjk5NSwtMzg5ODEwNTA0LC0xNT
+I3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0
+OF19
 -->
