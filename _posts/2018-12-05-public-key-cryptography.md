@@ -30,7 +30,8 @@ in practice asymmetric algorithms are never used to encrypt large amounts of dat
 
 ![](https://fadasr.github.io/images/key-trans-alice.png)
 
-Bob receives encrypted k (by his public key) and encry 
+Bob receives encrypted key (by his public key) and encrypted message (by decrypted symmetric key):
+
 ![](https://fadasr.github.io/images/key-trans-bob.png) 
 
 examples of such asymmetric encryption schemes are: [RSA-OAEP](https://tools.ietf.org/html/rfc8017), [RSA-KEM](https://tools.ietf.org/html/rfc5990), and ECIES-KEM.
@@ -78,7 +79,7 @@ Equal shared keys: True
 
 The authenticated key agreement schemes authenticate the identities of parties involved in the key exchange and thus prevent MITM attacks by use of digitally signed keys (e.g. PKI certificate), or password-authenticated key agreement.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTkwMDc5MCwtNzMyMTI3MTUxLC0xND
+eyJoaXN0b3J5IjpbMTI1MjI1MTYzNiwtNzMyMTI3MTUxLC0xND
 I3NDQ3NzEwLC03NTEyNzgxNjEsLTUyMTI5NTEwOCwtMTQ5MDc2
 MTg4MiwtNDMxNzEwNzc5LDEzNDg4NDUxNDIsLTE1NDkyNjk3MD
 UsMTczMzAyNzk0NCwxNTczNTMyMTI0LDUxNTc2MzM3Miw5MTM1
