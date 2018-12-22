@@ -298,9 +298,18 @@ for pk in recoveredPubKeys:
     print("Recovered public key from signature: (" +
           hex(pk[0]) + ", " + hex(pk[1]) + ")")
 ```
+
+the output:
+
+```
+Message: Message for ECDSA signing
+Signature: r=0xd034c98af3274ad93f3c8ce944bbc17b11b6aa170c5f097ed98687fa0d93347c, s=0xa2318ceea2002caba38efbba3bf8ef8d43236a6edc33c040734d8eb2ed77f608
+Recovered public key from signature: (0x1353fd26a6cb6110980cfd2bb5eca3b3cc3e08c930ad5991395dd826a250c79, 0xba6825142e230ee1fa2b406f3f9158a47ee49daca8ac47898c5fd92d805a101e)
+Recovered public key from signature: (0x10b5d9028ec828a0f9111e36f046afa5a0c677357351093426bcec10c663db7d, 0x271763c56fcd87b72d59ceaa5b9c3fd2122788fe344751a9bde373f903e5bb20)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzAxOTg4MSwtMjEzMTM4NjA3MSwtOD
-M5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4
-Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC
-0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
+eyJoaXN0b3J5IjpbLTIwOTE3Mjc4ODQsLTIxMzEzODYwNzEsLT
+gzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5
+ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNS
+wtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
 -->
