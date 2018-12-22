@@ -270,11 +270,17 @@ print("Signature valid?", valid)
 the output:
 
 ```
+Message: Message for ECDSA signing
+Private key: 0x79afbf7147841fca72b45a1978dd7669470ba67abbe5c220062924380c9c364b
+Signature: r=0xb83380f6e1d09411ebf49afd1a95c738686bfb2b0fe2391134f4ae3d6d77b78a, s=0x6c305afcac930a3ea1721c04d8a1a979016baae011319746323a756fbaee1811
 
+Message: Message for ECDSA signing
+Public key: (0x3804a19f2437f7bba4fcfbc194379e43e514aa98073db3528ccdbdb642e240, 0x6b22d833b9a502b0e10e58aac485aa357bccd1df6ec0fa4d398908c1ac1920bc)
+Signature valid? True
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzIwNDg0LC04MzkyMzUwMTUsLTE2ND
-EwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1
-MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQyNTQsOT
-kwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMT
+Y0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgx
+MDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NC
+w5OTA4MjIyNDhdfQ==
 -->
