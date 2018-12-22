@@ -224,8 +224,12 @@ signature verification:
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
+
+### example digital signature
+
+1) install first [pycoin](https://github.com/richardkiss/pycoin)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjM5NTk5NCwtMTY0MTA1NzQ2NSwtNj
+eyJoaXN0b3J5IjpbMTM2NTAyMTUzOSwtMTY0MTA1NzQ2NSwtNj
 E5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5
 ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ
 ==
