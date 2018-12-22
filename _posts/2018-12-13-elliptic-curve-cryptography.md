@@ -230,11 +230,25 @@ It is possible to turn ECDSA into deterministic schemes by using a deterministic
 install first [pycoin](https://github.com/richardkiss/pycoin)
 
 ```python
+from pycoin.ecdsa import generator_secp256k1, sign, verify
+import hashlib, secrets
 
+def sha3_256Hash(msg):
+    hashBytes = hashlib.sha3_256(msg.encode("utf8")).digest()
+    return int.from_bytes(hashBytes, byteorder="big")
+
+def signECDSAsecp256k1(msg, privKey):
+    msgHash = sha3_256Hash(msg)
+    signature = sign(generator_secp256k1, privKey, msgHash)
+    return signature
+
+def verifyECDSAsecp256k1(msg, signature, pubKey):
+    msgHash = sha3_256Hash(msg)
+    valid = verify(generator_secp256k1, pubKey, msgHash, signature)
+    return valid
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTMwNjMxMywtMTY0MTA1NzQ2NSwtNj
-E5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5
-ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ
-==
+eyJoaXN0b3J5IjpbNTM0NDM2NjEwLC0xNjQxMDU3NDY1LC02MT
+k3OTc1NzMsMjA0Mjk4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4
+MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
