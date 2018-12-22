@@ -278,9 +278,29 @@ Message: Message for ECDSA signing
 Public key: (0x3804a19f2437f7bba4fcfbc194379e43e514aa98073db3528ccdbdb642e240, 0x6b22d833b9a502b0e10e58aac485aa357bccd1df6ec0fa4d398908c1ac1920bc)
 Signature valid? True
 ```
+
+in ECDSA it is possible to recover the public key from signature:
+
+```python
+from pycoin.ecdsa import possible_public_pairs_for_signature
+
+def recoverPubKeyFromSignature(msg, signature):
+    msgHash = sha3_256Hash(msg)
+    recoveredPubKeys = possible_public_pairs_for_signature(
+        generator_secp256k1, msgHash, signature)
+    return recoveredPubKeys
+
+msg = "Message for ECDSA signing"
+recoveredPubKeys = recoverPubKeyFromSignature(msg, signature)
+print("\nMessage:", msg)
+print("Signature: r=" + hex(signature[0]) + ", s=" + hex(signature[1]))
+for pk in recoveredPubKeys:
+    print("Recovered public key from signature: (" +
+          hex(pk[0]) + ", " + hex(pk[1]) + ")")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMT
-Y0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgx
-MDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NC
-w5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbLTkzNzAxOTg4MSwtMjEzMTM4NjA3MSwtOD
+M5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4
+Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC
+0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
