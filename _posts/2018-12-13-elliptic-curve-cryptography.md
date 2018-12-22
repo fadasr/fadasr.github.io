@@ -350,10 +350,10 @@ Signature valid? True
 
 ## Edwards-Curve Digital Signature Algorithm (EdDSA)
 
-[EdDSA](https://tools.ietf.org/html/rfc8032) is based on performance-optimized elliptic curves, such as the 255-bit curve [Curve25519](https://tools.ietf.org/html/rfc7748).
+[EdDSA](https://tools.ietf.org/html/rfc8032) is based on performance-optimized elliptic curves, such as the 255-bit curve [Curve25519](https://tools.ietf.org/html/rfc7748). The algorithm is based on the [Schnorr signature algorithm](https://en.wikipedia.org/wiki/Schnorr_signature).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0OTkxNDYzLC0yMTMxMzg2MDcxLC04Mz
-kyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgy
-OTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLT
-ExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMTkwNDc3OTY2OCwtMjEzMTM4NjA3MSwtOD
+M5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4
+Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC
+0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
