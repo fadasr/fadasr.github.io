@@ -227,9 +227,13 @@ It is possible to turn ECDSA into deterministic schemes by using a deterministic
 
 ### example digital signature
 
-1) install first [pycoin](https://github.com/richardkiss/pycoin)
+install first [pycoin](https://github.com/richardkiss/pycoin)
+
+```python
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTAyMTUzOSwtMTY0MTA1NzQ2NSwtNj
+eyJoaXN0b3J5IjpbMTIyOTMwNjMxMywtMTY0MTA1NzQ2NSwtNj
 E5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5
 ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ
 ==
