@@ -308,10 +308,36 @@ Recovered public key from signature: (0x1353fd26a6cb6110980cfd2bb5eca3b3cc3e08c9
 Recovered public key from signature: (0x10b5d9028ec828a0f9111e36f046afa5a0c677357351093426bcec10c663db7d, 0x271763c56fcd87b72d59ceaa5b9c3fd2122788fe344751a9bde373f903e5bb20)
 ```
 
-now let's use [eth_keys](https://github.com/ethereum/eth-keys/) library that generates extended ECDSA signatures `{r, s, `v`} and supports internally the public key recovery.
+now let's use [eth_keys](https://github.com/ethereum/eth-keys/) library that generates extended ECDSA signatures `{r, s, v}` and supports internally the public key recovery.
+
+```python
+import eth_keys, os
+
+# Generate the private + public key pair (using the secp256k1 curve)
+signerPrivKey = eth_keys.keys.PrivateKey(os.urandom(32))
+signerPubKey = signerPrivKey.public_key
+print('Private key (64 hex digits):', signerPrivKey)
+print('Public key (uncompressed, 128 hex digits):', signerPubKey)
+
+# ECDSA sign message (using the curve secp256k1 + Keccak-256)
+msg = b'Message for signing'
+signature = signerPrivKey.sign_msg(msg)
+print('Message:', msg)
+print('Signature: [r = {0}, s = {1}, v = {2}]'.format(
+    hex(signature.r), hex(signature.s), hex(signature.v)))
+
+# ECDSA public key recovery from signature + verify signature
+# (using the curve secp256k1 + Keccak-256 hash)
+msg = b'Message for signing'
+recoveredPubKey = signature.recover_public_key_from_msg(msg)
+print('Recovered public key (128 hex digits):', recoveredPubKey)
+print('Public key correct?', recoveredPubKey == signerPubKey)
+valid = signerPubKey.verify_msg(msg, signature)
+print("Signature valid?", valid)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjQ5OTk5MiwtMjEzMTM4NjA3MSwtOD
-M5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4
-Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC
-0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
+eyJoaXN0b3J5IjpbMjQzNjY4OTA3LC0yMTMxMzg2MDcxLC04Mz
+kyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgy
+OTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLT
+ExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
