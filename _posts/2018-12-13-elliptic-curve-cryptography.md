@@ -307,8 +307,10 @@ Signature: r=0xd034c98af3274ad93f3c8ce944bbc17b11b6aa170c5f097ed98687fa0d93347c,
 Recovered public key from signature: (0x1353fd26a6cb6110980cfd2bb5eca3b3cc3e08c930ad5991395dd826a250c79, 0xba6825142e230ee1fa2b406f3f9158a47ee49daca8ac47898c5fd92d805a101e)
 Recovered public key from signature: (0x10b5d9028ec828a0f9111e36f046afa5a0c677357351093426bcec10c663db7d, 0x271763c56fcd87b72d59ceaa5b9c3fd2122788fe344751a9bde373f903e5bb20)
 ```
+
+now let's a library that generates **extended ECDSA signatures** {_**r**_, _**s**_, _**v**_} and supports internally the public key recovery
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTE3Mjc4ODQsLTIxMzEzODYwNzEsLT
+eyJoaXN0b3J5IjpbLTE5MTcwNDI5OTYsLTIxMzEzODYwNzEsLT
 gzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5
 ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNS
 wtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
