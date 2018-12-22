@@ -210,16 +210,17 @@ For Bob to authenticate Alice's signature, he must have a copy of her public-key
 input:
 	n: order of the curve
 	m: signed message
+	G: base point for the cu
 	(r, s): the signature
 signature verification:
 	1. verify that r and s in the range [1, n-1]
 	2. compute h = H(m)
-	3. 
+	3. compute w = s^-1 mod n
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5ODk0MDgxLC02MTk3OTc1NzMsMjA0Mj
+eyJoaXN0b3J5IjpbNTk2ODU3NTkzLC02MTk3OTc1NzMsMjA0Mj
 k4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1
 LC0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
