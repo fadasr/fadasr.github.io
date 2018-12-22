@@ -217,13 +217,14 @@ signature verification:
 	1. verify that r and s in the range [1, n-1]
 	2. compute h = H(m)
 	3. compute w = s^-1 mod n
-	4. compute the point X = (hw)G + (rw)Q
-	5. 
+	4. compute the point X = (hw)G + (rw)Q. If X = 0 then reject the signature
+	5. compute r' = X.x
 ```
 
 It is possible to turn ECDSA into deterministic schemes by using a deterministic process for generating the "random" value k. [Deterministic ECDSA](https://tools.ietf.org/html/rfc6979) only deal with the need for randomness at the time of signature generation. The key pair generation still requires a source of randomness.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMD
-QyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkw
-MjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbMTMyMjg1NjgwOSwtMTY0MTA1NzQ2NSwtNj
+E5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5
+ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ
+==
 -->
