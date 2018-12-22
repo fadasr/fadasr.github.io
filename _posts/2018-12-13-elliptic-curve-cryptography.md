@@ -335,9 +335,21 @@ print('Public key correct?', recoveredPubKey == signerPubKey)
 valid = signerPubKey.verify_msg(msg, signature)
 print("Signature valid?", valid)
 ```
+
+the output:
+
+```
+Private key (64 hex digits): 0x68abc765746a33272e47b0a96a0b4184048f70354221e04219fbc223bfe79794
+Public key (uncompressed, 128 hex digits): 0x30a6dc572da312587144e7ccda1e9abd901323adebe7091bb4985e1202c2a10bc25f681b3d2e1a671438f0b125287b473c09ca345c5583cd627232b536b9ca0a
+Message: b'Message for signing'
+Signature: [r = 0x4cddf146c578d20a31fa6128e5d9afe6ac666e5ef5899f2767cacb56a42703cc, s = 0x3847036857aa3f077a2e142eee707e5af2653baa99b9d10764a0be3d61595dbb, v = 0x0]
+Recovered public key (128 hex digits): 0x30a6dc572da312587144e7ccda1e9abd901323adebe7091bb4985e1202c2a10bc25f681b3d2e1a671438f0b125287b473c09ca345c5583cd627232b536b9ca0a
+Public key correct? True
+Signature valid? True
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzNjY4OTA3LC0yMTMxMzg2MDcxLC04Mz
-kyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgy
-OTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLT
-ExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTM4MDEzNzA5NiwtMjEzMTM4NjA3MSwtOD
+M5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4
+Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC
+0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
