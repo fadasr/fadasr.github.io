@@ -350,10 +350,10 @@ Signature valid? True
 
 ## Edwards-Curve Digital Signature Algorithm (EdDSA)
 
-[EdDSA](https://tools.ietf.org/html/rfc8032) is based on performance-optimized elliptic curves, such as the 255-bit curve [Curve25519](https://tools.ietf.org/html/rfc7748). It is a variant of Schnorr's signature system with (possibly twisted) Edwards curves. It uses small public keys (32 or 57 bytes) and signatures (64 or 114 bytes) for Ed25519 and Ed448, respectively
+[EdDSA](https://tools.ietf.org/html/rfc8032) is based on performance-optimized elliptic curves, such as the 255-bit curve [Curve25519](https://tools.ietf.org/html/rfc7748). It is a variant of Schnorr's signature system with (possibly twisted) Edwards curves. It uses small public keys (32 or 57 bytes) and signatures (64 or 114 bytes) for Ed25519 and Ed448, respectively.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjYwNjM4MDYsLTIxMzEzODYwNzEsLT
-gzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5
-ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNS
-wtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbODc1MjI3ODgsLTIxMzEzODYwNzEsLTgzOT
+IzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5
+OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMT
+E4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
 -->
