@@ -425,14 +425,15 @@ input:
 	Q: public key
 	(R, S): signature
 signature verification:
-	1. first split the signature into two 32-octet halves. Decode the first half as a point R, and the second half as an integer S, in the range 0 <= v < n.
+	1. first split the signature into two 32-octet halves. Decode the first half as a point R, and the second half as an integer S, in the range [0,...,n-1].
+	2. 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTIzMTcwNDUsLTE3NTg4NzI5MzAsLT
-U0NDMwNDg2NSwzNDE1Nzg1OTMsLTExMjY3MzQ1NzUsLTE5MTQ1
-MjgyOTEsMTIzODkxMzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Ni
-w4NDU0ODgwMzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIy
-Nzg4LC0yMTMxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0Nj
-UsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1MDQsLTE1
-Mjc0OTgyMzBdfQ==
+eyJoaXN0b3J5IjpbMTQ4NDczMDI2NiwtMTMxMjMxNzA0NSwtMT
+c1ODg3MjkzMCwtNTQ0MzA0ODY1LDM0MTU3ODU5MywtMTEyNjcz
+NDU3NSwtMTkxNDUyODI5MSwxMjM4OTEzMzA4LC02NTcwODgwOC
+wtOTE0MjY3MjY2LDg0NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMy
+Mjc4MTcsODc1MjI3ODgsLTIxMzEzODYwNzEsLTgzOTIzNTAxNS
+wtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLTM4
+OTgxMDUwNF19
 -->
