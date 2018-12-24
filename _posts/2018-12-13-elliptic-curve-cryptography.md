@@ -163,6 +163,7 @@ twisted Edwards curve:
 
 ```
 edwards25519: -x^2 + y^2 = 1 + dx^2y^2 when p = 1 mod 4
+	p = 2^255 - 19
 ```
 
 ## elliptic curve key pairs
@@ -376,9 +377,10 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNDI2NzI2Niw4NDU0ODgwMzAsLTE0Nj
-kzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2MDcx
-LC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMD
-QyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkw
-MjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTEzMzYwNDcyMCwtOTE0MjY3MjY2LDg0NT
+Q4ODAzMCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3ODgs
+LTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNj
+E5Nzk3NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5
+ODIzMCwxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ
+==
 -->
