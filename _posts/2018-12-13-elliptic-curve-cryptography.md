@@ -181,6 +181,13 @@ print("privKey:", binascii.hexlify(bytes(privKey)))
 print("pubKey: ", binascii.hexlify(bytes(pubKey)))
 ``` 
 
+the output:
+
+```
+privKey: b'8175f7cd524a59b6efbd447985ce5d97c546b319521ff236203970e50052c641'
+pubKey:  b'cf97a96568fee4ddb232f617fd5b9df2d2e5b90e68ba7f6d5129ea92d7d8f95e'
+```
+
 ## elliptic curve key pairs
 
 elliptic curve key pairs should be generated as follows:
@@ -392,10 +399,10 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzM4NjYyNzcsLTE5MTQ1MjgyOTEsMT
-IzODkxMzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Niw4NDU0ODgw
-MzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMT
-MxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5
-NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMz
-AsMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbNDA0MzM0MTgyLC0xOTE0NTI4MjkxLDEyMz
+g5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1NDg4MDMw
+LC0xNDY5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4OCwtMjEzMT
+M4NjA3MSwtODM5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1
+NzMsMjA0Mjk4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLD
+E1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgyMjI0OF19
 -->
