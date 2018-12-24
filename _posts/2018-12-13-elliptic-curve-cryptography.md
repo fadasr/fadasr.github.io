@@ -170,8 +170,15 @@ edwards25519: -x^2 + y^2 = 1 + dx^2y^2
 
 example curve25519 using [pynacl](https://github.com/pyca/pynacl):
 
-```
+```python
+from nacl.public import PrivateKey
+import binascii
 
+privKey = PrivateKey.generate()
+pubKey = privKey.public_key
+
+print("privKey:", binascii.hexlify(bytes(privKey)))
+print("pubKey: ", binascii.hexlify(bytes(pubKey)))
 ``` 
 
 ## elliptic curve key pairs
@@ -385,7 +392,7 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjU5MTc4NDksLTE5MTQ1MjgyOTEsMT
+eyJoaXN0b3J5IjpbLTE5MzM4NjYyNzcsLTE5MTQ1MjgyOTEsMT
 IzODkxMzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Niw4NDU0ODgw
 MzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMT
 MxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5
