@@ -138,7 +138,11 @@ secp256k1: y^2 = x^3 + 0x + 7
 	n = 115792089237316195423570985008687907852837564279074904382605163141518161494337
 	  = 0xfffffffffffffffffffffffffffffffebaaedce6af48a03bbfd25e8cd0364141
 	  = 2^256 - 432420386565659656852420866394968145599
+```
 
+### curve25519
+
+```
 Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
 	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
 	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
@@ -371,7 +375,7 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMwODE5MDUsOTgzMjI3ODE3LDg3NT
+eyJoaXN0b3J5IjpbLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NT
 IyNzg4LC0yMTMxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0
 NjUsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1MDQsLT
 E1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwODIy
