@@ -408,9 +408,10 @@ input:
 signature generation:
 	1. h = SHA512(d). Let prefix denote the second half of the hash digest, h[32],...,h[63].
 	2. compute r = SHA512(prefix || m)
+	3. compute R = rG
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDQ1MTk4NywtMTkxNDUyODI5MSwxMj
+eyJoaXN0b3J5IjpbLTY5NTEwMzMxMywtMTkxNDUyODI5MSwxMj
 M4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0NTQ4ODAz
 MCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3ODgsLTIxMz
 EzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3
