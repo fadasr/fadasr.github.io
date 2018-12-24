@@ -405,19 +405,21 @@ signature generation:
 input:
 	d: private key
 	m: message
+output:
+	(R, S): signature
 signature generation:
 	1. h = SHA512(d). Let prefix denote the second half of the hash digest, h[32],...,h[63].
 	2. compute r = SHA512(prefix || m)
 	3. compute R = rG
 	4. compute k = SHA512(R || Q || m)
-	5. compute s = (r + k*v) mod n
+	5. compute S = (r + k*v) mod n
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDMwNDg2NSwzNDE1Nzg1OTMsLTExMj
-Y3MzQ1NzUsLTE5MTQ1MjgyOTEsMTIzODkxMzMwOCwtNjU3MDg4
-MDgsLTkxNDI2NzI2Niw4NDU0ODgwMzAsLTE0NjkzNzM2NjUsOT
-gzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2MDcxLC04MzkyMzUw
-MTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC
-0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4
-MzQyNTRdfQ==
+eyJoaXN0b3J5IjpbNDgzNTIxNzA4LC01NDQzMDQ4NjUsMzQxNT
+c4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4MjkxLDEyMzg5MTMz
+MDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1NDg4MDMwLC0xND
+Y5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4OCwtMjEzMTM4NjA3
+MSwtODM5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMj
+A0Mjk4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5
+MDI1XX0=
 -->
