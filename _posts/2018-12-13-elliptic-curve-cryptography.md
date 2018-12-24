@@ -395,8 +395,8 @@ public key generation:
 	1. h = SHA512(d). Only the lower 32 bytes are used for generating the public key.
 	2. prune the buffer h[0],...,h[31]: The lowest three bits of the first octet are cleared, the highest bit
 	   of the last octet is cleared, and the second highest bit of the last octet is set.
-	3. interpret the buffer as the little-endian integer, s
-	4. the public key Q is the encoding of the point sG.
+	3. interpret the buffer as the little-endian integer, v
+	4. the public key is the encoding of the point Q = vG.
 ```
 
 signature generation:
@@ -410,14 +410,14 @@ signature generation:
 	2. compute r = SHA512(prefix || m)
 	3. compute R = rG
 	4. compute k = SHA512(R || Q || m)
-	5. compute s = 
+	5. compute s = r
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOT
-E0NTI4MjkxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcy
-NjYsODQ1NDg4MDMwLC0xNDY5MzczNjY1LDk4MzIyNzgxNyw4Nz
-UyMjc4OCwtMjEzMTM4NjA3MSwtODM5MjM1MDE1LC0xNjQxMDU3
-NDY1LC02MTk3OTc1NzMsMjA0Mjk4Mjk5NSwtMzg5ODEwNTA0LC
-0xNTI3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0MjU0LDk5MDgy
-MjI0OF19
+eyJoaXN0b3J5IjpbLTI4NjQ1NTY0NCwzNDE1Nzg1OTMsLTExMj
+Y3MzQ1NzUsLTE5MTQ1MjgyOTEsMTIzODkxMzMwOCwtNjU3MDg4
+MDgsLTkxNDI2NzI2Niw4NDU0ODgwMzAsLTE0NjkzNzM2NjUsOT
+gzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2MDcxLC04MzkyMzUw
+MTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC
+0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4
+MzQyNTRdfQ==
 -->
