@@ -425,12 +425,10 @@ input:
 	Q: public key
 	(R, S): signature
 signature verification:
-	1. Decode the first half as a
-       point R, and the second half as an integer S, in the range
-       0 <= s < L.
+	1. Decode the first half as a point R, and the second half as an integer S, in the range 0 <= v < n.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxMTk4NDExLC0xNzU4ODcyOTMwLC01ND
+eyJoaXN0b3J5IjpbNTI1NTcyNjc4LC0xNzU4ODcyOTMwLC01ND
 QzMDQ4NjUsMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4
 MjkxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsOD
 Q1NDg4MDMwLC0xNDY5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4
