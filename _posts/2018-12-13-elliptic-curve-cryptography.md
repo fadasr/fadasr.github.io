@@ -142,10 +142,10 @@ secp256k1: y^2 = x^3 + 0x + 7
 
 ### curve25519
 
-[curve25519](https://tools.ietf.org/html/rfc7748) is an elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve_cryptography "Ellioffering 128 bits of security and designed for use with the [elliptic curve Diffie–Hellman](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman "Elliptic curve Diffie–Hellman") (ECDH) key agreement scheme.
+[curve25519](https://tools.ietf.org/html/rfc7748) is an elliptic curve offering 128 bits of security and designed for use with the ECDH key agreement scheme. The curve used is:
 
 ```
-Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
+Curve25519: y^2 = x^3 + 486662x^2 + x
 	p = 57896044618658097711785492504343953926634992332820282019728792003956564819949
 	  = 0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffed
 	  = 2^255 - 19
@@ -377,9 +377,9 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4ODczNDY1MywtMTQ2OTM3MzY2NSw5OD
-MyMjc4MTcsODc1MjI3ODgsLTIxMzEzODYwNzEsLTgzOTIzNTAx
-NSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLT
-M4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMTE4Njgz
-NDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbODQ1NDg4MDMwLC0xNDY5MzczNjY1LDk4Mz
+IyNzgxNyw4NzUyMjc4OCwtMjEzMTM4NjA3MSwtODM5MjM1MDE1
+LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMjA0Mjk4Mjk5NSwtMz
+g5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5MDI1LC0xMTg2ODM0
+MjU0LDk5MDgyMjI0OF19
 -->
