@@ -438,9 +438,13 @@ SG = rG + kvG = R + kQ
 
 ### example ed25519 signatures
 
+install first [ed25519](https://github.com/warner/python-ed25519) library.
 
+```
+pip install ed25519
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTk4NjE1MSwtMTIwMzEwMzUzNSwxOD
+eyJoaXN0b3J5IjpbLTQ0MzYxOTQ4NCwtMTIwMzEwMzUzNSwxOD
 QwNDQ3NzczLC0xMzEyMzE3MDQ1LC0xNzU4ODcyOTMwLC01NDQz
 MDQ4NjUsMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4Mj
 kxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1
