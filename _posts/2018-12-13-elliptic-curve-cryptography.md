@@ -399,18 +399,20 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 
-sign:
+signature generation:
 
 ```
 input:
 	d: private key
 	m: message
+signature generation:
+	1. h = SHA512(d)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjY4ODA0MSwtMTkxNDUyODI5MSwxMj
-M4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0NTQ4ODAz
-MCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3ODgsLTIxMz
-EzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3
-NTczLDIwNDI5ODI5OTUsLTM4OTgxMDUwNCwtMTUyNzQ5ODIzMC
-wxNTIxOTAyNSwtMTE4NjgzNDI1NCw5OTA4MjIyNDhdfQ==
+eyJoaXN0b3J5IjpbLTE4NjI0ODM0MjEsLTE5MTQ1MjgyOTEsMT
+IzODkxMzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Niw4NDU0ODgw
+MzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMT
+MxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5
+NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMz
+AsMTUyMTkwMjUsLTExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
