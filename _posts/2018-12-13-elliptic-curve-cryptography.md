@@ -430,9 +430,13 @@ signature verification:
 	3. check S*G = R + kQ
 ```
 
-to see that signatures pass verification, simply multiply `G` by the equation  
+to see that signatures pass verification, simply multiply `G` by the equation  `S = (r + k*v) mod n`, and use the fact that `nG = 0`, to see that:
+
+```
+S
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MTIwMTc4MCwtMTIwMzEwMzUzNSwxOD
+eyJoaXN0b3J5IjpbLTU2MjUxODYyNSwtMTIwMzEwMzUzNSwxOD
 QwNDQ3NzczLC0xMzEyMzE3MDQ1LC0xNzU4ODcyOTMwLC01NDQz
 MDQ4NjUsMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4Mj
 kxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1
