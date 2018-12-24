@@ -414,7 +414,7 @@ signature generation:
 	2. compute r = SHA512(prefix || m)
 	3. compute R = rG
 	4. compute k = SHA512(R || Q || m)
-	5. compute S = (r + k*v) mod n
+	5. compute S = (r + kv) mod n
 ```
 
 signature verification:
@@ -427,20 +427,20 @@ input:
 signature verification:
 	1. first split the signature into two 32-octet halves. Decode the first half as a point R, and the second half as an integer S, in the range [0,...,n-1].
 	2. compute k = SHA512(R || Q || m)
-	3. check S*G = R + kQ
+	3. check if SG = R + kQ
 ```
 
-to see that signatures pass verification, simply multiply `G` by the equation  `S = (r + k*v) mod n`, and use the fact that `nG = 0`, to see that:
+to see that signatures pass verification, simply multiply `G` by the equation  `S = (r + kv) mod n`, and use the fact that `nG = 0`, to see that:
 
 ```
-S*G = r*G + k*v*G
+S*G = r*G + k*v*G = R + kQ
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjU5MjY3NzcsLTEyMDMxMDM1MzUsMT
-g0MDQ0Nzc3MywtMTMxMjMxNzA0NSwtMTc1ODg3MjkzMCwtNTQ0
-MzA0ODY1LDM0MTU3ODU5MywtMTEyNjczNDU3NSwtMTkxNDUyOD
-I5MSwxMjM4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0
-NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3OD
-gsLTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwt
-NjE5Nzk3NTczXX0=
+eyJoaXN0b3J5IjpbMTkwMTcxMTg5MCwtMTIwMzEwMzUzNSwxOD
+QwNDQ3NzczLC0xMzEyMzE3MDQ1LC0xNzU4ODcyOTMwLC01NDQz
+MDQ4NjUsMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4Mj
+kxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1
+NDg4MDMwLC0xNDY5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4OC
+wtMjEzMTM4NjA3MSwtODM5MjM1MDE1LC0xNjQxMDU3NDY1LC02
+MTk3OTc1NzNdfQ==
 -->
