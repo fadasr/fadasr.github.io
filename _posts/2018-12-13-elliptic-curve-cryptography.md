@@ -427,14 +427,14 @@ input:
 signature verification:
 	1. first split the signature into two 32-octet halves. Decode the first half as a point R, and the second half as an integer S, in the range [0,...,n-1].
 	2. compute k = SHA512(R || Q || m)
-	3. 
+	3. check S*G = R + kQ
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDQ0Nzc3MywtMTMxMjMxNzA0NSwtMT
-c1ODg3MjkzMCwtNTQ0MzA0ODY1LDM0MTU3ODU5MywtMTEyNjcz
-NDU3NSwtMTkxNDUyODI5MSwxMjM4OTEzMzA4LC02NTcwODgwOC
-wtOTE0MjY3MjY2LDg0NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMy
-Mjc4MTcsODc1MjI3ODgsLTIxMzEzODYwNzEsLTgzOTIzNTAxNS
-wtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLTM4
-OTgxMDUwNF19
+eyJoaXN0b3J5IjpbLTEyMDMxMDM1MzUsMTg0MDQ0Nzc3MywtMT
+MxMjMxNzA0NSwtMTc1ODg3MjkzMCwtNTQ0MzA0ODY1LDM0MTU3
+ODU5MywtMTEyNjczNDU3NSwtMTkxNDUyODI5MSwxMjM4OTEzMz
+A4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0NTQ4ODAzMCwtMTQ2
+OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3ODgsLTIxMzEzODYwNz
+EsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIw
+NDI5ODI5OTVdfQ==
 -->
