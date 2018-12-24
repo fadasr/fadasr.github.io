@@ -159,11 +159,13 @@ Curve25519: y^2 = x^3 + 486662x^2 + x
 	h = 8 
 ```
 
-twisted Edwards curve:
+curve25519 is birationally equivalent to a twisted Edwards curve:
 
 ```
 edwards25519: -x^2 + y^2 = 1 + dx^2y^2
 	d = 37095705934669439343138083508754565189542113879843219016388785533085940283555
+	G = (,
+	  
 ```
 
 ## elliptic curve key pairs
@@ -377,10 +379,10 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODkxMzMwOCwtNjU3MDg4MDgsLTkxND
-I2NzI2Niw4NDU0ODgwMzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3
-LDg3NTIyNzg4LC0yMTMxMzg2MDcxLC04MzkyMzUwMTUsLTE2ND
-EwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgyOTk1LC0zODk4MTA1
-MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLTExODY4MzQyNTQsOT
-kwODIyMjQ4XX0=
+eyJoaXN0b3J5IjpbLTE2NzE1MzExMzcsMTIzODkxMzMwOCwtNj
+U3MDg4MDgsLTkxNDI2NzI2Niw4NDU0ODgwMzAsLTE0NjkzNzM2
+NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2MDcxLC04Mz
+kyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3MywyMDQyOTgy
+OTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUyMTkwMjUsLT
+ExODY4MzQyNTQsOTkwODIyMjQ4XX0=
 -->
