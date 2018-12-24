@@ -142,7 +142,7 @@ secp256k1: y^2 = x^3 + 0x + 7
 
 ### curve25519
 
-[curve25519](https://tools.ietf.org/html/rfc7748) 
+[curve25519](https://tools.ietf.org/html/rfc7748) is an elliptic curve](https://en.wikipedia.org/wiki/Elliptic_curve_cryptography "Ellioffering 128 bits of security and designed for use with the [elliptic curve Diffie–Hellman](https://en.wikipedia.org/wiki/Elliptic_curve_Diffie%E2%80%93Hellman "Elliptic curve Diffie–Hellman") (ECDH) key agreement scheme.
 
 ```
 Curve25519 [rfc7748]: y^2 = x^3 + 486662x^2 + x
@@ -377,7 +377,7 @@ public key generation:
 	4. the public key is the encoding of the point sG.
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NjE3MTM2MywtMTQ2OTM3MzY2NSw5OD
+eyJoaXN0b3J5IjpbLTg4ODczNDY1MywtMTQ2OTM3MzY2NSw5OD
 MyMjc4MTcsODc1MjI3ODgsLTIxMzEzODYwNzEsLTgzOTIzNTAx
 NSwtMTY0MTA1NzQ2NSwtNjE5Nzk3NTczLDIwNDI5ODI5OTUsLT
 M4OTgxMDUwNCwtMTUyNzQ5ODIzMCwxNTIxOTAyNSwtMTE4Njgz
