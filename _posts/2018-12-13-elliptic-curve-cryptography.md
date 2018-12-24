@@ -423,11 +423,12 @@ signature verification:
 input:
 	m: message
 	Q: public key
+	(R, S): signature
 signature verification:
 	1. 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTEzNDYwOCwtMTc1ODg3MjkzMCwtNT
+eyJoaXN0b3J5IjpbLTQ5Nzk5ODMwMCwtMTc1ODg3MjkzMCwtNT
 Q0MzA0ODY1LDM0MTU3ODU5MywtMTEyNjczNDU3NSwtMTkxNDUy
 ODI5MSwxMjM4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LD
 g0NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3
