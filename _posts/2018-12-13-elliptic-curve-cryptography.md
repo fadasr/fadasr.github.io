@@ -410,10 +410,10 @@ signature generation:
 	2. compute r = SHA512(prefix || m)
 	3. compute R = rG
 	4. compute k = SHA512(R || Q || m)
-	5. compute s = r
+	5. compute s = (r + k*v) mod n
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjQ1NTY0NCwzNDE1Nzg1OTMsLTExMj
+eyJoaXN0b3J5IjpbLTU0NDMwNDg2NSwzNDE1Nzg1OTMsLTExMj
 Y3MzQ1NzUsLTE5MTQ1MjgyOTEsMTIzODkxMzMwOCwtNjU3MDg4
 MDgsLTkxNDI2NzI2Niw4NDU0ODgwMzAsLTE0NjkzNzM2NjUsOT
 gzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2MDcxLC04MzkyMzUw
