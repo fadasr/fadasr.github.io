@@ -444,13 +444,38 @@ install first [ed25519](https://github.com/warner/python-ed25519) library.
 pip install ed25519
 ```
 
+```python
+import ed25519
 
+privKey, pubKey = ed25519.create_keypair()
+print("Private key (32 bytes):", privKey.to_ascii(encoding='hex'))
+print("Public key (32 bytes): ", pubKey.to_ascii(encoding='hex'))
+
+msg = b'Message for Ed25519 signing'
+signature = privKey.sign(msg, encoding='hex')
+print("Signature (64 bytes):", signature)
+
+try:
+    pubKey.verify(signature, msg, encoding='hex')
+    print("The signature is valid.")
+except:
+    print("Invalid signature!")
+```
+
+the output:
+
+```
+Private key (32 bytes): b'1498b5467a63dffa2dc9d9e069caf075d16fc33fdd4c3b01bfadae6433767d93'
+Public key (32 bytes):  b'b7a3c12dc0c8c748ab07525b701122b88bd78f600c76342d27f25e5f92444cde'
+Signature (64 bytes): b'6dd355667fae4eb43c6e0ab92e870edb2de0a88cae12dbd8591507f584fe4912babff497f1b8edf9567d2483d54ddc6459bea7855281b7a246a609e3001a4e08'
+The signature is valid.
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk3MTg5NzYsLTEyMDMxMDM1MzUsMT
-g0MDQ0Nzc3MywtMTMxMjMxNzA0NSwtMTc1ODg3MjkzMCwtNTQ0
-MzA0ODY1LDM0MTU3ODU5MywtMTEyNjczNDU3NSwtMTkxNDUyOD
-I5MSwxMjM4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0
-NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3OD
-gsLTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwt
-NjE5Nzk3NTczXX0=
+eyJoaXN0b3J5IjpbMjMwMjU4NjEzLC0xMjAzMTAzNTM1LDE4ND
+A0NDc3NzMsLTEzMTIzMTcwNDUsLTE3NTg4NzI5MzAsLTU0NDMw
+NDg2NSwzNDE1Nzg1OTMsLTExMjY3MzQ1NzUsLTE5MTQ1MjgyOT
+EsMTIzODkxMzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Niw4NDU0
+ODgwMzAsLTE0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC
+0yMTMxMzg2MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYx
+OTc5NzU3M119
 -->
