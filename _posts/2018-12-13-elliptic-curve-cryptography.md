@@ -426,10 +426,11 @@ input:
 	(R, S): signature
 signature verification:
 	1. first split the signature into two 32-octet halves. Decode the first half as a point R, and the second half as an integer S, in the range [0,...,n-1].
-	2. 
+	2. compute k = SHA512(R || Q || m)
+	3. 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDczMDI2NiwtMTMxMjMxNzA0NSwtMT
+eyJoaXN0b3J5IjpbMTg0MDQ0Nzc3MywtMTMxMjMxNzA0NSwtMT
 c1ODg3MjkzMCwtNTQ0MzA0ODY1LDM0MTU3ODU5MywtMTEyNjcz
 NDU3NSwtMTkxNDUyODI5MSwxMjM4OTEzMzA4LC02NTcwODgwOC
 wtOTE0MjY3MjY2LDg0NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMy
