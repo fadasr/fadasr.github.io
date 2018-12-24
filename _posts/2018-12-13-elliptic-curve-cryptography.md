@@ -433,14 +433,14 @@ signature verification:
 to see that signatures pass verification, simply multiply `G` by the equation  `S = (r + k*v) mod n`, and use the fact that `nG = 0`, to see that:
 
 ```
-S
+S*G = r*G + k*v*G
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjUxODYyNSwtMTIwMzEwMzUzNSwxOD
-QwNDQ3NzczLC0xMzEyMzE3MDQ1LC0xNzU4ODcyOTMwLC01NDQz
-MDQ4NjUsMzQxNTc4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4Mj
-kxLDEyMzg5MTMzMDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1
-NDg4MDMwLC0xNDY5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4OC
-wtMjEzMTM4NjA3MSwtODM5MjM1MDE1LC0xNjQxMDU3NDY1LC02
-MTk3OTc1NzNdfQ==
+eyJoaXN0b3J5IjpbLTE2NjU5MjY3NzcsLTEyMDMxMDM1MzUsMT
+g0MDQ0Nzc3MywtMTMxMjMxNzA0NSwtMTc1ODg3MjkzMCwtNTQ0
+MzA0ODY1LDM0MTU3ODU5MywtMTEyNjczNDU3NSwtMTkxNDUyOD
+I5MSwxMjM4OTEzMzA4LC02NTcwODgwOCwtOTE0MjY3MjY2LDg0
+NTQ4ODAzMCwtMTQ2OTM3MzY2NSw5ODMyMjc4MTcsODc1MjI3OD
+gsLTIxMzEzODYwNzEsLTgzOTIzNTAxNSwtMTY0MTA1NzQ2NSwt
+NjE5Nzk3NTczXX0=
 -->
