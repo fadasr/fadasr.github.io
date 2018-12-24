@@ -391,6 +391,8 @@ Signature valid? True
 ```
 input:
 	d: private key
+output:
+	Q: public key
 public key generation:
 	1. h = SHA512(d). Only the lower 32 bytes are used for generating the public key.
 	2. prune the buffer h[0],...,h[31]: The lowest three bits of the first octet are cleared, the highest bit
@@ -415,11 +417,11 @@ signature generation:
 	5. compute S = (r + k*v) mod n
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzNTIxNzA4LC01NDQzMDQ4NjUsMzQxNT
-c4NTkzLC0xMTI2NzM0NTc1LC0xOTE0NTI4MjkxLDEyMzg5MTMz
-MDgsLTY1NzA4ODA4LC05MTQyNjcyNjYsODQ1NDg4MDMwLC0xND
-Y5MzczNjY1LDk4MzIyNzgxNyw4NzUyMjc4OCwtMjEzMTM4NjA3
-MSwtODM5MjM1MDE1LC0xNjQxMDU3NDY1LC02MTk3OTc1NzMsMj
-A0Mjk4Mjk5NSwtMzg5ODEwNTA0LC0xNTI3NDk4MjMwLDE1MjE5
-MDI1XX0=
+eyJoaXN0b3J5IjpbLTE3NTg4NzI5MzAsLTU0NDMwNDg2NSwzND
+E1Nzg1OTMsLTExMjY3MzQ1NzUsLTE5MTQ1MjgyOTEsMTIzODkx
+MzMwOCwtNjU3MDg4MDgsLTkxNDI2NzI2Niw4NDU0ODgwMzAsLT
+E0NjkzNzM2NjUsOTgzMjI3ODE3LDg3NTIyNzg4LC0yMTMxMzg2
+MDcxLC04MzkyMzUwMTUsLTE2NDEwNTc0NjUsLTYxOTc5NzU3My
+wyMDQyOTgyOTk1LC0zODk4MTA1MDQsLTE1Mjc0OTgyMzAsMTUy
+MTkwMjVdfQ==
 -->
