@@ -7,7 +7,7 @@ hash functions take as an input an arbitrary length message and produce a fixed 
 two properties hash functions must have to be useful:
 
 - one-way function: a function that can be computed but cannot be inverted. aka pre-image-attack-resistance function: given only the digest `h`, finding the message `m` is nontrivial
-- collision resistance: a collision is 2 different inputs `m1` and `m2` for which `H(m1) = H(m2)`. Finding another input that produces the same digest is nontrivial
+- collision resistance: a collision is 2 different inputs <code>m<sub>1</sub></code> and <code>m<sub>1</sub></code> for which `H(m1) = H(m2)`. Finding another input that produces the same digest is nontrivial
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
 
@@ -50,6 +50,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc4Njg1ODYsMjAxOTQ3ODEzMiwtMT
-MzNTE0MjU0OSw2MjAyMDUyODJdfQ==
+eyJoaXN0b3J5IjpbLTIwMjk5NTM3MSwyMDE5NDc4MTMyLC0xMz
+M1MTQyNTQ5LDYyMDIwNTI4Ml19
 -->
