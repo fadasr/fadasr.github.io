@@ -6,7 +6,7 @@ hash functions aka pseudo-random functions (PRF) take as an input an arbitrary l
 
 two properties hash functions must have to be useful:
 
-- one-way function: a function that can be computed but cannot be inverted. aka pre-image-attack-resistance function: given only the digest `h`, finding the message `m` is nontrivial
+- one-way function: a function that can be computed but cannot be inverted. aka pre-image-resistance function: given only the digest `h`, finding the message `m` is nontrivial
 - collision resistance: a collision is two different inputs <code>m<sub>1</sub></code> and <code>m<sub>2</sub></code> for which <code>H(m<sub>1</sub>) = H(m<sub>2</sub>)</code>. Finding another input that produces the same digest is nontrivial
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
@@ -61,6 +61,6 @@ SHA3-256:   b'3338be694f50c5f338814986cdf0686453a888b84f424d792af4b9202398f392'
 BLAKE2s:    b'19213bacc58dee6dbde3ceb9a47cbb330b3d86f8cca8997eb00be456f140ca25'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5Mjk3MzczMiwzNzA1OTE0OTUsMjAxOT
+eyJoaXN0b3J5IjpbLTMwMjM4NjUwOSwzNzA1OTE0OTUsMjAxOT
 Q3ODEzMiwtMTMzNTE0MjU0OSw2MjAyMDUyODJdfQ==
 -->
