@@ -1,6 +1,6 @@
 ## secure one-way hash functions
 
-hash functions take as an input an arbitrary length message and produce a fixed size result. The hash result is also known as the digest or the fingerprint.
+hash functions (aka pseudo-random functions) take as an input an arbitrary length message and produce a fixed size result. The hash result is also known as the digest or the fingerprint.
 
 ![](https://fadasr.github.io/images/hash.png)
 
@@ -61,6 +61,6 @@ SHA3-256:   b'3338be694f50c5f338814986cdf0686453a888b84f424d792af4b9202398f392'
 BLAKE2s:    b'19213bacc58dee6dbde3ceb9a47cbb330b3d86f8cca8997eb00be456f140ca25'
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEzNDkyMjcsMzcwNTkxNDk1LDIwMT
+eyJoaXN0b3J5IjpbLTIxNDEzNjg4MjQsMzcwNTkxNDk1LDIwMT
 k0NzgxMzIsLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
 -->
