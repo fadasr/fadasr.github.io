@@ -27,9 +27,13 @@ here are list of modern cryptographic hash algorithm that are secure enough for 
 
 SHA-256, SHA-384, and SHA-512 are based on the cryptographic concept "merkle-damgard" construction. SHA-256 is widely used by developers (e.g. in the bitcoin blockchain). SHA-512 uses 128-byte blocks instead of the 64-byte blocks SHA-256 use.
 
-### SHA-3`: Keccak is the winner of the SHA-3 NIST competition and is based on the cryptographic concept "sponge" construction. Unlike SHA-2, the SHA-3 family are not vulnerable to the "length extension" attack. SHAKE128 and SHAKE256 are variants of the SHA-3 
+### SHA-3
 
-- `BLAKE2`: BLAKE2 is a family of fast hash functions and is one of the finalists at the SHA-3 NIST competition. BLAKE2s is optimized for 32-bit microprocessors and BLAKE2b is optimized for 64-bit
+Keccak is the winner of the SHA-3 NIST competition and is based on the cryptographic concept "sponge" construction. Unlike SHA-2, the SHA-3 family are not vulnerable to the "length extension" attack. SHAKE128 and SHAKE256 are variants of the SHA-3 
+
+### BLAKE2
+
+BLAKE2 is a family of fast hash functions and is one of the finalists at the SHA-3 NIST competition. BLAKE2s is optimized for 32-bit microprocessors and BLAKE2b is optimized for 64-bit
 
 calculating cryptographic hash functions in python:
 
@@ -49,6 +53,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4NTk0NDIsMzcwNTkxNDk1LDIwMTk0Nz
-gxMzIsLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
+eyJoaXN0b3J5IjpbLTE3OTE3MDcwNzAsMzcwNTkxNDk1LDIwMT
+k0NzgxMzIsLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
 -->
