@@ -7,7 +7,7 @@ hash functions take as an input an arbitrary length message and produce a fixed 
 two properties hash functions must have to be useful:
 
 - one-way function: a function that can be computed but cannot be inverted. aka pre-image-attack-resistance function: given only the digest `h`, finding the message `m` is nontrivial
-- collision resistance: a collision is 2 different inputs <code>m<sub>1</sub></code> and <code>m<sub>2</sub></code> for which <code>H(m<sub>1</sub>) = H(m<sub>2</sub>)</code>. Finding another input that produces the same digest is nontrivial
+- collision resistance: a collision is two different inputs <code>m<sub>1</sub></code> and <code>m<sub>2</sub></code> for which <code>H(m<sub>1</sub>) = H(m<sub>2</sub>)</code>. Finding another input that produces the same digest is nontrivial
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
 
@@ -18,7 +18,7 @@ hash functions are used in many scenarios. Here are their most common applicatio
 - file manifests
 - storing password
 - generate unique Id: commit hashes in git, bitcoin addresses
-- pseudorandom number generation
+- pseudo-random number generation
 - proof-of-work algorithm
 
 here are list of modern cryptographic hash algorithm that are secure enough for most application:
@@ -47,6 +47,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNzkwMjksMzcwNTkxNDk1LDIwMTk0Nz
-gxMzIsLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
+eyJoaXN0b3J5IjpbLTUyOTM0NDgzOCwzNzA1OTE0OTUsMjAxOT
+Q3ODEzMiwtMTMzNTE0MjU0OSw2MjAyMDUyODJdfQ==
 -->
