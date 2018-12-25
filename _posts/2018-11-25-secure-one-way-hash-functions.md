@@ -6,7 +6,7 @@ hash functions take as an input an arbitrary length message and produce a fixed 
 
 two properties hash functions must have to be useful:
 
-- one-way function: a function that can be computed but cannot be inverted. Finding the message given only the digest is nontrivial
+- one-way function: a function that can be computed but cannot be inverted. Finding the message given only the digest is nontrivial. aka pre-image attack resistant
 - collision resistance: finding another input that produces the same digest is nontrivial
 
 almost all real-life hash functions are iterative hash functions. This structure allows you to start computing the hash of an input as soon as you have the first part of it. So in applications where a stream of data is to be hashed, the message can be hashed on the fly without ever storing the data.
@@ -50,6 +50,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDEzNjQxNywyMDE5NDc4MTMyLC0xMz
+eyJoaXN0b3J5IjpbMTIzODI5ODE5NCwyMDE5NDc4MTMyLC0xMz
 M1MTQyNTQ5LDYyMDIwNTI4Ml19
 -->
