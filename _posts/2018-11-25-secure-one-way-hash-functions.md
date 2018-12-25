@@ -35,7 +35,7 @@ Keccak is the winner of the SHA-3 NIST competition and is based on the cryptogra
 
 BLAKE2 is a family of fast hash functions and is one of the finalists at the SHA-3 NIST competition. BLAKE2s is optimized for 32-bit microprocessors and BLAKE2b is optimized for 64-bit
 
-calculating cryptographic hash functions in python:
+### calculating cryptographic hash functions in python
 
 ```python
 import hashlib, binascii
@@ -53,6 +53,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE3MDcwNzAsMzcwNTkxNDk1LDIwMT
+eyJoaXN0b3J5IjpbLTE4NzAzMzQ2NjcsMzcwNTkxNDk1LDIwMT
 k0NzgxMzIsLTEzMzUxNDI1NDksNjIwMjA1MjgyXX0=
 -->
