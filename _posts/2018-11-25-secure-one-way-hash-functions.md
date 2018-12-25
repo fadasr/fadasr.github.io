@@ -23,7 +23,7 @@ hash functions are used in many scenarios. Here are their most common applicatio
 
 here are list of modern cryptographic hash algorithm that are secure enough for most application:
 
-- `SHA-2`: SHA-256, SHA-384, and SHA-512 are based on the cryptographic concept "merkle-damgard" construction. SHA-256 is widely used by developers (e.g. in the bitcoin blockchain). SHA-512 uses 128-byte blocks instead of the 64-byte blocks SHA-256 use.
+- `SHA-2`: based on the cryptographic concept "merkle-damgard" construction. It is widely used by developers (e.g. in the bitcoin blockchain). SHA-512 uses 128-byte blocks instead of the 64-byte blocks SHA-256 use.
 
 - `SHA-3`: Keccak is the winner of the SHA-3 NIST competition and is based on the cryptographic concept "sponge" construction. Unlike SHA-2, the SHA-3 family are not vulnerable to the "length extension" attack. SHAKE128 and SHAKE256 are variants of the SHA-3 
 
@@ -47,6 +47,6 @@ blake2s = hashlib.new('blake2s', data).digest()
 print("BLAKE2s:   ", binascii.hexlify(blake2s))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTM0NDgzOCwzNzA1OTE0OTUsMjAxOT
-Q3ODEzMiwtMTMzNTE0MjU0OSw2MjAyMDUyODJdfQ==
+eyJoaXN0b3J5IjpbNDg0NDc4ODc1LDM3MDU5MTQ5NSwyMDE5ND
+c4MTMyLC0xMzM1MTQyNTQ5LDYyMDIwNTI4Ml19
 -->
