@@ -24,14 +24,15 @@
     <td>start listener</td>
   </tr>
   <tr>
-    <td>nc -v -n -z -w1 <i>ip startPort</i> - <i>endPort</i</td>
+    <td>nc -v -n -z -w1 <i>ip startPort</i> - <i>endPort</i></td>
     <td>tcp port scanner</td> 
   </tr>
   <tr>
-    <td>nc -l -p <i>port fileName</i><br>nc -w3 <i>ip port fileName</td>
+    <td>nc -l -p <i>port fileName</i><br>nc -w3 <i>ip port fileName</i></td>
     <td>file transfers</td>
   </tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYyODUzMTAzLC0xOTY2NTg4NTE1XX0=
+eyJoaXN0b3J5IjpbLTE3MjI0NTA0MDMsLTE5NjY1ODg1MTVdfQ
+==
 -->
