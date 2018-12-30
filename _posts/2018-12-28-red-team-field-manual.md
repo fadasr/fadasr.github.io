@@ -12,7 +12,7 @@
     <td>ask the name servers for a domain</td>
   </tr>
   <tr>
-    <td>host -l <i>domain nameServer</td>
+    <td>host -l <i>domain nameServer</i></td>
     <td>dns zone transfer</td>
   </tr>
   <tr>
@@ -33,5 +33,5 @@
   </tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjI3ODkwMSwtMTk2NjU4ODUxNV19
+eyJoaXN0b3J5IjpbMTA0NTQwMzk4MSwtMTk2NjU4ODUxNV19
 -->
