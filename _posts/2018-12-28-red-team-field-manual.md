@@ -3,10 +3,10 @@
 ## network
 
 <table>
-	<tr>
-		<th>command</th>
-		<th>description</th>
-	</tr>
+  <tr>
+    <th>command</th>
+	<th>description</th>
+  </tr>
 	<tr>
 		<td>host -t ns <i>domain</td>
 		<td>ask the name servers for a domain</td>
@@ -33,5 +33,5 @@
 	</tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkwMjYyODA1XX0=
+eyJoaXN0b3J5IjpbLTE5NjY1ODg1MTVdfQ==
 -->
