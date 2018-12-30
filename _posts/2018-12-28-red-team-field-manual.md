@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <td>host -t ns <i>domain</i></td>
-	<td>ask the name servers for a domain</td>
+    <td>ask the name servers for a domain</td>
   </tr>
   <tr>
 	<td>host -l <i>domain nameServer</td>
@@ -33,5 +33,5 @@
   </tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3NDg0NjUzLC0xOTY2NTg4NTE1XX0=
+eyJoaXN0b3J5IjpbMTc3MTg5MTQxMywtMTk2NjU4ODUxNV19
 -->
