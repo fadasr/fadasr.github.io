@@ -7,10 +7,10 @@
     <th>command</th>
 	<th>description</th>
   </tr>
-	<tr>
-		<td>host -t ns <i>domain</td>
-		<td>ask the name servers for a domain</td>
-	</tr>
+  <tr>
+    <td>host -t ns <i>domain</i></td>
+	<td>ask the name servers for a domain</td>
+  </tr>
 	<tr>
 		<td>host -l <i>domain nameServer</td>
 		<td>dns zone transfer</td>
@@ -33,5 +33,5 @@
 	</tr>
 </table>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY1ODg1MTVdfQ==
+eyJoaXN0b3J5IjpbLTIwNDYzMTc5NSwtMTk2NjU4ODUxNV19
 -->
